@@ -11,12 +11,10 @@ shopt -s nullglob
 for folder in $HOME/files/*/
 do 	
 	type=$(basename "$folder")
-	#echo $type
 	for filepath in "$folder"*
 	do	
 		safe_name=$(printf '%s\n' "${filepath##*/}" | sed 's/[&/\]/\\&/g')
 		safe_name=${safe_name%.*}
-		#echo $safe_name
 		pic="${safe_name}_${type}"
 		
 		python3 $HOME/codes/cake.py "$safe_name" "$type" "1"
