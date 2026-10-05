@@ -1,6 +1,5 @@
 import os
 import sys
-import time
 
 def proc():
     tmp = sys.argv[1].split(" ")
