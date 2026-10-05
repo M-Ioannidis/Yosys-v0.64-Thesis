@@ -1,0 +1,2098 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.64 (git sha1 6d2c445ae, g++ 11.4.0-1ubuntu1~22.04.3 -fPIC -O3)
+
+-- Parsing `/home/user/files/switch_(whole)/XS3_Gray_to_bin.v' using frontend ` -vlog2k' --
+
+1. Executing Verilog-2005 frontend: /home/user/files/switch_(whole)/XS3_Gray_to_bin.v
+Parsing Verilog input from `/home/user/files/switch_(whole)/XS3_Gray_to_bin.v' to AST representation.
+Storing AST representation for module `$abstract\XS3_Gray_to_bin'.
+Successfully finished Verilog frontend.
+
+-- Running command `synth_ice40 -top XS3_Gray_to_bin' --
+
+2. Executing SYNTH_ICE40 pass.
+
+2.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/cells_sim.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\SB_IO'.
+Generating RTLIL representation for module `\SB_GB_IO'.
+Generating RTLIL representation for module `\SB_GB'.
+Generating RTLIL representation for module `\SB_LUT4'.
+Generating RTLIL representation for module `\SB_CARRY'.
+Generating RTLIL representation for module `\SB_DFF'.
+Generating RTLIL representation for module `\SB_DFFE'.
+Generating RTLIL representation for module `\SB_DFFSR'.
+Generating RTLIL representation for module `\SB_DFFR'.
+Generating RTLIL representation for module `\SB_DFFSS'.
+Generating RTLIL representation for module `\SB_DFFS'.
+Generating RTLIL representation for module `\SB_DFFESR'.
+Generating RTLIL representation for module `\SB_DFFER'.
+Generating RTLIL representation for module `\SB_DFFESS'.
+Generating RTLIL representation for module `\SB_DFFES'.
+Generating RTLIL representation for module `\SB_DFFN'.
+Generating RTLIL representation for module `\SB_DFFNE'.
+Generating RTLIL representation for module `\SB_DFFNSR'.
+Generating RTLIL representation for module `\SB_DFFNR'.
+Generating RTLIL representation for module `\SB_DFFNSS'.
+Generating RTLIL representation for module `\SB_DFFNS'.
+Generating RTLIL representation for module `\SB_DFFNESR'.
+Generating RTLIL representation for module `\SB_DFFNER'.
+Generating RTLIL representation for module `\SB_DFFNESS'.
+Generating RTLIL representation for module `\SB_DFFNES'.
+Generating RTLIL representation for module `\SB_RAM40_4K'.
+Generating RTLIL representation for module `\SB_RAM40_4KNR'.
+Generating RTLIL representation for module `\SB_RAM40_4KNW'.
+Generating RTLIL representation for module `\SB_RAM40_4KNRNW'.
+Generating RTLIL representation for module `\ICESTORM_LC'.
+Generating RTLIL representation for module `\SB_PLL40_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2F_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_2F_PAD'.
+Generating RTLIL representation for module `\SB_WARMBOOT'.
+Generating RTLIL representation for module `\SB_SPRAM256KA'.
+Generating RTLIL representation for module `\SB_HFOSC'.
+Generating RTLIL representation for module `\SB_LFOSC'.
+Generating RTLIL representation for module `\SB_RGBA_DRV'.
+Generating RTLIL representation for module `\SB_LED_DRV_CUR'.
+Generating RTLIL representation for module `\SB_RGB_DRV'.
+Generating RTLIL representation for module `\SB_I2C'.
+Generating RTLIL representation for module `\SB_SPI'.
+Generating RTLIL representation for module `\SB_LEDDA_IP'.
+Generating RTLIL representation for module `\SB_FILTER_50NS'.
+Generating RTLIL representation for module `\SB_IO_I3C'.
+Generating RTLIL representation for module `\SB_IO_OD'.
+Generating RTLIL representation for module `\SB_MAC16'.
+Generating RTLIL representation for module `\ICESTORM_RAM'.
+Successfully finished Verilog frontend.
+
+2.2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\XS3_Gray_to_bin'.
+Generating RTLIL representation for module `\XS3_Gray_to_bin'.
+
+2.3.1. Analyzing design hierarchy..
+Top module:  \XS3_Gray_to_bin
+
+2.3.2. Analyzing design hierarchy..
+Top module:  \XS3_Gray_to_bin
+Removing unused module `$abstract\XS3_Gray_to_bin'.
+Removed 1 unused modules.
+
+2.4. Executing PROC pass (convert processes to netlists).
+
+2.4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 11 switch rules as full_case in process $proc$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:4$381 in module XS3_Gray_to_bin.
+Removed a total of 0 dead cases.
+
+2.4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 1 assignment to connection.
+
+2.4.4. Executing PROC_INIT pass (extract init attributes).
+
+2.4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.4.6. Executing PROC_ROM pass (convert switches to ROMs).
+rejecting switch: not enough values
+rejecting switch: not enough values
+rejecting switch: not enough values
+rejecting switch: not enough values
+rejecting switch: not enough values
+rejecting switch: not enough values
+rejecting switch: not enough values
+rejecting switch: not enough values
+rejecting switch: not enough values
+rejecting switch: not enough values
+rejecting switch: has nested switches
+Converted 0 switches.
+
+2.4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\XS3_Gray_to_bin.$proc$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:4$381'.
+     1/11: $11\Y[3:0]
+     2/11: $10\Y[3:0]
+     3/11: $9\Y[3:0]
+     4/11: $8\Y[3:0]
+     5/11: $7\Y[3:0]
+     6/11: $6\Y[3:0]
+     7/11: $5\Y[3:0]
+     8/11: $4\Y[3:0]
+     9/11: $3\Y[3:0]
+    10/11: $2\Y[3:0]
+    11/11: $1\Y[3:0]
+
+2.4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\XS3_Gray_to_bin.\Y' from process `\XS3_Gray_to_bin.$proc$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:4$381'.
+
+2.4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+2.4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 11 empty switches in `\XS3_Gray_to_bin.$proc$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:4$381'.
+Removing empty process `XS3_Gray_to_bin.$proc$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:4$381'.
+Cleaned up 11 empty switches.
+
+2.4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.5. Executing FLATTEN pass (flatten design).
+
+2.6. Executing TRIBUF pass.
+
+2.7. Executing DEMINOUT pass (demote inout ports to input or output).
+
+2.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+  removing unused `$eq' cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:8$382'.
+  removing unused non-port wire $0\Y[3:0].
+  removing unused non-port wire $1\Y[3:0].
+  removing unused non-port wire $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:8$382_Y.
+  removing unused non-port wire $procmux$395_CMP.
+  removing unused non-port wire $procmux$396_Y.
+  removing unused non-port wire $procmux$402_CMP.
+  removing unused non-port wire $procmux$403_Y.
+  removing unused non-port wire $procmux$410_CMP.
+  removing unused non-port wire $procmux$411_Y.
+  removing unused non-port wire $procmux$419_CMP.
+  removing unused non-port wire $procmux$420_Y.
+  removing unused non-port wire $procmux$429_CMP.
+  removing unused non-port wire $procmux$430_Y.
+  removing unused non-port wire $procmux$440_CMP.
+  removing unused non-port wire $procmux$441_Y.
+  removing unused non-port wire $procmux$452_CMP.
+  removing unused non-port wire $procmux$453_Y.
+  removing unused non-port wire $procmux$465_CMP.
+  removing unused non-port wire $procmux$466_Y.
+  removing unused non-port wire $procmux$479_CMP.
+  removing unused non-port wire $procmux$480_Y.
+  removing unused non-port wire $procmux$494_Y.
+  removing unused non-port wire $procmux$497_Y.
+Removed 1 unused cells and 23 unused wires.
+
+2.10. Executing CHECK pass (checking for obvious problems).
+Checking module XS3_Gray_to_bin...
+Found and reported 0 problems.
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\XS3_Gray_to_bin'.
+Computing hashes of 49 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+  Cell `$procmux$481_CMP0' is identical to cell `$procmux$506_CMP0'.
+    Redirecting output \Y: $procmux$481_CMP = $procmux$506_CMP
+    Removing $eq cell `$procmux$481_CMP0' from module `\XS3_Gray_to_bin'.
+  Cell `$procmux$467_CMP0' is identical to cell `$procmux$505_CMP0'.
+    Redirecting output \Y: $procmux$467_CMP = $procmux$505_CMP
+    Removing $eq cell `$procmux$467_CMP0' from module `\XS3_Gray_to_bin'.
+  Cell `$procmux$454_CMP0' is identical to cell `$procmux$504_CMP0'.
+    Redirecting output \Y: $procmux$454_CMP = $procmux$504_CMP
+    Removing $eq cell `$procmux$454_CMP0' from module `\XS3_Gray_to_bin'.
+  Cell `$procmux$442_CMP0' is identical to cell `$procmux$503_CMP0'.
+    Redirecting output \Y: $procmux$442_CMP = $procmux$503_CMP
+    Removing $eq cell `$procmux$442_CMP0' from module `\XS3_Gray_to_bin'.
+  Cell `$procmux$431_CMP0' is identical to cell `$procmux$502_CMP0'.
+    Redirecting output \Y: $procmux$431_CMP = $procmux$502_CMP
+    Removing $eq cell `$procmux$431_CMP0' from module `\XS3_Gray_to_bin'.
+  Cell `$procmux$421_CMP0' is identical to cell `$procmux$501_CMP0'.
+    Redirecting output \Y: $procmux$421_CMP = $procmux$501_CMP
+    Removing $eq cell `$procmux$421_CMP0' from module `\XS3_Gray_to_bin'.
+  Cell `$procmux$412_CMP0' is identical to cell `$procmux$500_CMP0'.
+    Redirecting output \Y: $procmux$412_CMP = $procmux$500_CMP
+    Removing $eq cell `$procmux$412_CMP0' from module `\XS3_Gray_to_bin'.
+  Cell `$procmux$404_CMP0' is identical to cell `$procmux$499_CMP0'.
+    Redirecting output \Y: $procmux$404_CMP = $procmux$499_CMP
+    Removing $eq cell `$procmux$404_CMP0' from module `\XS3_Gray_to_bin'.
+  Cell `$procmux$397_CMP0' is identical to cell `$procmux$498_CMP0'.
+    Redirecting output \Y: $procmux$397_CMP = $procmux$498_CMP
+    Removing $eq cell `$procmux$397_CMP0' from module `\XS3_Gray_to_bin'.
+  Cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:64$391' is identical to cell `$procmux$498_CMP0'.
+    Redirecting output \Y: $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:64$391_Y = $procmux$498_CMP
+    Removing $eq cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:64$391' from module `\XS3_Gray_to_bin'.
+  Cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:58$390' is identical to cell `$procmux$499_CMP0'.
+    Redirecting output \Y: $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:58$390_Y = $procmux$499_CMP
+    Removing $eq cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:58$390' from module `\XS3_Gray_to_bin'.
+  Cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:51$389' is identical to cell `$procmux$500_CMP0'.
+    Redirecting output \Y: $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:51$389_Y = $procmux$500_CMP
+    Removing $eq cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:51$389' from module `\XS3_Gray_to_bin'.
+  Cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:45$388' is identical to cell `$procmux$501_CMP0'.
+    Redirecting output \Y: $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:45$388_Y = $procmux$501_CMP
+    Removing $eq cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:45$388' from module `\XS3_Gray_to_bin'.
+  Cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:39$387' is identical to cell `$procmux$502_CMP0'.
+    Redirecting output \Y: $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:39$387_Y = $procmux$502_CMP
+    Removing $eq cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:39$387' from module `\XS3_Gray_to_bin'.
+  Cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:33$386' is identical to cell `$procmux$503_CMP0'.
+    Redirecting output \Y: $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:33$386_Y = $procmux$503_CMP
+    Removing $eq cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:33$386' from module `\XS3_Gray_to_bin'.
+  Cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:27$385' is identical to cell `$procmux$504_CMP0'.
+    Redirecting output \Y: $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:27$385_Y = $procmux$504_CMP
+    Removing $eq cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:27$385' from module `\XS3_Gray_to_bin'.
+  Cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:21$384' is identical to cell `$procmux$505_CMP0'.
+    Redirecting output \Y: $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:21$384_Y = $procmux$505_CMP
+    Removing $eq cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:21$384' from module `\XS3_Gray_to_bin'.
+  Cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:14$383' is identical to cell `$procmux$506_CMP0'.
+    Redirecting output \Y: $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:14$383_Y = $procmux$506_CMP
+    Removing $eq cell `$eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:14$383' from module `\XS3_Gray_to_bin'.
+  Cell `$procmux$507_CMP0' is identical to cell `$procmux$495_CMP0'.
+    Redirecting output \Y: $procmux$507_CMP = $procmux$495_CMP
+    Removing $eq cell `$procmux$507_CMP0' from module `\XS3_Gray_to_bin'.
+Computing hashes of 30 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+Removed a total of 19 cells.
+
+2.11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \XS3_Gray_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$497 (pure)
+		eval $procmux$497 (replace 1 enable 1)
+		eval $procmux$396 (replace 1 enable 1)
+		eval $procmux$394 (replace 1 enable 1)
+		eval $procmux$403 (replace 1 enable 1)
+		eval $procmux$401 (replace 1 enable 1)
+		eval $procmux$411 (replace 1 enable 1)
+		eval $procmux$409 (replace 1 enable 1)
+		eval $procmux$420 (replace 1 enable 1)
+		eval $procmux$418 (replace 1 enable 1)
+		eval $procmux$430 (replace 1 enable 1)
+		eval $procmux$428 (replace 1 enable 1)
+		eval $procmux$441 (replace 1 enable 1)
+		eval $procmux$439 (replace 1 enable 1)
+		eval $procmux$453 (replace 1 enable 1)
+		eval $procmux$451 (replace 1 enable 1)
+		eval $procmux$466 (replace 1 enable 1)
+		eval $procmux$464 (replace 1 enable 1)
+		eval $procmux$480 (replace 1 enable 1)
+		eval $procmux$478 (replace 1 enable 1)
+		eval $procmux$494 (replace 1 enable 1)
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$451.
+    dead port 2/2 on $mux $procmux$441.
+    dead port 2/2 on $mux $procmux$439.
+    dead port 2/2 on $mux $procmux$430.
+    dead port 2/2 on $mux $procmux$428.
+    dead port 2/2 on $mux $procmux$420.
+    dead port 2/2 on $mux $procmux$418.
+    dead port 2/2 on $mux $procmux$411.
+    dead port 2/2 on $mux $procmux$409.
+    dead port 2/2 on $mux $procmux$403.
+    dead port 2/2 on $mux $procmux$401.
+    dead port 2/2 on $mux $procmux$396.
+    dead port 2/2 on $mux $procmux$394.
+    dead port 2/2 on $mux $procmux$494.
+    dead port 2/2 on $mux $procmux$480.
+    dead port 2/2 on $mux $procmux$478.
+    dead port 2/2 on $mux $procmux$466.
+    dead port 2/2 on $mux $procmux$464.
+    dead port 2/2 on $mux $procmux$453.
+Removed 19 multiplexer ports.
+
+2.11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \XS3_Gray_to_bin.
+    New ctrl vector for $pmux cell $procmux$497: { $procmux$506_CMP $procmux$505_CMP $procmux$504_CMP $procmux$503_CMP $procmux$502_CMP $procmux$501_CMP $procmux$500_CMP $procmux$499_CMP $procmux$498_CMP }
+  Optimizing cells in module \XS3_Gray_to_bin.
+Performed a total of 1 changes.
+
+2.11.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\XS3_Gray_to_bin'.
+Computing hashes of 11 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+Removed a total of 0 cells.
+
+2.11.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+  removing unused `$eq' cell `$procmux$495_CMP0'.
+  removing unused non-port wire $procmux$507_CMP.
+  removing unused non-port wire $procmux$506_CMP.
+  removing unused non-port wire $procmux$505_CMP.
+  removing unused non-port wire $2\Y[3:0].
+  removing unused non-port wire $3\Y[3:0].
+  removing unused non-port wire $4\Y[3:0].
+  removing unused non-port wire $5\Y[3:0].
+  removing unused non-port wire $6\Y[3:0].
+  removing unused non-port wire $7\Y[3:0].
+  removing unused non-port wire $8\Y[3:0].
+  removing unused non-port wire $9\Y[3:0].
+  removing unused non-port wire $10\Y[3:0].
+  removing unused non-port wire $11\Y[3:0].
+  removing unused non-port wire $procmux$504_CMP.
+  removing unused non-port wire $procmux$394_Y.
+  removing unused non-port wire $procmux$397_CMP.
+  removing unused non-port wire $procmux$503_CMP.
+  removing unused non-port wire $procmux$502_CMP.
+  removing unused non-port wire $procmux$401_Y.
+  removing unused non-port wire $procmux$404_CMP.
+  removing unused non-port wire $procmux$501_CMP.
+  removing unused non-port wire $procmux$500_CMP.
+  removing unused non-port wire $procmux$409_Y.
+  removing unused non-port wire $procmux$412_CMP.
+  removing unused non-port wire $procmux$499_CMP.
+  removing unused non-port wire $procmux$454_CMP.
+  removing unused non-port wire $procmux$418_Y.
+  removing unused non-port wire $procmux$421_CMP.
+  removing unused non-port wire $procmux$498_CMP.
+  removing unused non-port wire $procmux$464_Y.
+  removing unused non-port wire $procmux$428_Y.
+  removing unused non-port wire $procmux$431_CMP.
+  removing unused non-port wire $procmux$495_CMP.
+  removing unused non-port wire $procmux$467_CMP.
+  removing unused non-port wire $procmux$439_Y.
+  removing unused non-port wire $procmux$442_CMP.
+  removing unused non-port wire $procmux$481_CMP.
+  removing unused non-port wire $procmux$478_Y.
+  removing unused non-port wire $procmux$451_Y.
+Removed 1 unused cells and 39 unused wires.
+
+2.11.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.11.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.11.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \XS3_Gray_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$497 (pure)
+		eval $procmux$497 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.11.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \XS3_Gray_to_bin.
+Performed a total of 0 changes.
+
+2.11.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\XS3_Gray_to_bin'.
+Computing hashes of 10 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+Removed a total of 0 cells.
+
+2.11.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.11.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+
+2.11.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.11.16. Finished fast OPT passes. (There is nothing left to do.)
+
+2.12. Executing FSM pass (extract and optimize FSM).
+
+2.12.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+2.12.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+2.12.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.12.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+
+2.12.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.12.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+2.12.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+2.12.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+2.13. Executing OPT pass (performing simple optimizations).
+
+2.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\XS3_Gray_to_bin'.
+Computing hashes of 10 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+Removed a total of 0 cells.
+
+2.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \XS3_Gray_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$497 (pure)
+		eval $procmux$497 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \XS3_Gray_to_bin.
+Performed a total of 0 changes.
+
+2.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\XS3_Gray_to_bin'.
+Computing hashes of 10 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+Removed a total of 0 cells.
+
+2.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+
+2.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.13.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.14. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 4) from port B of cell XS3_Gray_to_bin.$procmux$503_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell XS3_Gray_to_bin.$procmux$504_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell XS3_Gray_to_bin.$procmux$505_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell XS3_Gray_to_bin.$procmux$506_CMP0 ($eq).
+
+2.15. Executing PEEPOPT pass (run peephole optimizers).
+
+2.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+
+2.17. Executing SHARE pass (SAT-based resource sharing).
+
+2.18. Executing TECHMAP pass (map to technology primitives).
+
+2.18.1. Executing Verilog-2005 frontend: /home/user/yosys/share/cmp2lut.v
+Parsing Verilog input from `/home/user/yosys/share/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+2.18.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $ge: _90_lut_cmp_
+    $gt: _90_lut_cmp_
+    $le: _90_lut_cmp_
+    $lt: _90_lut_cmp_
+
+No more expansions possible.
+
+2.19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.20. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+
+2.21. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module XS3_Gray_to_bin:
+  created 0 $alu and 0 $macc cells.
+
+2.22. Executing OPT pass (performing simple optimizations).
+
+2.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\XS3_Gray_to_bin'.
+Computing hashes of 10 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+Removed a total of 0 cells.
+
+2.22.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \XS3_Gray_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$497 (pure)
+		eval $procmux$497 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.22.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \XS3_Gray_to_bin.
+Performed a total of 0 changes.
+
+2.22.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\XS3_Gray_to_bin'.
+Computing hashes of 10 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+Removed a total of 0 cells.
+
+2.22.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.22.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+
+2.22.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.22.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.23. Executing MEMORY pass.
+
+2.23.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+2.23.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+2.23.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+2.23.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+2.23.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+2.23.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+
+2.23.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+2.23.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+2.23.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+
+2.23.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+
+2.25. Executing MEMORY_LIBMAP pass (mapping memories to cells).
+
+2.26. Executing TECHMAP pass (map to technology primitives).
+
+2.26.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/brams_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/brams_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_RAM4K_'.
+Successfully finished Verilog frontend.
+
+2.26.2. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/spram_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/spram_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_SPRAM_'.
+Successfully finished Verilog frontend.
+
+2.26.3. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $__ICE40_RAM4K_: $__ICE40_RAM4K_
+    $__ICE40_SPRAM_: $__ICE40_SPRAM_
+
+No more expansions possible.
+
+2.27. Executing ICE40_BRAMINIT pass.
+
+2.28. Executing OPT pass (performing simple optimizations).
+
+2.28.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.28.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\XS3_Gray_to_bin'.
+Computing hashes of 10 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+Removed a total of 0 cells.
+
+2.28.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+
+2.28.5. Finished fast OPT passes.
+
+2.29. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+2.30. Executing OPT pass (performing simple optimizations).
+
+2.30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\XS3_Gray_to_bin'.
+Computing hashes of 10 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+Removed a total of 0 cells.
+
+2.30.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \XS3_Gray_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$497 (pure)
+		eval $procmux$497 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \XS3_Gray_to_bin.
+Performed a total of 0 changes.
+
+2.30.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\XS3_Gray_to_bin'.
+Computing hashes of 10 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+Removed a total of 0 cells.
+
+2.30.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.30.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+
+2.30.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.30.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.31. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+2.32. Executing TECHMAP pass (map to technology primitives).
+
+2.32.1. Executing Verilog-2005 frontend: /home/user/yosys/share/techmap.v
+Parsing Verilog input from `/home/user/yosys/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+2.32.2. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/arith_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_ice40_alu'.
+Successfully finished Verilog frontend.
+
+2.32.3. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $xnor: _90_simplemap_bool_ops
+    $xor: _90_simplemap_bool_ops
+    $or: _90_simplemap_bool_ops
+    $and: _90_simplemap_bool_ops
+    $not: _90_simplemap_bool_ops
+    $reduce_bool: _90_simplemap_reduce_ops
+    $reduce_xnor: _90_simplemap_reduce_ops
+    $reduce_xor: _90_simplemap_reduce_ops
+    $reduce_or: _90_simplemap_reduce_ops
+    $reduce_and: _90_simplemap_reduce_ops
+    $logic_or: _90_simplemap_logic_ops
+    $logic_and: _90_simplemap_logic_ops
+    $logic_not: _90_simplemap_logic_ops
+    $nex: _90_simplemap_compare_ops
+    $ne: _90_simplemap_compare_ops
+    $eqx: _90_simplemap_compare_ops
+    $eq: _90_simplemap_compare_ops
+    $bweqx: _90_simplemap_various
+    $bwmux: _90_simplemap_various
+    $bmux: _90_simplemap_various
+    $tribuf: _90_simplemap_various
+    $mux: _90_simplemap_various
+    $concat: _90_simplemap_various
+    $slice: _90_simplemap_various
+    $pos: _90_simplemap_various
+    $buf: _90_simplemap_various
+    $dlatchsr: _90_simplemap_registers
+    $adlatch: _90_simplemap_registers
+    $dlatch: _90_simplemap_registers
+    $dffsre: _90_simplemap_registers
+    $dffsr: _90_simplemap_registers
+    $sdffce: _90_simplemap_registers
+    $sdffe: _90_simplemap_registers
+    $sdff: _90_simplemap_registers
+    $aldffe: _90_simplemap_registers
+    $aldff: _90_simplemap_registers
+    $adffe: _90_simplemap_registers
+    $adff: _90_simplemap_registers
+    $dffe: _90_simplemap_registers
+    $dff: _90_simplemap_registers
+    $ff: _90_simplemap_registers
+    $sr: _90_simplemap_registers
+    $sshr: _90_shift_ops_shr_shl_sshl_sshr
+    $sshl: _90_shift_ops_shr_shl_sshl_sshr
+    $shl: _90_shift_ops_shr_shl_sshl_sshr
+    $shr: _90_shift_ops_shr_shl_sshl_sshr
+    $shiftx: _90_shift_shiftx
+    $shift: _90_shift_shiftx
+    $fa: _90_fa
+    $lcu: _90_lcu_brent_kung
+    $macc_v2: _90_macc
+    $macc: _90_macc
+    $mul: _90_alumacc
+    $neg: _90_alumacc
+    $sub: _90_alumacc
+    $add: _90_alumacc
+    $gt: _90_alumacc
+    $ge: _90_alumacc
+    $le: _90_alumacc
+    $lt: _90_alumacc
+    $__div_mod_u: $__div_mod_u
+    $__div_mod_trunc: $__div_mod_trunc
+    $div: _90_div
+    $mod: _90_mod
+    $__div_mod_floor: $__div_mod_floor
+    $divfloor: _90_divfloor
+    $modfloor: _90_modfloor
+    $pow: _90_pow
+    $pmux: _90_pmux
+    $demux: _90_demux
+    $sop: _90_lut
+    $lut: _90_lut
+    $connect: $connect
+    $input_port: $input_port
+    $alu: _80_ice40_alu _90_alu
+
+Using extmapper simplemap for cells of type $eq.
+Mapping XS3_Gray_to_bin.$procmux$498_CMP0 ($eq) with simplemap.
+Parameter \WIDTH = 4
+Parameter \S_WIDTH = 9
+
+2.32.4. Executing AST frontend in derive mode using pre-parsed AST for module `\_90_pmux'.
+Parameter \WIDTH = 4
+Parameter \S_WIDTH = 9
+Generating RTLIL representation for module `$paramod$4d45682f6d5f8751d24fc75184ef72226da353f7\_90_pmux'.
+
+2.32.5. Continuing TECHMAP pass.
+Using template $paramod$4d45682f6d5f8751d24fc75184ef72226da353f7\_90_pmux for cells of type $pmux.
+Mapping XS3_Gray_to_bin.$procmux$497 ($pmux) using $paramod$4d45682f6d5f8751d24fc75184ef72226da353f7\_90_pmux.
+Mapping XS3_Gray_to_bin.$procmux$499_CMP0 ($eq) with simplemap.
+Mapping XS3_Gray_to_bin.$procmux$500_CMP0 ($eq) with simplemap.
+Mapping XS3_Gray_to_bin.$procmux$501_CMP0 ($eq) with simplemap.
+Mapping XS3_Gray_to_bin.$procmux$502_CMP0 ($eq) with simplemap.
+Mapping XS3_Gray_to_bin.$procmux$503_CMP0 ($eq) with simplemap.
+Mapping XS3_Gray_to_bin.$procmux$504_CMP0 ($eq) with simplemap.
+Mapping XS3_Gray_to_bin.$procmux$505_CMP0 ($eq) with simplemap.
+Mapping XS3_Gray_to_bin.$procmux$506_CMP0 ($eq) with simplemap.
+Using extmapper simplemap for cells of type $reduce_or.
+Mapping XS3_Gray_to_bin.$techmap$procmux$497.$reduce_or$/home/user/yosys/share/techmap.v:601$636 ($reduce_or) with simplemap.
+Mapping XS3_Gray_to_bin.$techmap$procmux$497.$reduce_or$/home/user/yosys/share/techmap.v:601$635 ($reduce_or) with simplemap.
+Mapping XS3_Gray_to_bin.$techmap$procmux$497.$reduce_or$/home/user/yosys/share/techmap.v:601$634 ($reduce_or) with simplemap.
+Mapping XS3_Gray_to_bin.$techmap$procmux$497.$reduce_or$/home/user/yosys/share/techmap.v:601$633 ($reduce_or) with simplemap.
+Using extmapper simplemap for cells of type $and.
+Mapping XS3_Gray_to_bin.$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$632 ($and) with simplemap.
+Mapping XS3_Gray_to_bin.$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$631 ($and) with simplemap.
+Mapping XS3_Gray_to_bin.$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$630 ($and) with simplemap.
+Mapping XS3_Gray_to_bin.$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$629 ($and) with simplemap.
+Mapping XS3_Gray_to_bin.$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$628 ($and) with simplemap.
+Mapping XS3_Gray_to_bin.$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$627 ($and) with simplemap.
+Mapping XS3_Gray_to_bin.$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$626 ($and) with simplemap.
+Mapping XS3_Gray_to_bin.$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$625 ($and) with simplemap.
+Mapping XS3_Gray_to_bin.$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$624 ($and) with simplemap.
+Using extmapper simplemap for cells of type $mux.
+Mapping XS3_Gray_to_bin.$techmap$procmux$497.$ternary$/home/user/yosys/share/techmap.v:605$623 ($mux) with simplemap.
+Mapping XS3_Gray_to_bin.$techmap$procmux$497.$reduce_or$/home/user/yosys/share/techmap.v:605$622 ($reduce_or) with simplemap.
+No more expansions possible.
+
+2.33. Executing OPT pass (performing simple optimizations).
+
+2.33.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$732' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$727 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$731' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$727 [2] = $auto$rtlil.cc:3492:NotGate$858'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$730' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$727 [1] = $auto$rtlil.cc:3492:NotGate$860'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$729' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$727 [0] = $auto$rtlil.cc:3492:NotGate$862'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$717' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$712 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$716' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$712 [2] = $auto$rtlil.cc:3492:NotGate$864'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$715' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$712 [1] = \A [1]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$714' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$712 [0] = $auto$rtlil.cc:3492:NotGate$866'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$702' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$697 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$701' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$697 [2] = $auto$rtlil.cc:3492:NotGate$868'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$700' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$697 [1] = \A [1]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$699' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$697 [0] = \A [0]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$687' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$682 [3] = $auto$rtlil.cc:3492:NotGate$870'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$686' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$682 [2] = $auto$rtlil.cc:3492:NotGate$872'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$685' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$682 [1] = \A [1]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$684' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$682 [0] = \A [0]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$672' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$667 [3] = $auto$rtlil.cc:3492:NotGate$874'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$671' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$667 [2] = $auto$rtlil.cc:3492:NotGate$876'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$670' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$667 [1] = \A [1]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$669' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$667 [0] = $auto$rtlil.cc:3492:NotGate$878'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$657' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$652 [3] = $auto$rtlil.cc:3492:NotGate$880'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$656' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$652 [2] = $auto$rtlil.cc:3492:NotGate$882'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$655' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$652 [1] = $auto$rtlil.cc:3492:NotGate$884'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$654' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$652 [0] = $auto$rtlil.cc:3492:NotGate$886'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$642' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$637 [3] = $auto$rtlil.cc:3492:NotGate$888'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$641' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$637 [2] = $auto$rtlil.cc:3492:NotGate$890'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$640' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$637 [1] = $auto$rtlil.cc:3492:NotGate$892'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$639' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$637 [0] = \A [0]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$612' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$607 [3] = $auto$rtlil.cc:3492:NotGate$894'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$611' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$607 [2] = \A [2]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$610' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$607 [1] = $auto$rtlil.cc:3492:NotGate$896'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$609' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$607 [0] = \A [0]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$747' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$742 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$746' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$742 [2] = $auto$rtlil.cc:3492:NotGate$898'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$745' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$742 [1] = $auto$rtlil.cc:3492:NotGate$900'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$744' (xor_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$742 [0] = \A [0]'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$808' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$632_Y [3] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$816' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$630_Y [3] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$812' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$631_Y [3] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$761' (00) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$757 [3] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$824' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$628_Y [3] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$820' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$629_Y [3] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$760' (00) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$757 [2] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$764' (00) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$762 [1] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$832' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$626_Y [3] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$828' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$627_Y [3] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$759' (00) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$757 [1] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$840' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$624_Y [3] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:64$391_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$836' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$625_Y [3] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:58$390_Y'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$763' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$762 [0] = $auto$simplemap.cc:148:simplemap_reduce$757 [0]'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$766' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$765 = $auto$simplemap.cc:148:simplemap_reduce$757 [0]'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$768' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$reduce_or$/home/user/yosys/share/techmap.v:601$636_Y = $auto$simplemap.cc:148:simplemap_reduce$757 [0]'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$807' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$632_Y [2] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$815' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$630_Y [2] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$811' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$631_Y [2] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$773' (00) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$769 [3] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$823' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$628_Y [2] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:39$387_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$819' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$629_Y [2] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:33$386_Y'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$776' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$774 [1] = $auto$simplemap.cc:148:simplemap_reduce$769 [2]'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$831' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$626_Y [2] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:51$389_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$827' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$627_Y [2] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:45$388_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$839' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$624_Y [2] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$835' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$625_Y [2] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$770' (00) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$769 [0] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$775' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$774 [0] = $auto$simplemap.cc:148:simplemap_reduce$769 [1]'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$780' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$reduce_or$/home/user/yosys/share/techmap.v:601$635_Y = $auto$simplemap.cc:148:simplemap_reduce$777'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$806' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$632_Y [1] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$814' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$630_Y [1] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:27$385_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$810' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$631_Y [1] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:21$384_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$822' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$628_Y [1] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$818' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$629_Y [1] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$784' (00) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$781 [2] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$788' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$786 [1] = $auto$simplemap.cc:148:simplemap_reduce$781 [3]'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$830' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$626_Y [1] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:51$389_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$826' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$627_Y [1] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:45$388_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$838' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$624_Y [1] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$834' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$625_Y [1] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$782' (00) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$781 [0] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$787' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$786 [0] = $auto$simplemap.cc:148:simplemap_reduce$781 [1]'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$792' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$reduce_or$/home/user/yosys/share/techmap.v:601$634_Y = $auto$simplemap.cc:148:simplemap_reduce$789'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$805' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$632_Y [0] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:14$383_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$813' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$630_Y [0] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:27$385_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$809' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$631_Y [0] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$797' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$793 [3] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:27$385_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$821' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$628_Y [0] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:39$387_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$817' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$629_Y [0] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$796' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$793 [2] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:39$387_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$829' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$626_Y [0] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:51$389_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$825' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$627_Y [0] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$795' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$793 [1] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:51$389_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$837' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$624_Y [0] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:64$391_Y'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$833' (const_and) in module `\XS3_Gray_to_bin' with constant driver `$techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$625_Y [0] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$794' (and_or_buffer) in module `\XS3_Gray_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$793 [0] = $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:64$391_Y'.
+
+2.33.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\XS3_Gray_to_bin'.
+Computing hashes of 81 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$857' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$897'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$858 = $auto$rtlil.cc:3492:NotGate$898
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$857' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$863' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$897'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$864 = $auto$rtlil.cc:3492:NotGate$898
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$863' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$865' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$861'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$866 = $auto$rtlil.cc:3492:NotGate$862
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$865' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$867' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$897'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$868 = $auto$rtlil.cc:3492:NotGate$898
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$867' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$691' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$706'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$690 [0] = $auto$simplemap.cc:148:simplemap_reduce$705 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$691' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$871' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$897'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$872 = $auto$rtlil.cc:3492:NotGate$898
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$871' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$875' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$897'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$876 = $auto$rtlil.cc:3492:NotGate$898
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$875' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$877' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$861'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$878 = $auto$rtlil.cc:3492:NotGate$862
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$877' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$873' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$869'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$874 = $auto$rtlil.cc:3492:NotGate$870
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$873' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$881' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$897'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$882 = $auto$rtlil.cc:3492:NotGate$898
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$881' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$883' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$859'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$884 = $auto$rtlil.cc:3492:NotGate$860
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$883' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$885' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$861'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$886 = $auto$rtlil.cc:3492:NotGate$862
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$885' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$879' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$869'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$880 = $auto$rtlil.cc:3492:NotGate$870
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$879' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$889' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$897'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$890 = $auto$rtlil.cc:3492:NotGate$898
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$889' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$891' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$859'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$892 = $auto$rtlil.cc:3492:NotGate$860
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$891' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$887' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$869'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$888 = $auto$rtlil.cc:3492:NotGate$870
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$887' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$783' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$847'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$781 [1] = $auto$simplemap.cc:148:simplemap_reduce$845 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$783' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$785' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$849'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$781 [3] = $auto$simplemap.cc:148:simplemap_reduce$845 [3]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$785' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$899' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$859'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$900 = $auto$rtlil.cc:3492:NotGate$860
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$899' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$771' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$847'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$769 [1] = $auto$simplemap.cc:148:simplemap_reduce$845 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$771' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$758' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$846'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$757 [0] = $auto$simplemap.cc:148:simplemap_reduce$845 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$758' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$772' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$848'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$769 [2] = $auto$simplemap.cc:148:simplemap_reduce$845 [2]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$772' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$895' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$859'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$896 = $auto$rtlil.cc:3492:NotGate$860
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$895' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$893' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$869'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$894 = $auto$rtlil.cc:3492:NotGate$870
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$893' from module `\XS3_Gray_to_bin'.
+Computing hashes of 57 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$662' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$677'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$660 [1] = $auto$simplemap.cc:148:simplemap_reduce$675 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$662' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$721' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$676'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$720 [0] = $auto$simplemap.cc:148:simplemap_reduce$675 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$721' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$737' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$722'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$735 [1] = $auto$simplemap.cc:148:simplemap_reduce$720 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$737' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$647' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$677'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$645 [1] = $auto$simplemap.cc:148:simplemap_reduce$675 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$647' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$736' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$661'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$735 [0] = $auto$simplemap.cc:148:simplemap_reduce$660 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$736' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$707' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$722'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$705 [1] = $auto$simplemap.cc:148:simplemap_reduce$720 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$707' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$751' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$646'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$750 [0] = $auto$simplemap.cc:148:simplemap_reduce$645 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$751' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$752' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$722'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$750 [1] = $auto$simplemap.cc:148:simplemap_reduce$720 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$752' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$616' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$646'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$615 [0] = $auto$simplemap.cc:148:simplemap_reduce$645 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$616' from module `\XS3_Gray_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$692' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$677'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$690 [1] = $auto$simplemap.cc:148:simplemap_reduce$675 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$692' from module `\XS3_Gray_to_bin'.
+Computing hashes of 47 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+Removed a total of 34 cells.
+
+2.33.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.33.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+  removing unused non-port wire $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:58$390_Y.
+  removing unused non-port wire $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:33$386_Y.
+  removing unused non-port wire $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:51$389_Y.
+  removing unused non-port wire $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:39$387_Y.
+  removing unused non-port wire $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:14$383_Y.
+  removing unused non-port wire $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:64$391_Y.
+  removing unused non-port wire $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:21$384_Y.
+  removing unused non-port wire $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:45$388_Y.
+  removing unused non-port wire $eq$/home/user/files/switch_(whole)/XS3_Gray_to_bin.v:27$385_Y.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$607.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$618.
+  removing unused non-port wire $techmap$procmux$497.$reduce_or$/home/user/yosys/share/techmap.v:601$636_Y.
+  removing unused non-port wire $techmap$procmux$497.$reduce_or$/home/user/yosys/share/techmap.v:601$635_Y.
+  removing unused non-port wire $techmap$procmux$497.$reduce_or$/home/user/yosys/share/techmap.v:601$634_Y.
+  removing unused non-port wire $techmap$procmux$497.$reduce_or$/home/user/yosys/share/techmap.v:601$633_Y.
+  removing unused non-port wire $techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$632_Y.
+  removing unused non-port wire $techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$631_Y.
+  removing unused non-port wire $techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$630_Y.
+  removing unused non-port wire $techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$629_Y.
+  removing unused non-port wire $techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$628_Y.
+  removing unused non-port wire $techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$627_Y.
+  removing unused non-port wire $techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$626_Y.
+  removing unused non-port wire $techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$625_Y.
+  removing unused non-port wire $techmap$procmux$497.$and$/home/user/yosys/share/techmap.v:593$624_Y.
+  removing unused non-port wire $techmap$procmux$497.$ternary$/home/user/yosys/share/techmap.v:605$623_Y.
+  removing unused non-port wire $procmux$497.B_OR[3].B_AND_BITS.
+  removing unused non-port wire $procmux$497.B_OR[2].B_AND_BITS.
+  removing unused non-port wire $procmux$497.B_OR[1].B_AND_BITS.
+  removing unused non-port wire $procmux$497.B_OR[0].B_AND_BITS.
+  removing unused non-port wire $procmux$497.Y.
+  removing unused non-port wire $procmux$497.S.
+  removing unused non-port wire $procmux$497.B.
+  removing unused non-port wire $procmux$497.A.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$637.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$648.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$652.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$663.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$667.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$678.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$682.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$693.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$697.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$708.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$712.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$720.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$723.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$727.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$735.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$738.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$742.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$750.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$753.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$757.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$762.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$765.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$767.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$774.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$777.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$779.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$786.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$789.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$791.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$793.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$803.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$845.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$855.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$864.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$866.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$868.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$872.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$874.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$876.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$878.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$880.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$882.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$884.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$886.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$888.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$890.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$892.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$894.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$896.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$898.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$900.
+Removed 0 unused cells and 84 unused wires.
+
+2.33.5. Finished fast OPT passes.
+
+2.34. Executing ICE40_OPT pass (performing simple optimizations).
+
+2.34.1. Running ICE40 specific optimizations.
+
+2.34.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.34.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\XS3_Gray_to_bin'.
+Computing hashes of 47 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+Removed a total of 0 cells.
+
+2.34.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.34.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+
+2.34.6. Finished OPT passes. (There is nothing left to do.)
+
+2.35. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+2.36. Executing TECHMAP pass (map to technology primitives).
+
+2.36.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/ff_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+2.36.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $_DFF_N_: $_DFF_N_
+    $_DFF_P_: $_DFF_P_
+    $_DFFE_NP_: $_DFFE_NP_
+    $_DFFE_PP_: $_DFFE_PP_
+    $_DFF_NP0_: $_DFF_NP0_
+    $_DFF_NP1_: $_DFF_NP1_
+    $_DFF_PP0_: $_DFF_PP0_
+    $_DFF_PP1_: $_DFF_PP1_
+    $_DFFE_NP0P_: $_DFFE_NP0P_
+    $_DFFE_NP1P_: $_DFFE_NP1P_
+    $_DFFE_PP0P_: $_DFFE_PP0P_
+    $_DFFE_PP1P_: $_DFFE_PP1P_
+    $_SDFF_NP0_: $_SDFF_NP0_
+    $_SDFF_NP1_: $_SDFF_NP1_
+    $_SDFF_PP0_: $_SDFF_PP0_
+    $_SDFF_PP1_: $_SDFF_PP1_
+    $_SDFFCE_NP0P_: $_SDFFCE_NP0P_
+    $_SDFFCE_NP1P_: $_SDFFCE_NP1P_
+    $_SDFFCE_PP0P_: $_SDFFCE_PP0P_
+    $_SDFFCE_PP1P_: $_SDFFCE_PP1P_
+
+No more expansions possible.
+
+2.37. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.38. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+2.39. Executing ICE40_OPT pass (performing simple optimizations).
+
+2.39.1. Running ICE40 specific optimizations.
+
+2.39.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$844' in module `XS3_Gray_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$843' in module `XS3_Gray_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$842' in module `XS3_Gray_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$841' in module `XS3_Gray_to_bin' with and-gate.
+
+2.39.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\XS3_Gray_to_bin'.
+Computing hashes of 47 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+Removed a total of 0 cells.
+
+2.39.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.39.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+
+2.39.6. Rerunning OPT passes. (Removed registers in this run.)
+
+2.39.7. Running ICE40 specific optimizations.
+
+2.39.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module XS3_Gray_to_bin.
+
+2.39.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\XS3_Gray_to_bin'.
+Computing hashes of 47 cells of `\XS3_Gray_to_bin'.
+Finding duplicate cells in `\XS3_Gray_to_bin'.
+Removed a total of 0 cells.
+
+2.39.10. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.39.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+
+2.39.12. Finished OPT passes. (There is nothing left to do.)
+
+2.40. Executing TECHMAP pass (map to technology primitives).
+
+2.40.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/latches_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/latches_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Successfully finished Verilog frontend.
+
+2.40.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $_DLATCH_N_: $_DLATCH_N_
+    $_DLATCH_P_: $_DLATCH_P_
+
+No more expansions possible.
+
+2.41. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/abc9_model.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_CARRY_WRAPPER'.
+Successfully finished Verilog frontend.
+
+2.42. Executing ABC9 pass.
+
+2.42.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module XS3_Gray_to_bin.
+Found 0 SCCs.
+
+2.42.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.5. Executing TECHMAP pass (map to technology primitives).
+
+2.42.5.1. Executing Verilog-2005 frontend: /home/user/yosys/share/techmap.v
+Parsing Verilog input from `/home/user/yosys/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+2.42.5.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    XS3_Gray_to_bin: XS3_Gray_to_bin
+    SB_WARMBOOT: SB_WARMBOOT
+    SB_SPRAM256KA: SB_SPRAM256KA
+    SB_SPI: SB_SPI
+    SB_RGB_DRV: SB_RGB_DRV
+    SB_RGBA_DRV: SB_RGBA_DRV
+    SB_RAM40_4KNW: SB_RAM40_4KNW
+    SB_RAM40_4KNRNW: SB_RAM40_4KNRNW
+    SB_RAM40_4KNR: SB_RAM40_4KNR
+    SB_RAM40_4K: SB_RAM40_4K
+    SB_PLL40_PAD: SB_PLL40_PAD
+    SB_PLL40_CORE: SB_PLL40_CORE
+    SB_PLL40_2_PAD: SB_PLL40_2_PAD
+    SB_PLL40_2F_PAD: SB_PLL40_2F_PAD
+    SB_PLL40_2F_CORE: SB_PLL40_2F_CORE
+    SB_MAC16: SB_MAC16
+    SB_LUT4: SB_LUT4
+    SB_LFOSC: SB_LFOSC
+    SB_LED_DRV_CUR: SB_LED_DRV_CUR
+    SB_LEDDA_IP: SB_LEDDA_IP
+    SB_IO_OD: SB_IO_OD
+    SB_IO_I3C: SB_IO_I3C
+    SB_IO: SB_IO
+    SB_I2C: SB_I2C
+    SB_HFOSC: SB_HFOSC
+    SB_GB_IO: SB_GB_IO
+    SB_GB: SB_GB
+    SB_FILTER_50NS: SB_FILTER_50NS
+    SB_DFFSS: SB_DFFSS
+    SB_DFFSR: SB_DFFSR
+    SB_DFFS: SB_DFFS
+    SB_DFFR: SB_DFFR
+    SB_DFFNSS: SB_DFFNSS
+    SB_DFFNSR: SB_DFFNSR
+    SB_DFFNS: SB_DFFNS
+    SB_DFFNR: SB_DFFNR
+    SB_DFFNESS: SB_DFFNESS
+    SB_DFFNESR: SB_DFFNESR
+    SB_DFFNES: SB_DFFNES
+    SB_DFFNER: SB_DFFNER
+    SB_DFFNE: SB_DFFNE
+    SB_DFFN: SB_DFFN
+    SB_DFFESS: SB_DFFESS
+    SB_DFFESR: SB_DFFESR
+    SB_DFFES: SB_DFFES
+    SB_DFFER: SB_DFFER
+    SB_DFFE: SB_DFFE
+    SB_DFF: SB_DFF
+    SB_CARRY: SB_CARRY
+    ICESTORM_RAM: ICESTORM_RAM
+    ICESTORM_LC: ICESTORM_LC
+    $__ICE40_CARRY_WRAPPER: $__ICE40_CARRY_WRAPPER
+    $xnor: _90_simplemap_bool_ops
+    $xor: _90_simplemap_bool_ops
+    $or: _90_simplemap_bool_ops
+    $and: _90_simplemap_bool_ops
+    $not: _90_simplemap_bool_ops
+    $reduce_bool: _90_simplemap_reduce_ops
+    $reduce_xnor: _90_simplemap_reduce_ops
+    $reduce_xor: _90_simplemap_reduce_ops
+    $reduce_or: _90_simplemap_reduce_ops
+    $reduce_and: _90_simplemap_reduce_ops
+    $logic_or: _90_simplemap_logic_ops
+    $logic_and: _90_simplemap_logic_ops
+    $logic_not: _90_simplemap_logic_ops
+    $nex: _90_simplemap_compare_ops
+    $ne: _90_simplemap_compare_ops
+    $eqx: _90_simplemap_compare_ops
+    $eq: _90_simplemap_compare_ops
+    $bweqx: _90_simplemap_various
+    $bwmux: _90_simplemap_various
+    $bmux: _90_simplemap_various
+    $tribuf: _90_simplemap_various
+    $mux: _90_simplemap_various
+    $concat: _90_simplemap_various
+    $slice: _90_simplemap_various
+    $pos: _90_simplemap_various
+    $buf: _90_simplemap_various
+    $dlatchsr: _90_simplemap_registers
+    $adlatch: _90_simplemap_registers
+    $dlatch: _90_simplemap_registers
+    $dffsre: _90_simplemap_registers
+    $dffsr: _90_simplemap_registers
+    $sdffce: _90_simplemap_registers
+    $sdffe: _90_simplemap_registers
+    $sdff: _90_simplemap_registers
+    $aldffe: _90_simplemap_registers
+    $aldff: _90_simplemap_registers
+    $adffe: _90_simplemap_registers
+    $adff: _90_simplemap_registers
+    $dffe: _90_simplemap_registers
+    $dff: _90_simplemap_registers
+    $ff: _90_simplemap_registers
+    $sr: _90_simplemap_registers
+    $sshr: _90_shift_ops_shr_shl_sshl_sshr
+    $sshl: _90_shift_ops_shr_shl_sshl_sshr
+    $shl: _90_shift_ops_shr_shl_sshl_sshr
+    $shr: _90_shift_ops_shr_shl_sshl_sshr
+    $shiftx: _90_shift_shiftx
+    $shift: _90_shift_shiftx
+    $fa: _90_fa
+    $lcu: _90_lcu_brent_kung
+    $alu: _90_alu
+    $macc_v2: _90_macc
+    $macc: _90_macc
+    $mul: _90_alumacc
+    $neg: _90_alumacc
+    $sub: _90_alumacc
+    $add: _90_alumacc
+    $gt: _90_alumacc
+    $ge: _90_alumacc
+    $le: _90_alumacc
+    $lt: _90_alumacc
+    $__div_mod_u: $__div_mod_u
+    $__div_mod_trunc: $__div_mod_trunc
+    $div: _90_div
+    $mod: _90_mod
+    $__div_mod_floor: $__div_mod_floor
+    $divfloor: _90_divfloor
+    $modfloor: _90_modfloor
+    $pow: _90_pow
+    $pmux: _90_pmux
+    $demux: _90_demux
+    $sop: _90_lut
+    $lut: _90_lut
+    $connect: $connect
+    $input_port: $input_port
+
+No more expansions possible.
+
+2.42.6. Executing OPT pass (performing simple optimizations).
+
+2.42.6.1. Executing OPT_EXPR pass (perform const folding).
+
+2.42.6.2. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+2.42.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+2.42.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+2.42.6.5. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+2.42.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.42.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+2.42.6.8. Executing OPT_EXPR pass (perform const folding).
+
+2.42.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.42.7. Executing TECHMAP pass (map to technology primitives).
+
+2.42.7.1. Executing Verilog-2005 frontend: /home/user/yosys/share/abc9_map.v
+Parsing Verilog input from `/home/user/yosys/share/abc9_map.v' to AST representation.
+Successfully finished Verilog frontend.
+
+2.42.7.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+
+No more expansions possible.
+
+2.42.8. Executing Verilog-2005 frontend: /home/user/yosys/share/abc9_model.v
+Parsing Verilog input from `/home/user/yosys/share/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+2.42.9. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.10. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.11. Executing ABC9_OPS pass (helper functions for ABC9).
+$__DFF_P__$abc9_flop.D abc9_required = 0
+$__DFF_N__$abc9_flop.D abc9_required = 0
+
+2.42.12. Executing AIGMAP pass (map logic to AIG).
+Module XS3_Gray_to_bin: replaced 30 cells with 120 new cells, skipped 17 cells.
+  replaced 1 cell types:
+      30 $_OR_
+  not replaced 2 cell types:
+       4 $_AND_
+      13 $_NOT_
+
+2.42.12.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.12.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.12.3. Executing XAIGER backend.
+ciNum = 4
+coNum = 4
+piNum = 4
+poNum = 4
+boxNum = 0
+Extracted 34 AND gates and 143 wires from module `XS3_Gray_to_bin' to a netlist network with 4 inputs and 4 outputs.
+
+2.42.12.4. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+2.42.12.5. Executing ABC9.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_lut <abc-temp-dir>/input.lut 
+ABC: + read_box <abc-temp-dir>/input.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =      4/      4  and =      34  lev =    7 (7.00)  mem = 0.00 MB  box = 0  bb = 0
+ABC: + &scorr 
+ABC: Warning: The network is combinational.
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &dch -f -r 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =      4/      4  and =      26  lev =    5 (3.25)  mem = 0.00 MB  ch =    4  box = 0  bb = 0
+ABC: cst =       0  cls =      3  lit =       4  unused =      23  proof =     0
+ABC: + &if -W 250 -v 
+ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
+ABC: Node =      26.  Ch =     3.  Total mem =    0.01 MB. Peak cut mem =    0.01 MB.
+ABC: P:  Del =  699.00.  Ar =       4.0.  Edge =       14.  Cut =      150.  T =     0.00 sec
+ABC: P:  Del =  699.00.  Ar =       4.0.  Edge =       14.  Cut =      150.  T =     0.00 sec
+ABC: P:  Del =  699.00.  Ar =       4.0.  Edge =       14.  Cut =      150.  T =     0.00 sec
+ABC: F:  Del =  699.00.  Ar =       4.0.  Edge =       14.  Cut =      150.  T =     0.00 sec
+ABC: A:  Del =  699.00.  Ar =       4.0.  Edge =       14.  Cut =      150.  T =     0.00 sec
+ABC: A:  Del =  699.00.  Ar =       4.0.  Edge =       14.  Cut =      150.  T =     0.00 sec
+ABC: Total time =     0.00 sec
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &mfs 
+ABC: Timing manager is given but there is no GIA of boxes.
+ABC: Error: Abc_FrameUpdateGia(): Transformation has failed.
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =      4/      4  and =      21  lev =    5 (3.25)  mem = 0.00 MB  box = 0  bb = 0
+ABC: Mapping (K=4)  :  lut =      4  edge =      14  lev =    1 (1.00)  mem = 0.00 MB
+ABC: LUT = 4 : 2=0 0.0 %  3=2 50.0 %  4=2 50.0 %  Ave = 3.50
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &verify 
+ABC: Networks are equivalent.  Time =     0.01 sec
+ABC: + time 
+ABC: elapse: 0.01 seconds, total: 0.01 seconds
+
+2.42.12.6. Executing AIGER frontend.
+M=25 I=4 L=0 O=4 A=21
+ciNum = 4
+coNum = 4
+piNum = 4
+poNum = 4
+boxNum = 0
+m: dataSize=96 lutNum=4 lutSize=4
+n: '/tmp/yosys-abc-F2OASW/inputRenaming input $i1 -> A
+Renaming input $i2 -> A[1]
+Renaming input $i3 -> A[2]
+Renaming input $i4 -> A[3]
+Renaming output $o0 -> Y
+Renaming output $o1 -> Y[1]
+Renaming output $o2 -> Y[2]
+Renaming output $o3 -> Y[3]
+Finding unused cells or wires in module \XS3_Gray_to_bin$abc9..
+  removing unused `$_AND_' cell `$and$aiger1232$24'.
+  removing unused `$_NOT_' cell `$not$aiger1232$20'.
+  removing unused `$_AND_' cell `$and$aiger1232$22'.
+  removing unused `$_NOT_' cell `$not$aiger1232$21'.
+  removing unused `$_AND_' cell `$and$aiger1232$21'.
+  removing unused `$_AND_' cell `$and$aiger1232$20'.
+  removing unused `$_NOT_' cell `$not$aiger1232$16'.
+  removing unused `$_NOT_' cell `$not$aiger1232$18'.
+  removing unused `$_AND_' cell `$and$aiger1232$18'.
+  removing unused `$_AND_' cell `$and$aiger1232$17'.
+  removing unused `$_NOT_' cell `$not$aiger1232$4'.
+  removing unused `$_AND_' cell `$and$aiger1232$16'.
+  removing unused `$_AND_' cell `$and$aiger1232$15'.
+  removing unused `$_NOT_' cell `$not$aiger1232$9'.
+  removing unused `$_NOT_' cell `$not$aiger1232$13'.
+  removing unused `$_AND_' cell `$and$aiger1232$13'.
+  removing unused `$_NOT_' cell `$not$aiger1232$5'.
+  removing unused `$_NOT_' cell `$not$aiger1232$12'.
+  removing unused `$_AND_' cell `$and$aiger1232$12'.
+  removing unused `$_NOT_' cell `$not$aiger1232$11'.
+  removing unused `$_AND_' cell `$and$aiger1232$11'.
+  removing unused `$_NOT_' cell `$not$aiger1232$3'.
+  removing unused `$_NOT_' cell `$not$aiger1232$10'.
+  removing unused `$_AND_' cell `$and$aiger1232$10'.
+  removing unused `$_AND_' cell `$and$aiger1232$9'.
+  removing unused `$_NOT_' cell `$not$aiger1232$8'.
+  removing unused `$_AND_' cell `$and$aiger1232$8'.
+  removing unused `$_NOT_' cell `$not$aiger1232$6'.
+  removing unused `$_NOT_' cell `$not$aiger1232$7'.
+  removing unused `$_AND_' cell `$and$aiger1232$7'.
+  removing unused `$_NOT_' cell `$not$aiger1232$2'.
+  removing unused `$_AND_' cell `$and$aiger1232$6'.
+  removing unused `$_NOT_' cell `$not$aiger1232$1'.
+  removing unused `$_AND_' cell `$and$aiger1232$5'.
+  removing unused non-port wire $aiger1232$24.
+  removing unused non-port wire $aiger1232$1.
+  removing unused non-port wire $aiger1232$2.
+  removing unused non-port wire $aiger1232$3.
+  removing unused non-port wire $aiger1232$4.
+  removing unused non-port wire $aiger1232$14.
+  removing unused non-port wire $aiger1232$19b.
+  removing unused non-port wire $aiger1232$23.
+  removing unused non-port wire $aiger1232$25.
+  removing unused non-port wire $aiger1232$5.
+  removing unused non-port wire $aiger1232$6.
+  removing unused non-port wire $aiger1232$1b.
+  removing unused non-port wire $aiger1232$7.
+  removing unused non-port wire $aiger1232$2b.
+  removing unused non-port wire $aiger1232$8.
+  removing unused non-port wire $aiger1232$7b.
+  removing unused non-port wire $aiger1232$6b.
+  removing unused non-port wire $aiger1232$9.
+  removing unused non-port wire $aiger1232$8b.
+  removing unused non-port wire $aiger1232$10.
+  removing unused non-port wire $aiger1232$11.
+  removing unused non-port wire $aiger1232$10b.
+  removing unused non-port wire $aiger1232$3b.
+  removing unused non-port wire $aiger1232$12.
+  removing unused non-port wire $aiger1232$11b.
+  removing unused non-port wire $aiger1232$13.
+  removing unused non-port wire $aiger1232$12b.
+  removing unused non-port wire $aiger1232$5b.
+  removing unused non-port wire $aiger1232$13b.
+  removing unused non-port wire $aiger1232$9b.
+  removing unused non-port wire $aiger1232$15.
+  removing unused non-port wire $aiger1232$16.
+  removing unused non-port wire $aiger1232$17.
+  removing unused non-port wire $aiger1232$4b.
+  removing unused non-port wire $aiger1232$18.
+  removing unused non-port wire $aiger1232$18b.
+  removing unused non-port wire $aiger1232$16b.
+  removing unused non-port wire $aiger1232$20.
+  removing unused non-port wire $aiger1232$21.
+  removing unused non-port wire $aiger1232$22.
+  removing unused non-port wire $aiger1232$21b.
+  removing unused non-port wire $aiger1232$20b.
+Removed 34 unused cells and 42 unused wires.
+
+2.42.12.7. Executing ABC9_OPS pass (helper functions for ABC9).
+ABC RESULTS:              $lut cells:        4
+ABC RESULTS:           input signals:        1
+ABC RESULTS:          output signals:        1
+Removing temp directory.
+
+2.42.13. Executing TECHMAP pass (map to technology primitives).
+
+2.42.13.1. Executing Verilog-2005 frontend: /home/user/yosys/share/abc9_unmap.v
+Parsing Verilog input from `/home/user/yosys/share/abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `$__DFF_x__$abc9_flop'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Successfully finished Verilog frontend.
+
+2.42.13.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $__DFF_P__$abc9_flop: $__DFF_x__$abc9_flop
+    $__DFF_N__$abc9_flop: $__DFF_x__$abc9_flop
+    $__ABC9_SCC_BREAKER: $__ABC9_SCC_BREAKER
+
+No more expansions possible.
+
+2.43. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+2.44. Executing TECHMAP pass (map to technology primitives).
+
+2.44.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/ff_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+2.44.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $_DFF_N_: $_DFF_N_
+    $_DFF_P_: $_DFF_P_
+    $_DFFE_NP_: $_DFFE_NP_
+    $_DFFE_PP_: $_DFFE_PP_
+    $_DFF_NP0_: $_DFF_NP0_
+    $_DFF_NP1_: $_DFF_NP1_
+    $_DFF_PP0_: $_DFF_PP0_
+    $_DFF_PP1_: $_DFF_PP1_
+    $_DFFE_NP0P_: $_DFFE_NP0P_
+    $_DFFE_NP1P_: $_DFFE_NP1P_
+    $_DFFE_PP0P_: $_DFFE_PP0P_
+    $_DFFE_PP1P_: $_DFFE_PP1P_
+    $_SDFF_NP0_: $_SDFF_NP0_
+    $_SDFF_NP1_: $_SDFF_NP1_
+    $_SDFF_PP0_: $_SDFF_PP0_
+    $_SDFF_PP1_: $_SDFF_PP1_
+    $_SDFFCE_NP0P_: $_SDFFCE_NP0P_
+    $_SDFFCE_NP1P_: $_SDFFCE_NP1P_
+    $_SDFFCE_PP0P_: $_SDFFCE_PP0P_
+    $_SDFFCE_PP1P_: $_SDFFCE_PP1P_
+
+No more expansions possible.
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+  removing unused `$lut' cell `$abc$1233$lut$aiger1232$19'.
+  removing unused non-port wire $techmap$procmux$497.$reduce_or$/home/user/yosys/share/techmap.v:605$622_Y.
+  removing unused non-port wire $procmux$497.Y_B.
+  removing unused non-port wire $procmux$497.B_AND_S.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$748.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$733.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$718.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$703.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$688.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$673.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$658.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$643.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$613.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$853.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$850.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$801.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$798.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$781.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$769.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$705.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$690.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$675.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$660.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$645.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$615.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$870.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$862.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$860.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$858.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$992.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$994.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$996.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$998.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1000.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1002.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1004.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1006.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1008.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1010.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1012.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1014.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1016.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1018.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1020.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1022.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1024.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1026.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1028.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1030.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1032.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1034.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1036.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1038.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1040.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1042.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1044.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1046.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1048.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1050.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1052.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1054.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1056.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1058.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1060.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1062.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1064.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1066.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1068.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1070.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1072.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1074.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1076.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1078.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1080.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1082.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1084.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1086.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1088.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1090.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1092.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1094.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1096.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1098.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1100.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1102.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1104.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1106.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1108.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1110.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1112.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1114.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1116.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1118.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1120.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1122.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1124.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1126.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1128.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1130.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1132.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1134.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1136.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1138.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1140.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1142.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1144.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1146.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1148.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1150.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1152.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1154.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1156.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1158.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1160.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1162.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1164.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1166.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1168.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1170.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1172.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1174.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1176.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1178.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1180.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1182.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1184.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1186.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1188.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1190.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1192.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1194.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1196.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1198.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1200.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1202.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1204.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1206.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1208.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1210.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1212.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1214.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1216.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1218.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1220.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1222.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1224.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1226.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1228.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1230.
+  removing unused non-port wire $abc$1233$Y[3].
+  removing unused non-port wire $abc$1233$Y[1].
+  removing unused non-port wire $abc$1233$A[3].
+  removing unused non-port wire $abc$1233$aiger1232$19.
+  removing unused non-port wire $abc$1233$A[2].
+  removing unused non-port wire $abc$1233$Y[2].
+  removing unused non-port wire $abc$1233$A[1].
+  removing unused non-port wire $abc$1233$Y[0].
+  removing unused non-port wire $abc$1233$Y.
+  removing unused non-port wire $abc$1233$A[0].
+  removing unused non-port wire $abc$1233$A.
+Removed 1 unused cells and 159 unused wires.
+
+2.45. Executing OPT_LUT pass (optimize LUTs).
+Discovering LUTs.
+Found $lut\WIDTH=4 cell XS3_Gray_to_bin.$abc$1233$lut\Y[2].
+  Cell implements a 4-LUT.
+Found $lut\WIDTH=3 cell XS3_Gray_to_bin.$auto$abc9_ops.cc:1613:reintegrate$1234.
+  Cell implements a 3-LUT.
+Found $lut\WIDTH=4 cell XS3_Gray_to_bin.$abc$1233$lut\Y[0].
+  Cell implements a 4-LUT.
+Found $lut\WIDTH=3 cell XS3_Gray_to_bin.$abc$1233$lut\Y[3].
+  Cell implements a 3-LUT.
+Number of LUTs:        4
+  3-LUT                2
+  4-LUT                2
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Eliminating LUTs.
+Number of LUTs:        4
+  3-LUT                2
+  4-LUT                2
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Combining LUTs.
+Number of LUTs:        4
+  3-LUT                2
+  4-LUT                2
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Eliminated 0 LUTs.
+Combined 0 LUTs.
+
+2.46. Executing TECHMAP pass (map to technology primitives).
+
+2.46.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/cells_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+2.46.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $lut: $lut
+
+Parameter \WIDTH = 3
+Parameter \LUT = 8'11000000
+
+2.46.3. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 3
+Parameter \LUT = 8'11000000
+Generating RTLIL representation for module `$paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11000000'.
+
+2.46.4. Continuing TECHMAP pass.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11000000 for cells of type $lut.
+Mapping XS3_Gray_to_bin.$auto$abc9_ops.cc:1613:reintegrate$1234 ($lut) using $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11000000.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'1000100000001100
+
+2.46.5. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'1000100000001100
+Generating RTLIL representation for module `$paramod$b9d3baa367e429670fdcc099dbbeb654f38fd2cd$lut'.
+
+2.46.6. Continuing TECHMAP pass.
+Using template $paramod$b9d3baa367e429670fdcc099dbbeb654f38fd2cd$lut for cells of type $lut.
+Mapping XS3_Gray_to_bin.$abc$1233$lut\Y[2] ($lut) using $paramod$b9d3baa367e429670fdcc099dbbeb654f38fd2cd$lut.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'1000010001101000
+
+2.46.7. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'1000010001101000
+Generating RTLIL representation for module `$paramod$8a9765da19ab37df84a9ab716086f10acaeca38e$lut'.
+
+2.46.8. Continuing TECHMAP pass.
+Using template $paramod$8a9765da19ab37df84a9ab716086f10acaeca38e$lut for cells of type $lut.
+Mapping XS3_Gray_to_bin.$abc$1233$lut\Y[0] ($lut) using $paramod$8a9765da19ab37df84a9ab716086f10acaeca38e$lut.
+Parameter \WIDTH = 3
+Parameter \LUT = 8'00001000
+
+2.46.9. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 3
+Parameter \LUT = 8'00001000
+Generating RTLIL representation for module `$paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001000'.
+
+2.46.10. Continuing TECHMAP pass.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001000 for cells of type $lut.
+Mapping XS3_Gray_to_bin.$abc$1233$lut\Y[3] ($lut) using $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001000.
+No more expansions possible.
+Finding unused cells or wires in module \XS3_Gray_to_bin..
+  removing unused non-port wire $techmap1235$auto$abc9_ops.cc:1613:reintegrate$1234.Y.
+  removing unused non-port wire $techmap1235$auto$abc9_ops.cc:1613:reintegrate$1234.A.
+  removing unused non-port wire $techmap1236$abc$1233$lut\Y[2].Y.
+  removing unused non-port wire $techmap1236$abc$1233$lut\Y[2].A.
+  removing unused non-port wire $techmap1237$abc$1233$lut\Y[0].Y.
+  removing unused non-port wire $techmap1237$abc$1233$lut\Y[0].A.
+  removing unused non-port wire $techmap1238$abc$1233$lut\Y[3].Y.
+  removing unused non-port wire $techmap1238$abc$1233$lut\Y[3].A.
+Removed 0 unused cells and 8 unused wires.
+
+2.47. Executing AUTONAME pass.
+Rename cell $abc$1233$lut\Y[0] in XS3_Gray_to_bin to Y_SB_LUT4_O.
+Rename cell $abc$1233$lut\Y[2] in XS3_Gray_to_bin to Y_SB_LUT4_O_1.
+Rename cell $auto$abc9_ops.cc:1613:reintegrate$1234 in XS3_Gray_to_bin to Y_SB_LUT4_O_2.
+Rename cell $abc$1233$lut\Y[3] in XS3_Gray_to_bin to Y_SB_LUT4_O_3.
+Renamed 4 objects in module XS3_Gray_to_bin (2 iterations).
+
+2.48. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `XS3_Gray_to_bin'. Setting top module to XS3_Gray_to_bin.
+
+2.48.1. Analyzing design hierarchy..
+Top module:  \XS3_Gray_to_bin
+
+2.48.2. Analyzing design hierarchy..
+Top module:  \XS3_Gray_to_bin
+Removed 0 unused modules.
+
+2.49. Printing statistics.
+
+=== XS3_Gray_to_bin ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+        8 wire bits
+        2 public wires
+        8 public wire bits
+        2 ports
+        8 port bits
+        4 submodules
+        4   SB_LUT4
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+        - XS3_Gray_to_bin
+
+        +----------Count including submodules.
+        | 
+        2 wires
+        8 wire bits
+        2 public wires
+        8 public wire bits
+        2 ports
+        8 port bits
+        - memories
+        - memory bits
+        - processes
+        - cells
+        4 submodules
+        4   SB_LUT4
+
+2.50. Executing CHECK pass (checking for obvious problems).
+Checking module XS3_Gray_to_bin...
+Found and reported 0 problems.
+
+End of script. Logfile hash: 88d0679239, time: 0.44s, user: 0.30s, system: 0.09s, MEM: 31.50 MB peak
+Yosys 0.64 (git sha1 6d2c445ae, g++ 11.4.0-1ubuntu1~22.04.3 -fPIC -O3)
+Time spent:
+   58%    20 calls    0.249 sec read_verilog
+   11%     1 calls    0.047 sec synth_ice40
+    8%     1 calls    0.034 sec abc9_exe
+    4%    18 calls    0.019 sec opt_clean
+    3%     1 calls    0.015 sec abc9
+    3%    18 calls    0.014 sec id_gc
+    2%    10 calls    0.010 sec techmap
+    1%     7 calls    0.006 sec opt
+    1%    16 calls    0.005 sec opt_merge
+    1%    20 calls    0.005 sec opt_expr
+    1%     7 calls    0.005 sec design
+    0%     3 calls    0.003 sec clean
+    0%     2 calls    0.003 sec ice40_opt
+    0%    11 calls    0.001 sec opt_dff
+    0%     2 calls    0.001 sec hierarchy
+    0%     9 calls    0.001 sec abc9_ops
+    0%     6 calls    0.001 sec opt_muxtree
+    0%     6 calls    0.001 sec opt_reduce
+    0%     1 calls    0.001 sec proc_mux
+    0%     2 calls    0.000 sec read_aiger
+    0%     2 calls    0.000 sec check
+    0%     1 calls    0.000 sec fsm_extract
+    0%     1 calls    0.000 sec stat
+    0%     1 calls    0.000 sec aigmap
+    0%     2 calls    0.000 sec write_xaiger
+    0%     1 calls    0.000 sec proc_dlatch
+    0%     1 calls    0.000 sec share
+    0%     1 calls    0.000 sec scc
+    0%     1 calls    0.000 sec fsm_detect
+    0%     1 calls    0.000 sec memory_libmap
+    0%     1 calls    0.000 sec opt_lut
+    0%     1 calls    0.000 sec blackbox
+    0%     2 calls    0.000 sec ice40_wrapcarry
+    0%     1 calls    0.000 sec proc_rom
+    0%     1 calls    0.000 sec wreduce
+    0%     2 calls    0.000 sec proc_clean
+    0%     1 calls    0.000 sec memory_share
+    0%     1 calls    0.000 sec autoname
+    0%     1 calls    0.000 sec opt_mem_priority
+    0%     1 calls    0.000 sec memory_dff
+    0%     1 calls    0.000 sec deminout
+    0%     1 calls    0.000 sec proc_dff
+    0%     2 calls    0.000 sec fsm_opt
+    0%     1 calls    0.000 sec proc
+    0%     1 calls    0.000 sec peepopt
+    0%     1 calls    0.000 sec dfflegalize
+    0%     1 calls    0.000 sec tribuf
+    0%     1 calls    0.000 sec proc_rmdead
+    0%     1 calls    0.000 sec proc_prune
+    0%     1 calls    0.000 sec fsm
+    0%     1 calls    0.000 sec alumacc
+    0%     1 calls    0.000 sec memory
+    0%     1 calls    0.000 sec simplemap
+    0%     1 calls    0.000 sec memory_map
+    0%     1 calls    0.000 sec ice40_braminit
+    0%     1 calls    0.000 sec opt_mem
+    0%     1 calls    0.000 sec memory_bmux2rom
+    0%     1 calls    0.000 sec proc_arst
+    0%     1 calls    0.000 sec flatten
+    0%     1 calls    0.000 sec memory_collect
+    0%     1 calls    0.000 sec proc_memwr
+    0%     1 calls    0.000 sec opt_mem_widen
+    0%     1 calls    0.000 sec opt_mem_feedback
+    0%     1 calls    0.000 sec fsm_recode
+    0%     1 calls    0.000 sec proc_init
+    0%     1 calls    0.000 sec fsm_info
+    0%     1 calls    0.000 sec fsm_map
+    0%     1 calls    0.000 sec setattr
+    0%     1 calls    0.000 sec read
+    0%     1 calls    0.000 sec wbflip

@@ -1,0 +1,2115 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.64 (git sha1 6d2c445ae, g++ 11.4.0-1ubuntu1~22.04.3 -fPIC -O3)
+
+-- Parsing `/home/user/files/switch_(whole)/OBrienII_to_bin.v' using frontend ` -vlog2k' --
+
+1. Executing Verilog-2005 frontend: /home/user/files/switch_(whole)/OBrienII_to_bin.v
+Parsing Verilog input from `/home/user/files/switch_(whole)/OBrienII_to_bin.v' to AST representation.
+Storing AST representation for module `$abstract\OBrienII_to_bin'.
+Successfully finished Verilog frontend.
+
+-- Running command `synth_ice40 -top OBrienII_to_bin' --
+
+2. Executing SYNTH_ICE40 pass.
+
+2.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/cells_sim.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\SB_IO'.
+Generating RTLIL representation for module `\SB_GB_IO'.
+Generating RTLIL representation for module `\SB_GB'.
+Generating RTLIL representation for module `\SB_LUT4'.
+Generating RTLIL representation for module `\SB_CARRY'.
+Generating RTLIL representation for module `\SB_DFF'.
+Generating RTLIL representation for module `\SB_DFFE'.
+Generating RTLIL representation for module `\SB_DFFSR'.
+Generating RTLIL representation for module `\SB_DFFR'.
+Generating RTLIL representation for module `\SB_DFFSS'.
+Generating RTLIL representation for module `\SB_DFFS'.
+Generating RTLIL representation for module `\SB_DFFESR'.
+Generating RTLIL representation for module `\SB_DFFER'.
+Generating RTLIL representation for module `\SB_DFFESS'.
+Generating RTLIL representation for module `\SB_DFFES'.
+Generating RTLIL representation for module `\SB_DFFN'.
+Generating RTLIL representation for module `\SB_DFFNE'.
+Generating RTLIL representation for module `\SB_DFFNSR'.
+Generating RTLIL representation for module `\SB_DFFNR'.
+Generating RTLIL representation for module `\SB_DFFNSS'.
+Generating RTLIL representation for module `\SB_DFFNS'.
+Generating RTLIL representation for module `\SB_DFFNESR'.
+Generating RTLIL representation for module `\SB_DFFNER'.
+Generating RTLIL representation for module `\SB_DFFNESS'.
+Generating RTLIL representation for module `\SB_DFFNES'.
+Generating RTLIL representation for module `\SB_RAM40_4K'.
+Generating RTLIL representation for module `\SB_RAM40_4KNR'.
+Generating RTLIL representation for module `\SB_RAM40_4KNW'.
+Generating RTLIL representation for module `\SB_RAM40_4KNRNW'.
+Generating RTLIL representation for module `\ICESTORM_LC'.
+Generating RTLIL representation for module `\SB_PLL40_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2F_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_2F_PAD'.
+Generating RTLIL representation for module `\SB_WARMBOOT'.
+Generating RTLIL representation for module `\SB_SPRAM256KA'.
+Generating RTLIL representation for module `\SB_HFOSC'.
+Generating RTLIL representation for module `\SB_LFOSC'.
+Generating RTLIL representation for module `\SB_RGBA_DRV'.
+Generating RTLIL representation for module `\SB_LED_DRV_CUR'.
+Generating RTLIL representation for module `\SB_RGB_DRV'.
+Generating RTLIL representation for module `\SB_I2C'.
+Generating RTLIL representation for module `\SB_SPI'.
+Generating RTLIL representation for module `\SB_LEDDA_IP'.
+Generating RTLIL representation for module `\SB_FILTER_50NS'.
+Generating RTLIL representation for module `\SB_IO_I3C'.
+Generating RTLIL representation for module `\SB_IO_OD'.
+Generating RTLIL representation for module `\SB_MAC16'.
+Generating RTLIL representation for module `\ICESTORM_RAM'.
+Successfully finished Verilog frontend.
+
+2.2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\OBrienII_to_bin'.
+Generating RTLIL representation for module `\OBrienII_to_bin'.
+
+2.3.1. Analyzing design hierarchy..
+Top module:  \OBrienII_to_bin
+
+2.3.2. Analyzing design hierarchy..
+Top module:  \OBrienII_to_bin
+Removing unused module `$abstract\OBrienII_to_bin'.
+Removed 1 unused modules.
+
+2.4. Executing PROC pass (convert processes to netlists).
+
+2.4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed 2 dead cases from process $proc$/home/user/files/switch_(whole)/OBrienII_to_bin.v:28$383 in module OBrienII_to_bin.
+Marked 1 switch rules as full_case in process $proc$/home/user/files/switch_(whole)/OBrienII_to_bin.v:28$383 in module OBrienII_to_bin.
+Removed 2 dead cases from process $proc$/home/user/files/switch_(whole)/OBrienII_to_bin.v:10$381 in module OBrienII_to_bin.
+Marked 1 switch rules as full_case in process $proc$/home/user/files/switch_(whole)/OBrienII_to_bin.v:10$381 in module OBrienII_to_bin.
+Removed a total of 4 dead cases.
+
+2.4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 2 assignments to connections.
+
+2.4.4. Executing PROC_INIT pass (extract init attributes).
+
+2.4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.4.6. Executing PROC_ROM pass (convert switches to ROMs).
+rejecting switch: rhs not const
+rejecting switch: rhs not const
+Converted 0 switches.
+
+2.4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\OBrienII_to_bin.$proc$/home/user/files/switch_(whole)/OBrienII_to_bin.v:28$383'.
+     1/1: $3\Y[3:0]
+Creating decoders for process `\OBrienII_to_bin.$proc$/home/user/files/switch_(whole)/OBrienII_to_bin.v:10$381'.
+     1/1: $1\Y[3:0]
+
+2.4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\OBrienII_to_bin.\Y' from process `\OBrienII_to_bin.$proc$/home/user/files/switch_(whole)/OBrienII_to_bin.v:28$383'.
+No latch inferred for signal `\OBrienII_to_bin.\Y' from process `\OBrienII_to_bin.$proc$/home/user/files/switch_(whole)/OBrienII_to_bin.v:10$381'.
+
+2.4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+2.4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\OBrienII_to_bin.$proc$/home/user/files/switch_(whole)/OBrienII_to_bin.v:28$383'.
+Removing empty process `OBrienII_to_bin.$proc$/home/user/files/switch_(whole)/OBrienII_to_bin.v:28$383'.
+Found and cleaned up 1 empty switch in `\OBrienII_to_bin.$proc$/home/user/files/switch_(whole)/OBrienII_to_bin.v:10$381'.
+Removing empty process `OBrienII_to_bin.$proc$/home/user/files/switch_(whole)/OBrienII_to_bin.v:10$381'.
+Cleaned up 2 empty switches.
+
+2.4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+Replacing $not cell `$not$/home/user/files/switch_(whole)/OBrienII_to_bin.v:20$382' (4'1001) in module `\OBrienII_to_bin' with constant driver `$not$/home/user/files/switch_(whole)/OBrienII_to_bin.v:20$382_Y = 4'0110'.
+Replacing $not cell `$not$/home/user/files/switch_(whole)/OBrienII_to_bin.v:38$384' (4'1001) in module `\OBrienII_to_bin' with constant driver `$not$/home/user/files/switch_(whole)/OBrienII_to_bin.v:38$384_Y = 4'0110'.
+
+2.5. Executing FLATTEN pass (flatten design).
+
+2.6. Executing TRIBUF pass.
+
+2.7. Executing DEMINOUT pass (demote inout ports to input or output).
+
+2.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+  removing unused non-port wire $0\Y[3:0].
+  removing unused non-port wire $1\Y[3:0].
+  removing unused non-port wire $not$/home/user/files/switch_(whole)/OBrienII_to_bin.v:20$382_Y.
+  removing unused non-port wire $2\Y[3:0].
+  removing unused non-port wire $3\Y[3:0].
+  removing unused non-port wire $not$/home/user/files/switch_(whole)/OBrienII_to_bin.v:38$384_Y.
+  removing unused non-port wire $procmux$393_Y.
+  removing unused non-port wire $procmux$407_Y.
+Removed 0 unused cells and 8 unused wires.
+
+2.10. Executing CHECK pass (checking for obvious problems).
+Checking module OBrienII_to_bin...
+Warning: multiple conflicting drivers for OBrienII_to_bin.\Y [3]:
+    port Y[3] of cell $procmux$407 ($pmux)
+    port Y[3] of cell $procmux$393 ($pmux)
+Warning: multiple conflicting drivers for OBrienII_to_bin.\Y [2]:
+    port Y[2] of cell $procmux$407 ($pmux)
+    port Y[2] of cell $procmux$393 ($pmux)
+Warning: multiple conflicting drivers for OBrienII_to_bin.\Y [1]:
+    port Y[1] of cell $procmux$407 ($pmux)
+    port Y[1] of cell $procmux$393 ($pmux)
+Warning: multiple conflicting drivers for OBrienII_to_bin.\Y [0]:
+    port Y[0] of cell $procmux$407 ($pmux)
+    port Y[0] of cell $procmux$393 ($pmux)
+Warning: Wire OBrienII_to_bin.\inited [3] is used but has no driver.
+Warning: Wire OBrienII_to_bin.\inited [2] is used but has no driver.
+Warning: Wire OBrienII_to_bin.\inited [1] is used but has no driver.
+Warning: Wire OBrienII_to_bin.\inited [0] is used but has no driver.
+Found and reported 8 problems.
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\OBrienII_to_bin'.
+Computing hashes of 26 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+  Cell `$procmux$396_CMP0' is identical to cell `$procmux$410_CMP0'.
+    Redirecting output \Y: $procmux$396_CMP = $procmux$410_CMP
+    Removing $eq cell `$procmux$396_CMP0' from module `\OBrienII_to_bin'.
+  Cell `$procmux$395_CMP0' is identical to cell `$procmux$409_CMP0'.
+    Redirecting output \Y: $procmux$395_CMP = $procmux$409_CMP
+    Removing $eq cell `$procmux$395_CMP0' from module `\OBrienII_to_bin'.
+  Cell `$procmux$394_CMP0' is identical to cell `$procmux$408_CMP0'.
+    Redirecting output \Y: $procmux$394_CMP = $procmux$408_CMP
+    Removing $eq cell `$procmux$394_CMP0' from module `\OBrienII_to_bin'.
+  Cell `$procmux$392_CMP0' is identical to cell `$procmux$406_CMP0'.
+    Redirecting output \Y: $procmux$392_CMP = $procmux$406_CMP
+    Removing $eq cell `$procmux$392_CMP0' from module `\OBrienII_to_bin'.
+  Cell `$procmux$390_CMP0' is identical to cell `$procmux$404_CMP0'.
+    Redirecting output \Y: $procmux$390_CMP = $procmux$404_CMP
+    Removing $eq cell `$procmux$390_CMP0' from module `\OBrienII_to_bin'.
+  Cell `$procmux$389_CMP0' is identical to cell `$procmux$403_CMP0'.
+    Redirecting output \Y: $procmux$389_CMP = $procmux$403_CMP
+    Removing $eq cell `$procmux$389_CMP0' from module `\OBrienII_to_bin'.
+  Cell `$procmux$388_CMP0' is identical to cell `$procmux$402_CMP0'.
+    Redirecting output \Y: $procmux$388_CMP = $procmux$402_CMP
+    Removing $eq cell `$procmux$388_CMP0' from module `\OBrienII_to_bin'.
+  Cell `$procmux$387_CMP0' is identical to cell `$procmux$401_CMP0'.
+    Redirecting output \Y: $procmux$387_CMP = $procmux$401_CMP
+    Removing $eq cell `$procmux$387_CMP0' from module `\OBrienII_to_bin'.
+  Cell `$procmux$411_CMP0' is identical to cell `$procmux$397_CMP0'.
+    Redirecting output \Y: $procmux$411_CMP = $procmux$397_CMP
+    Removing $eq cell `$procmux$411_CMP0' from module `\OBrienII_to_bin'.
+  Cell `$procmux$412_CMP0' is identical to cell `$procmux$398_CMP0'.
+    Redirecting output \Y: $procmux$412_CMP = $procmux$398_CMP
+    Removing $eq cell `$procmux$412_CMP0' from module `\OBrienII_to_bin'.
+Computing hashes of 16 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+Removed a total of 10 cells.
+
+2.11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \OBrienII_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$393 (pure)
+		eval $procmux$393 (replace 1 enable 1)
+		eval $procmux$391 (replace 1 enable 1)
+		eval $procmux$386 (replace 1 enable 1)
+    Root of a mux tree: $procmux$407 (pure)
+		eval $procmux$407 (replace 1 enable 1)
+		eval $procmux$405 (replace 1 enable 1)
+		eval $procmux$400 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \OBrienII_to_bin.
+Performed a total of 0 changes.
+
+2.11.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\OBrienII_to_bin'.
+Computing hashes of 16 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+  Cell `$procmux$400' is identical to cell `$procmux$386'.
+    Redirecting output \Y: $procmux$400_Y = $procmux$386_Y
+    Removing $pmux cell `$procmux$400' from module `\OBrienII_to_bin'.
+Computing hashes of 15 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+  Cell `$procmux$405' is identical to cell `$procmux$391'.
+    Redirecting output \Y: $procmux$405_Y = $procmux$391_Y
+    Removing $mux cell `$procmux$405' from module `\OBrienII_to_bin'.
+Computing hashes of 14 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+  Cell `$procmux$407' is identical to cell `$procmux$393'.
+    Redirecting output \Y: \Y = \Y
+    Removing $pmux cell `$procmux$407' from module `\OBrienII_to_bin'.
+Computing hashes of 13 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+Removed a total of 3 cells.
+
+2.11.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+  removing unused non-port wire $procmux$412_CMP.
+  removing unused non-port wire $procmux$411_CMP.
+  removing unused non-port wire $procmux$410_CMP.
+  removing unused non-port wire $procmux$409_CMP.
+  removing unused non-port wire $procmux$406_CMP.
+  removing unused non-port wire $procmux$408_CMP.
+  removing unused non-port wire $procmux$405_Y.
+  removing unused non-port wire $procmux$401_CMP.
+  removing unused non-port wire $procmux$400_Y.
+  removing unused non-port wire $procmux$402_CMP.
+  removing unused non-port wire $procmux$403_CMP.
+  removing unused non-port wire $procmux$404_CMP.
+Removed 0 unused cells and 12 unused wires.
+
+2.11.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+
+2.11.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.11.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \OBrienII_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$393 (pure)
+		eval $procmux$393 (replace 1 enable 1)
+		eval $procmux$391 (replace 1 enable 1)
+		eval $procmux$386 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.11.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \OBrienII_to_bin.
+Performed a total of 0 changes.
+
+2.11.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\OBrienII_to_bin'.
+Computing hashes of 13 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+Removed a total of 0 cells.
+
+2.11.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.11.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+
+2.11.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+
+2.11.16. Finished fast OPT passes. (There is nothing left to do.)
+
+2.12. Executing FSM pass (extract and optimize FSM).
+
+2.12.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+2.12.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+2.12.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.12.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+
+2.12.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.12.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+2.12.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+2.12.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+2.13. Executing OPT pass (performing simple optimizations).
+
+2.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+
+2.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\OBrienII_to_bin'.
+Computing hashes of 13 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+Removed a total of 0 cells.
+
+2.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \OBrienII_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$393 (pure)
+		eval $procmux$393 (replace 1 enable 1)
+		eval $procmux$391 (replace 1 enable 1)
+		eval $procmux$386 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \OBrienII_to_bin.
+Performed a total of 0 changes.
+
+2.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\OBrienII_to_bin'.
+Computing hashes of 13 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+Removed a total of 0 cells.
+
+2.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+
+2.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+
+2.13.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.14. Executing WREDUCE pass (reducing word size of cells).
+Removed top 2 bits (of 4) from port B of cell OBrienII_to_bin.$procmux$397_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell OBrienII_to_bin.$procmux$398_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell OBrienII_to_bin.$procmux$408_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell OBrienII_to_bin.$procmux$409_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell OBrienII_to_bin.$procmux$410_CMP0 ($eq).
+
+2.15. Executing PEEPOPT pass (run peephole optimizers).
+
+2.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+
+2.17. Executing SHARE pass (SAT-based resource sharing).
+
+2.18. Executing TECHMAP pass (map to technology primitives).
+
+2.18.1. Executing Verilog-2005 frontend: /home/user/yosys/share/cmp2lut.v
+Parsing Verilog input from `/home/user/yosys/share/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+2.18.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $ge: _90_lut_cmp_
+    $gt: _90_lut_cmp_
+    $le: _90_lut_cmp_
+    $lt: _90_lut_cmp_
+
+No more expansions possible.
+
+2.19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+
+2.20. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+
+2.21. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module OBrienII_to_bin:
+  created 0 $alu and 0 $macc cells.
+
+2.22. Executing OPT pass (performing simple optimizations).
+
+2.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+
+2.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\OBrienII_to_bin'.
+Computing hashes of 13 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+Removed a total of 0 cells.
+
+2.22.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \OBrienII_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$393 (pure)
+		eval $procmux$393 (replace 1 enable 1)
+		eval $procmux$391 (replace 1 enable 1)
+		eval $procmux$386 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.22.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \OBrienII_to_bin.
+Performed a total of 0 changes.
+
+2.22.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\OBrienII_to_bin'.
+Computing hashes of 13 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+Removed a total of 0 cells.
+
+2.22.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.22.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+
+2.22.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+
+2.22.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.23. Executing MEMORY pass.
+
+2.23.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+2.23.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+2.23.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+2.23.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+2.23.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+2.23.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+
+2.23.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+2.23.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+2.23.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+
+2.23.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+
+2.25. Executing MEMORY_LIBMAP pass (mapping memories to cells).
+
+2.26. Executing TECHMAP pass (map to technology primitives).
+
+2.26.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/brams_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/brams_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_RAM4K_'.
+Successfully finished Verilog frontend.
+
+2.26.2. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/spram_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/spram_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_SPRAM_'.
+Successfully finished Verilog frontend.
+
+2.26.3. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $__ICE40_RAM4K_: $__ICE40_RAM4K_
+    $__ICE40_SPRAM_: $__ICE40_SPRAM_
+
+No more expansions possible.
+
+2.27. Executing ICE40_BRAMINIT pass.
+
+2.28. Executing OPT pass (performing simple optimizations).
+
+2.28.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+Setting undriven signal in OBrienII_to_bin to constant: \inited [2] = 1'0
+Setting undriven signal in OBrienII_to_bin to constant: \inited [0] = 1'0
+Setting undriven signal in OBrienII_to_bin to constant: \inited [3] = 1'0
+Setting undriven signal in OBrienII_to_bin to constant: \inited [1] = 1'0
+Removing init attribute from OBrienII_to_bin/inited.
+
+2.28.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\OBrienII_to_bin'.
+Computing hashes of 13 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+Removed a total of 0 cells.
+
+2.28.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+
+2.28.5. Finished fast OPT passes.
+
+2.29. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+2.30. Executing OPT pass (performing simple optimizations).
+
+2.30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+
+2.30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\OBrienII_to_bin'.
+Computing hashes of 13 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+Removed a total of 0 cells.
+
+2.30.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \OBrienII_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$393 (pure)
+		eval $procmux$393 (replace 1 enable 1)
+		eval $procmux$391 (replace 1 enable 1)
+		eval $procmux$386 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \OBrienII_to_bin.
+    Consolidated identical input bits for $pmux cell $procmux$386:
+      Old ports: A=4'0000, B=16'0110011110001001, Y=$procmux$386_Y
+      New ports: A=3'000, B=12'010011100101, Y={ $procmux$386_Y [3] $procmux$386_Y [1:0] }
+      New connections: $procmux$386_Y [2] = $procmux$386_Y [1]
+  Optimizing cells in module \OBrienII_to_bin.
+Performed a total of 1 changes.
+
+2.30.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\OBrienII_to_bin'.
+Computing hashes of 13 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+Removed a total of 0 cells.
+
+2.30.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.30.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+
+2.30.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+
+2.30.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.30.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \OBrienII_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$393 (pure)
+		eval $procmux$393 (replace 1 enable 1)
+		eval $procmux$391 (replace 1 enable 1)
+		eval $procmux$386 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.30.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \OBrienII_to_bin.
+Performed a total of 0 changes.
+
+2.30.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\OBrienII_to_bin'.
+Computing hashes of 13 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+Removed a total of 0 cells.
+
+2.30.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.30.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+
+2.30.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+
+2.30.16. Finished fast OPT passes. (There is nothing left to do.)
+
+2.31. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+2.32. Executing TECHMAP pass (map to technology primitives).
+
+2.32.1. Executing Verilog-2005 frontend: /home/user/yosys/share/techmap.v
+Parsing Verilog input from `/home/user/yosys/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+2.32.2. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/arith_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_ice40_alu'.
+Successfully finished Verilog frontend.
+
+2.32.3. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $xnor: _90_simplemap_bool_ops
+    $xor: _90_simplemap_bool_ops
+    $or: _90_simplemap_bool_ops
+    $and: _90_simplemap_bool_ops
+    $not: _90_simplemap_bool_ops
+    $reduce_bool: _90_simplemap_reduce_ops
+    $reduce_xnor: _90_simplemap_reduce_ops
+    $reduce_xor: _90_simplemap_reduce_ops
+    $reduce_or: _90_simplemap_reduce_ops
+    $reduce_and: _90_simplemap_reduce_ops
+    $logic_or: _90_simplemap_logic_ops
+    $logic_and: _90_simplemap_logic_ops
+    $logic_not: _90_simplemap_logic_ops
+    $nex: _90_simplemap_compare_ops
+    $ne: _90_simplemap_compare_ops
+    $eqx: _90_simplemap_compare_ops
+    $eq: _90_simplemap_compare_ops
+    $bweqx: _90_simplemap_various
+    $bwmux: _90_simplemap_various
+    $bmux: _90_simplemap_various
+    $tribuf: _90_simplemap_various
+    $mux: _90_simplemap_various
+    $concat: _90_simplemap_various
+    $slice: _90_simplemap_various
+    $pos: _90_simplemap_various
+    $buf: _90_simplemap_various
+    $dlatchsr: _90_simplemap_registers
+    $adlatch: _90_simplemap_registers
+    $dlatch: _90_simplemap_registers
+    $dffsre: _90_simplemap_registers
+    $dffsr: _90_simplemap_registers
+    $sdffce: _90_simplemap_registers
+    $sdffe: _90_simplemap_registers
+    $sdff: _90_simplemap_registers
+    $aldffe: _90_simplemap_registers
+    $aldff: _90_simplemap_registers
+    $adffe: _90_simplemap_registers
+    $adff: _90_simplemap_registers
+    $dffe: _90_simplemap_registers
+    $dff: _90_simplemap_registers
+    $ff: _90_simplemap_registers
+    $sr: _90_simplemap_registers
+    $sshr: _90_shift_ops_shr_shl_sshl_sshr
+    $sshl: _90_shift_ops_shr_shl_sshl_sshr
+    $shl: _90_shift_ops_shr_shl_sshl_sshr
+    $shr: _90_shift_ops_shr_shl_sshl_sshr
+    $shiftx: _90_shift_shiftx
+    $shift: _90_shift_shiftx
+    $fa: _90_fa
+    $lcu: _90_lcu_brent_kung
+    $macc_v2: _90_macc
+    $macc: _90_macc
+    $mul: _90_alumacc
+    $neg: _90_alumacc
+    $sub: _90_alumacc
+    $add: _90_alumacc
+    $gt: _90_alumacc
+    $ge: _90_alumacc
+    $le: _90_alumacc
+    $lt: _90_alumacc
+    $__div_mod_u: $__div_mod_u
+    $__div_mod_trunc: $__div_mod_trunc
+    $div: _90_div
+    $mod: _90_mod
+    $__div_mod_floor: $__div_mod_floor
+    $divfloor: _90_divfloor
+    $modfloor: _90_modfloor
+    $pow: _90_pow
+    $pmux: _90_pmux
+    $demux: _90_demux
+    $sop: _90_lut
+    $lut: _90_lut
+    $connect: $connect
+    $input_port: $input_port
+    $alu: _80_ice40_alu _90_alu
+
+Parameter \WIDTH = 3
+Parameter \S_WIDTH = 4
+
+2.32.4. Executing AST frontend in derive mode using pre-parsed AST for module `\_90_pmux'.
+Parameter \WIDTH = 3
+Parameter \S_WIDTH = 4
+Generating RTLIL representation for module `$paramod$d31bf4d7d72e59528d18fbd4f322e9d608532043\_90_pmux'.
+
+2.32.5. Continuing TECHMAP pass.
+Using template $paramod$d31bf4d7d72e59528d18fbd4f322e9d608532043\_90_pmux for cells of type $pmux.
+Mapping OBrienII_to_bin.$procmux$386 ($pmux) using $paramod$d31bf4d7d72e59528d18fbd4f322e9d608532043\_90_pmux.
+Using extmapper simplemap for cells of type $mux.
+Mapping OBrienII_to_bin.$procmux$391 ($mux) with simplemap.
+Parameter \WIDTH = 4
+Parameter \S_WIDTH = 5
+
+2.32.6. Executing AST frontend in derive mode using pre-parsed AST for module `\_90_pmux'.
+Parameter \WIDTH = 4
+Parameter \S_WIDTH = 5
+Generating RTLIL representation for module `$paramod$95ab7b964273918a033d1324366ecc612d202989\_90_pmux'.
+
+2.32.7. Continuing TECHMAP pass.
+Using template $paramod$95ab7b964273918a033d1324366ecc612d202989\_90_pmux for cells of type $pmux.
+Mapping OBrienII_to_bin.$procmux$393 ($pmux) using $paramod$95ab7b964273918a033d1324366ecc612d202989\_90_pmux.
+Using extmapper simplemap for cells of type $eq.
+Mapping OBrienII_to_bin.$procmux$397_CMP0 ($eq) with simplemap.
+Mapping OBrienII_to_bin.$procmux$398_CMP0 ($eq) with simplemap.
+Mapping OBrienII_to_bin.$procmux$401_CMP0 ($eq) with simplemap.
+Mapping OBrienII_to_bin.$procmux$402_CMP0 ($eq) with simplemap.
+Mapping OBrienII_to_bin.$procmux$403_CMP0 ($eq) with simplemap.
+Mapping OBrienII_to_bin.$procmux$404_CMP0 ($eq) with simplemap.
+Mapping OBrienII_to_bin.$procmux$406_CMP0 ($eq) with simplemap.
+Mapping OBrienII_to_bin.$procmux$408_CMP0 ($eq) with simplemap.
+Mapping OBrienII_to_bin.$procmux$409_CMP0 ($eq) with simplemap.
+Mapping OBrienII_to_bin.$procmux$410_CMP0 ($eq) with simplemap.
+Using extmapper simplemap for cells of type $reduce_or.
+Mapping OBrienII_to_bin.$techmap$procmux$386.$reduce_or$/home/user/yosys/share/techmap.v:601$520 ($reduce_or) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$386.$reduce_or$/home/user/yosys/share/techmap.v:601$519 ($reduce_or) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$386.$reduce_or$/home/user/yosys/share/techmap.v:601$518 ($reduce_or) with simplemap.
+Using extmapper simplemap for cells of type $and.
+Mapping OBrienII_to_bin.$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$517 ($and) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$516 ($and) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$515 ($and) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$514 ($and) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$386.$ternary$/home/user/yosys/share/techmap.v:605$513 ($mux) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$386.$reduce_or$/home/user/yosys/share/techmap.v:605$512 ($reduce_or) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$393.$reduce_or$/home/user/yosys/share/techmap.v:601$535 ($reduce_or) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$393.$reduce_or$/home/user/yosys/share/techmap.v:601$534 ($reduce_or) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$393.$reduce_or$/home/user/yosys/share/techmap.v:601$533 ($reduce_or) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$393.$reduce_or$/home/user/yosys/share/techmap.v:601$532 ($reduce_or) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$531 ($and) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$530 ($and) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$529 ($and) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$528 ($and) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$527 ($and) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$393.$ternary$/home/user/yosys/share/techmap.v:605$526 ($mux) with simplemap.
+Mapping OBrienII_to_bin.$techmap$procmux$393.$reduce_or$/home/user/yosys/share/techmap.v:605$525 ($reduce_or) with simplemap.
+No more expansions possible.
+
+2.33. Executing OPT pass (performing simple optimizations).
+
+2.33.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$676' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$671 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$675' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$671 [2] = \A [2]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$674' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$671 [1] = $auto$rtlil.cc:3492:NotGate$781'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$673' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$671 [0] = \A [0]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$541' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$536 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$540' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$536 [2] = \A [2]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$539' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$536 [1] = $auto$rtlil.cc:3492:NotGate$783'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$538' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$536 [0] = $auto$rtlil.cc:3492:NotGate$785'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$661' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$656 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$660' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$656 [2] = $auto$rtlil.cc:3492:NotGate$787'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$659' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$656 [1] = $auto$rtlil.cc:3492:NotGate$789'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$658' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$656 [0] = \A [0]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$646' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$641 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$645' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$641 [2] = $auto$rtlil.cc:3492:NotGate$791'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$644' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$641 [1] = \A [1]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$643' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$641 [0] = \A [0]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$556' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$551 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$555' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$551 [2] = \A [2]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$554' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$551 [1] = \A [1]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$553' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$551 [0] = $auto$rtlil.cc:3492:NotGate$793'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$752' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$531_Y [3] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$760' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$529_Y [3] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$756' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$530_Y [3] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$723' (00) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$721 [1] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$768' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$527_Y [3] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$764' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$528_Y [3] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$722' (00) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$721 [0] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$725' (00) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$724 = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$727' (00) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$reduce_or$/home/user/yosys/share/techmap.v:601$535_Y = 1'0'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$616' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$611 [3] = $auto$rtlil.cc:3492:NotGate$795'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$615' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$611 [2] = $auto$rtlil.cc:3492:NotGate$797'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$614' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$611 [1] = $auto$rtlil.cc:3492:NotGate$799'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$613' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$611 [0] = \A [0]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$601' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$596 [3] = $auto$rtlil.cc:3492:NotGate$801'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$600' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$596 [2] = \A [2]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$599' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$596 [1] = $auto$rtlil.cc:3492:NotGate$803'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$598' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$596 [0] = \A [0]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$586' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$581 [3] = $auto$rtlil.cc:3492:NotGate$805'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$585' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$581 [2] = \A [2]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$584' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$581 [1] = $auto$rtlil.cc:3492:NotGate$807'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$583' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$581 [0] = $auto$rtlil.cc:3492:NotGate$809'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$571' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$566 [3] = $auto$rtlil.cc:3492:NotGate$811'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$570' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$566 [2] = \A [2]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$569' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$566 [1] = \A [1]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$568' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$566 [0] = $auto$rtlil.cc:3492:NotGate$813'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$706' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$516_Y [2] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$703' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$517_Y [2] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$688' (00) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$686 [1] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$712' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$514_Y [2] = $procmux$387_CMP'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$709' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$515_Y [2] = $procmux$388_CMP'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$690' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$386.$reduce_or$/home/user/yosys/share/techmap.v:601$520_Y = $auto$simplemap.cc:148:simplemap_reduce$686 [0]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$631' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$626 [3] = $auto$rtlil.cc:3492:NotGate$815'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$630' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$626 [2] = $auto$rtlil.cc:3492:NotGate$817'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$629' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$626 [1] = \A [1]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$628' (xor_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$626 [0] = \A [0]'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$524' in module `OBrienII_to_bin'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$751' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$531_Y [2] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$759' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$529_Y [2] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$755' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$530_Y [2] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$730' (00) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$728 [1] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$767' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$527_Y [2] = $procmux$394_CMP'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$763' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$528_Y [2] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$729' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$728 [0] = $procmux$394_CMP'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$732' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$731 = $procmux$394_CMP'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$734' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$reduce_or$/home/user/yosys/share/techmap.v:601$534_Y = $procmux$394_CMP'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$705' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$516_Y [1] = $procmux$389_CMP'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$702' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$517_Y [1] = $procmux$390_CMP'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$711' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$514_Y [1] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$708' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$515_Y [1] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$692' (00) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$691 [0] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$695' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$386.$reduce_or$/home/user/yosys/share/techmap.v:601$519_Y = $auto$simplemap.cc:148:simplemap_reduce$691 [1]'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$523' in module `OBrienII_to_bin'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$750' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$531_Y [1] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$758' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$529_Y [1] = $procmux$396_CMP'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$754' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$530_Y [1] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$737' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$735 [1] = $procmux$396_CMP'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$766' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$527_Y [1] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$762' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$528_Y [1] = $procmux$395_CMP'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$736' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$735 [0] = $procmux$395_CMP'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$741' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$reduce_or$/home/user/yosys/share/techmap.v:601$533_Y = $auto$simplemap.cc:148:simplemap_reduce$738'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$522' in module `OBrienII_to_bin'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$749' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$531_Y [0] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$757' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$529_Y [0] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$753' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$530_Y [0] = $procmux$397_CMP'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$744' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$742 [1] = $procmux$397_CMP'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$765' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$527_Y [0] = 1'0'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$761' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$528_Y [0] = $procmux$395_CMP'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$743' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$742 [0] = $procmux$395_CMP'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$748' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$393.$reduce_or$/home/user/yosys/share/techmap.v:601$532_Y = $auto$simplemap.cc:148:simplemap_reduce$745'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$704' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$516_Y [0] = $procmux$389_CMP'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$701' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$517_Y [0] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$698' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$696 [1] = $procmux$389_CMP'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$710' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$514_Y [0] = $procmux$387_CMP'.
+Replacing $_AND_ cell `$auto$simplemap.cc:106:simplemap_bitop$707' (const_and) in module `\OBrienII_to_bin' with constant driver `$techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$515_Y [0] = 1'0'.
+Replacing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$697' (and_or_buffer) in module `\OBrienII_to_bin' with constant driver `$auto$simplemap.cc:148:simplemap_reduce$696 [0] = $procmux$387_CMP'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$521' in module `OBrienII_to_bin'.
+
+2.33.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\OBrienII_to_bin'.
+Computing hashes of 82 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$796' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$816'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$797 = $auto$rtlil.cc:3492:NotGate$817
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$796' from module `\OBrienII_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$788' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$798'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$789 = $auto$rtlil.cc:3492:NotGate$799
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$788' from module `\OBrienII_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$794' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$814'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$795 = $auto$rtlil.cc:3492:NotGate$815
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$794' from module `\OBrienII_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$802' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$798'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$803 = $auto$rtlil.cc:3492:NotGate$799
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$802' from module `\OBrienII_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$800' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$814'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$801 = $auto$rtlil.cc:3492:NotGate$815
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$800' from module `\OBrienII_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$806' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$798'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$807 = $auto$rtlil.cc:3492:NotGate$799
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$806' from module `\OBrienII_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$804' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$814'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$805 = $auto$rtlil.cc:3492:NotGate$815
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$804' from module `\OBrienII_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$812' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$808'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$813 = $auto$rtlil.cc:3492:NotGate$809
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$812' from module `\OBrienII_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$810' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$814'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$811 = $auto$rtlil.cc:3492:NotGate$815
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$810' from module `\OBrienII_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$792' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$808'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$793 = $auto$rtlil.cc:3492:NotGate$809
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$792' from module `\OBrienII_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$546' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$561'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$544 [1] = $auto$simplemap.cc:148:simplemap_reduce$559 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$546' from module `\OBrienII_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$782' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$798'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$783 = $auto$rtlil.cc:3492:NotGate$799
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$782' from module `\OBrienII_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$784' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$808'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$785 = $auto$rtlil.cc:3492:NotGate$809
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$784' from module `\OBrienII_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$786' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$816'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$787 = $auto$rtlil.cc:3492:NotGate$817
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$786' from module `\OBrienII_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$780' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$798'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$781 = $auto$rtlil.cc:3492:NotGate$799
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$780' from module `\OBrienII_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$650' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$635'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$649 [0] = $auto$simplemap.cc:148:simplemap_reduce$634 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$650' from module `\OBrienII_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$790' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$816'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$791 = $auto$rtlil.cc:3492:NotGate$817
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$790' from module `\OBrienII_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$681' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$561'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$679 [1] = $auto$simplemap.cc:148:simplemap_reduce$559 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$681' from module `\OBrienII_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$687' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$717'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$686 [0] = $auto$simplemap.cc:148:simplemap_reduce$716 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$687' from module `\OBrienII_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$718' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$693'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$716 [1] = $auto$simplemap.cc:148:simplemap_reduce$691 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$718' from module `\OBrienII_to_bin'.
+Computing hashes of 62 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$576' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$591'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$574 [1] = $auto$simplemap.cc:148:simplemap_reduce$589 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$576' from module `\OBrienII_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$636' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$621'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$634 [1] = $auto$simplemap.cc:148:simplemap_reduce$619 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$636' from module `\OBrienII_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$560' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$575'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$559 [0] = $auto$simplemap.cc:148:simplemap_reduce$574 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$560' from module `\OBrienII_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$545' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$590'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$544 [0] = $auto$simplemap.cc:148:simplemap_reduce$589 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$545' from module `\OBrienII_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$606' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$591'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$604 [1] = $auto$simplemap.cc:148:simplemap_reduce$589 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$606' from module `\OBrienII_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$605' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$620'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$604 [0] = $auto$simplemap.cc:148:simplemap_reduce$619 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$605' from module `\OBrienII_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$680' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$620'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$679 [0] = $auto$simplemap.cc:148:simplemap_reduce$619 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$680' from module `\OBrienII_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$651' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$666'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$649 [1] = $auto$simplemap.cc:148:simplemap_reduce$664 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$651' from module `\OBrienII_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$665' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$620'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$664 [0] = $auto$simplemap.cc:148:simplemap_reduce$619 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$665' from module `\OBrienII_to_bin'.
+Computing hashes of 53 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+Removed a total of 29 cells.
+
+2.33.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.33.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+  removing unused `$_NOT_' cell `$auto$simplemap.cc:227:simplemap_lognot$640'.
+  removing unused non-port wire $procmux$391_Y.
+  removing unused non-port wire $procmux$394_CMP.
+  removing unused non-port wire $procmux$397_CMP.
+  removing unused non-port wire $procmux$395_CMP.
+  removing unused non-port wire $procmux$396_CMP.
+  removing unused non-port wire $procmux$398_CMP.
+  removing unused non-port wire $procmux$387_CMP.
+  removing unused non-port wire $procmux$386_Y.
+  removing unused non-port wire $procmux$388_CMP.
+  removing unused non-port wire $procmux$389_CMP.
+  removing unused non-port wire $procmux$390_CMP.
+  removing unused non-port wire $procmux$392_CMP.
+  removing unused non-port wire $techmap$procmux$386.$reduce_or$/home/user/yosys/share/techmap.v:601$520_Y.
+  removing unused non-port wire $techmap$procmux$386.$reduce_or$/home/user/yosys/share/techmap.v:601$519_Y.
+  removing unused non-port wire $techmap$procmux$386.$reduce_or$/home/user/yosys/share/techmap.v:601$518_Y.
+  removing unused non-port wire $techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$517_Y.
+  removing unused non-port wire $techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$516_Y.
+  removing unused non-port wire $techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$515_Y.
+  removing unused non-port wire $techmap$procmux$386.$and$/home/user/yosys/share/techmap.v:593$514_Y.
+  removing unused non-port wire $techmap$procmux$386.$ternary$/home/user/yosys/share/techmap.v:605$513_Y.
+  removing unused non-port wire $procmux$386.B_OR[2].B_AND_BITS.
+  removing unused non-port wire $procmux$386.B_OR[1].B_AND_BITS.
+  removing unused non-port wire $procmux$386.B_OR[0].B_AND_BITS.
+  removing unused non-port wire $procmux$386.S.
+  removing unused non-port wire $procmux$386.B.
+  removing unused non-port wire $procmux$386.A.
+  removing unused non-port wire $techmap$procmux$393.$reduce_or$/home/user/yosys/share/techmap.v:601$535_Y.
+  removing unused non-port wire $techmap$procmux$393.$reduce_or$/home/user/yosys/share/techmap.v:601$534_Y.
+  removing unused non-port wire $techmap$procmux$393.$reduce_or$/home/user/yosys/share/techmap.v:601$533_Y.
+  removing unused non-port wire $techmap$procmux$393.$reduce_or$/home/user/yosys/share/techmap.v:601$532_Y.
+  removing unused non-port wire $techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$531_Y.
+  removing unused non-port wire $techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$530_Y.
+  removing unused non-port wire $techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$529_Y.
+  removing unused non-port wire $techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$528_Y.
+  removing unused non-port wire $techmap$procmux$393.$and$/home/user/yosys/share/techmap.v:593$527_Y.
+  removing unused non-port wire $techmap$procmux$393.$ternary$/home/user/yosys/share/techmap.v:605$526_Y.
+  removing unused non-port wire $procmux$393.B_OR[3].B_AND_BITS.
+  removing unused non-port wire $procmux$393.B_OR[2].B_AND_BITS.
+  removing unused non-port wire $procmux$393.B_OR[1].B_AND_BITS.
+  removing unused non-port wire $procmux$393.B_OR[0].B_AND_BITS.
+  removing unused non-port wire $procmux$393.Y.
+  removing unused non-port wire $procmux$393.B.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$536.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$547.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$551.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$562.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$566.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$577.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$581.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$589.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$592.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$596.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$607.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$611.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$622.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$626.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$637.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$641.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$652.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$656.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$664.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$667.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$671.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$679.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$682.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$686.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$689.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$691.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$694.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$696.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$699.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$716.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$719.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$721.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$724.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$726.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$728.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$731.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$733.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$735.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$738.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$740.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$742.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$745.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$747.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$778.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$783.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$789.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$791.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$793.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$797.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$799.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$801.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$803.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$805.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$807.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$809.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$811.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$813.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$815.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$817.
+Removed 1 unused cells and 101 unused wires.
+
+2.33.5. Finished fast OPT passes.
+
+2.34. Executing ICE40_OPT pass (performing simple optimizations).
+
+2.34.1. Running ICE40 specific optimizations.
+
+2.34.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+
+2.34.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\OBrienII_to_bin'.
+Computing hashes of 52 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+Removed a total of 0 cells.
+
+2.34.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.34.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+
+2.34.6. Finished OPT passes. (There is nothing left to do.)
+
+2.35. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+2.36. Executing TECHMAP pass (map to technology primitives).
+
+2.36.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/ff_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+2.36.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $_DFF_N_: $_DFF_N_
+    $_DFF_P_: $_DFF_P_
+    $_DFFE_NP_: $_DFFE_NP_
+    $_DFFE_PP_: $_DFFE_PP_
+    $_DFF_NP0_: $_DFF_NP0_
+    $_DFF_NP1_: $_DFF_NP1_
+    $_DFF_PP0_: $_DFF_PP0_
+    $_DFF_PP1_: $_DFF_PP1_
+    $_DFFE_NP0P_: $_DFFE_NP0P_
+    $_DFFE_NP1P_: $_DFFE_NP1P_
+    $_DFFE_PP0P_: $_DFFE_PP0P_
+    $_DFFE_PP1P_: $_DFFE_PP1P_
+    $_SDFF_NP0_: $_SDFF_NP0_
+    $_SDFF_NP1_: $_SDFF_NP1_
+    $_SDFF_PP0_: $_SDFF_PP0_
+    $_SDFF_PP1_: $_SDFF_PP1_
+    $_SDFFCE_NP0P_: $_SDFFCE_NP0P_
+    $_SDFFCE_NP1P_: $_SDFFCE_NP1P_
+    $_SDFFCE_PP0P_: $_SDFFCE_PP0P_
+    $_SDFFCE_PP1P_: $_SDFFCE_PP1P_
+
+No more expansions possible.
+
+2.37. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+
+2.38. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+2.39. Executing ICE40_OPT pass (performing simple optimizations).
+
+2.39.1. Running ICE40 specific optimizations.
+
+2.39.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$715' in module `OBrienII_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$524' in module `OBrienII_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$714' in module `OBrienII_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$522' in module `OBrienII_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$713' in module `OBrienII_to_bin' with and-gate.
+
+2.39.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\OBrienII_to_bin'.
+Computing hashes of 52 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+Removed a total of 0 cells.
+
+2.39.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.39.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+
+2.39.6. Rerunning OPT passes. (Removed registers in this run.)
+
+2.39.7. Running ICE40 specific optimizations.
+
+2.39.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module OBrienII_to_bin.
+
+2.39.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\OBrienII_to_bin'.
+Computing hashes of 52 cells of `\OBrienII_to_bin'.
+Finding duplicate cells in `\OBrienII_to_bin'.
+Removed a total of 0 cells.
+
+2.39.10. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.39.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \OBrienII_to_bin..
+
+2.39.12. Finished OPT passes. (There is nothing left to do.)
+
+2.40. Executing TECHMAP pass (map to technology primitives).
+
+2.40.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/latches_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/latches_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Successfully finished Verilog frontend.
+
+2.40.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $_DLATCH_N_: $_DLATCH_N_
+    $_DLATCH_P_: $_DLATCH_P_
+
+No more expansions possible.
+
+2.41. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/abc9_model.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_CARRY_WRAPPER'.
+Successfully finished Verilog frontend.
+
+2.42. Executing ABC9 pass.
+
+2.42.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module OBrienII_to_bin.
+Found 0 SCCs.
+
+2.42.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.5. Executing TECHMAP pass (map to technology primitives).
+
+2.42.5.1. Executing Verilog-2005 frontend: /home/user/yosys/share/techmap.v
+Parsing Verilog input from `/home/user/yosys/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+2.42.5.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    SB_WARMBOOT: SB_WARMBOOT
+    SB_SPRAM256KA: SB_SPRAM256KA
+    SB_SPI: SB_SPI
+    SB_RGB_DRV: SB_RGB_DRV
+    SB_RGBA_DRV: SB_RGBA_DRV
+    SB_RAM40_4KNW: SB_RAM40_4KNW
+    SB_RAM40_4KNRNW: SB_RAM40_4KNRNW
+    SB_RAM40_4KNR: SB_RAM40_4KNR
+    SB_RAM40_4K: SB_RAM40_4K
+    SB_PLL40_PAD: SB_PLL40_PAD
+    SB_PLL40_CORE: SB_PLL40_CORE
+    SB_PLL40_2_PAD: SB_PLL40_2_PAD
+    SB_PLL40_2F_PAD: SB_PLL40_2F_PAD
+    SB_PLL40_2F_CORE: SB_PLL40_2F_CORE
+    SB_MAC16: SB_MAC16
+    SB_LUT4: SB_LUT4
+    SB_LFOSC: SB_LFOSC
+    SB_LED_DRV_CUR: SB_LED_DRV_CUR
+    SB_LEDDA_IP: SB_LEDDA_IP
+    SB_IO_OD: SB_IO_OD
+    SB_IO_I3C: SB_IO_I3C
+    SB_IO: SB_IO
+    SB_I2C: SB_I2C
+    SB_HFOSC: SB_HFOSC
+    SB_GB_IO: SB_GB_IO
+    SB_GB: SB_GB
+    SB_FILTER_50NS: SB_FILTER_50NS
+    SB_DFFSS: SB_DFFSS
+    SB_DFFSR: SB_DFFSR
+    SB_DFFS: SB_DFFS
+    SB_DFFR: SB_DFFR
+    SB_DFFNSS: SB_DFFNSS
+    SB_DFFNSR: SB_DFFNSR
+    SB_DFFNS: SB_DFFNS
+    SB_DFFNR: SB_DFFNR
+    SB_DFFNESS: SB_DFFNESS
+    SB_DFFNESR: SB_DFFNESR
+    SB_DFFNES: SB_DFFNES
+    SB_DFFNER: SB_DFFNER
+    SB_DFFNE: SB_DFFNE
+    SB_DFFN: SB_DFFN
+    SB_DFFESS: SB_DFFESS
+    SB_DFFESR: SB_DFFESR
+    SB_DFFES: SB_DFFES
+    SB_DFFER: SB_DFFER
+    SB_DFFE: SB_DFFE
+    SB_DFF: SB_DFF
+    SB_CARRY: SB_CARRY
+    OBrienII_to_bin: OBrienII_to_bin
+    ICESTORM_RAM: ICESTORM_RAM
+    ICESTORM_LC: ICESTORM_LC
+    $__ICE40_CARRY_WRAPPER: $__ICE40_CARRY_WRAPPER
+    $xnor: _90_simplemap_bool_ops
+    $xor: _90_simplemap_bool_ops
+    $or: _90_simplemap_bool_ops
+    $and: _90_simplemap_bool_ops
+    $not: _90_simplemap_bool_ops
+    $reduce_bool: _90_simplemap_reduce_ops
+    $reduce_xnor: _90_simplemap_reduce_ops
+    $reduce_xor: _90_simplemap_reduce_ops
+    $reduce_or: _90_simplemap_reduce_ops
+    $reduce_and: _90_simplemap_reduce_ops
+    $logic_or: _90_simplemap_logic_ops
+    $logic_and: _90_simplemap_logic_ops
+    $logic_not: _90_simplemap_logic_ops
+    $nex: _90_simplemap_compare_ops
+    $ne: _90_simplemap_compare_ops
+    $eqx: _90_simplemap_compare_ops
+    $eq: _90_simplemap_compare_ops
+    $bweqx: _90_simplemap_various
+    $bwmux: _90_simplemap_various
+    $bmux: _90_simplemap_various
+    $tribuf: _90_simplemap_various
+    $mux: _90_simplemap_various
+    $concat: _90_simplemap_various
+    $slice: _90_simplemap_various
+    $pos: _90_simplemap_various
+    $buf: _90_simplemap_various
+    $dlatchsr: _90_simplemap_registers
+    $adlatch: _90_simplemap_registers
+    $dlatch: _90_simplemap_registers
+    $dffsre: _90_simplemap_registers
+    $dffsr: _90_simplemap_registers
+    $sdffce: _90_simplemap_registers
+    $sdffe: _90_simplemap_registers
+    $sdff: _90_simplemap_registers
+    $aldffe: _90_simplemap_registers
+    $aldff: _90_simplemap_registers
+    $adffe: _90_simplemap_registers
+    $adff: _90_simplemap_registers
+    $dffe: _90_simplemap_registers
+    $dff: _90_simplemap_registers
+    $ff: _90_simplemap_registers
+    $sr: _90_simplemap_registers
+    $sshr: _90_shift_ops_shr_shl_sshl_sshr
+    $sshl: _90_shift_ops_shr_shl_sshl_sshr
+    $shl: _90_shift_ops_shr_shl_sshl_sshr
+    $shr: _90_shift_ops_shr_shl_sshl_sshr
+    $shiftx: _90_shift_shiftx
+    $shift: _90_shift_shiftx
+    $fa: _90_fa
+    $lcu: _90_lcu_brent_kung
+    $alu: _90_alu
+    $macc_v2: _90_macc
+    $macc: _90_macc
+    $mul: _90_alumacc
+    $neg: _90_alumacc
+    $sub: _90_alumacc
+    $add: _90_alumacc
+    $gt: _90_alumacc
+    $ge: _90_alumacc
+    $le: _90_alumacc
+    $lt: _90_alumacc
+    $__div_mod_u: $__div_mod_u
+    $__div_mod_trunc: $__div_mod_trunc
+    $div: _90_div
+    $mod: _90_mod
+    $__div_mod_floor: $__div_mod_floor
+    $divfloor: _90_divfloor
+    $modfloor: _90_modfloor
+    $pow: _90_pow
+    $pmux: _90_pmux
+    $demux: _90_demux
+    $sop: _90_lut
+    $lut: _90_lut
+    $connect: $connect
+    $input_port: $input_port
+
+No more expansions possible.
+
+2.42.6. Executing OPT pass (performing simple optimizations).
+
+2.42.6.1. Executing OPT_EXPR pass (perform const folding).
+
+2.42.6.2. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+2.42.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+2.42.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+2.42.6.5. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+2.42.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.42.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+2.42.6.8. Executing OPT_EXPR pass (perform const folding).
+
+2.42.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.42.7. Executing TECHMAP pass (map to technology primitives).
+
+2.42.7.1. Executing Verilog-2005 frontend: /home/user/yosys/share/abc9_map.v
+Parsing Verilog input from `/home/user/yosys/share/abc9_map.v' to AST representation.
+Successfully finished Verilog frontend.
+
+2.42.7.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+
+No more expansions possible.
+
+2.42.8. Executing Verilog-2005 frontend: /home/user/yosys/share/abc9_model.v
+Parsing Verilog input from `/home/user/yosys/share/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+2.42.9. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.10. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.11. Executing ABC9_OPS pass (helper functions for ABC9).
+$__DFF_P__$abc9_flop.D abc9_required = 0
+$__DFF_N__$abc9_flop.D abc9_required = 0
+
+2.42.12. Executing AIGMAP pass (map logic to AIG).
+Module OBrienII_to_bin: replaced 34 cells with 154 new cells, skipped 18 cells.
+  replaced 2 cell types:
+       6 $_MUX_
+      28 $_OR_
+  not replaced 2 cell types:
+       5 $_AND_
+      13 $_NOT_
+
+2.42.12.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.12.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.12.3. Executing XAIGER backend.
+ciNum = 4
+coNum = 4
+piNum = 4
+poNum = 4
+boxNum = 0
+Extracted 51 AND gates and 178 wires from module `OBrienII_to_bin' to a netlist network with 4 inputs and 4 outputs.
+
+2.42.12.4. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+2.42.12.5. Executing ABC9.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_lut <abc-temp-dir>/input.lut 
+ABC: + read_box <abc-temp-dir>/input.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =      4/      4  and =      46  lev =    9 (8.25)  mem = 0.00 MB  box = 0  bb = 0
+ABC: + &scorr 
+ABC: Warning: The network is combinational.
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &dch -f -r 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =      4/      4  and =      20  lev =    4 (2.50)  mem = 0.00 MB  ch =    2  box = 0  bb = 0
+ABC: cst =       0  cls =      2  lit =       2  unused =      20  proof =     0
+ABC: + &if -W 250 -v 
+ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
+ABC: Node =      20.  Ch =     2.  Total mem =    0.00 MB. Peak cut mem =    0.01 MB.
+ABC: P:  Del =  699.00.  Ar =       4.0.  Edge =       13.  Cut =       76.  T =     0.00 sec
+ABC: P:  Del =  699.00.  Ar =       4.0.  Edge =       13.  Cut =       76.  T =     0.00 sec
+ABC: P:  Del =  699.00.  Ar =       4.0.  Edge =       13.  Cut =       74.  T =     0.00 sec
+ABC: F:  Del =  699.00.  Ar =       4.0.  Edge =       13.  Cut =       77.  T =     0.00 sec
+ABC: A:  Del =  699.00.  Ar =       4.0.  Edge =       13.  Cut =       77.  T =     0.00 sec
+ABC: A:  Del =  699.00.  Ar =       4.0.  Edge =       13.  Cut =       77.  T =     0.00 sec
+ABC: Total time =     0.00 sec
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &mfs 
+ABC: Timing manager is given but there is no GIA of boxes.
+ABC: Error: Abc_FrameUpdateGia(): Transformation has failed.
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =      4/      4  and =      16  lev =    4 (2.50)  mem = 0.00 MB  box = 0  bb = 0
+ABC: Mapping (K=4)  :  lut =      4  edge =      13  lev =    1 (1.00)  mem = 0.00 MB
+ABC: LUT = 4 : 2=1 25.0 %  3=1 25.0 %  4=2 50.0 %  Ave = 3.25
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &verify 
+ABC: Networks are equivalent.  Time =     0.01 sec
+ABC: + time 
+ABC: elapse: 0.01 seconds, total: 0.01 seconds
+
+2.42.12.6. Executing AIGER frontend.
+M=20 I=4 L=0 O=4 A=16
+ciNum = 4
+coNum = 4
+piNum = 4
+poNum = 4
+boxNum = 0
+m: dataSize=92 lutNum=4 lutSize=4
+n: '/tmp/yosys-abc-PqJhsw/inputRenaming input $i1 -> A
+Renaming input $i2 -> A[1]
+Renaming input $i3 -> A[2]
+Renaming input $i4 -> A[3]
+Renaming output $o0 -> Y
+Renaming output $o1 -> Y[1]
+Renaming output $o2 -> Y[2]
+Renaming output $o3 -> Y[3]
+Finding unused cells or wires in module \OBrienII_to_bin$abc9..
+  removing unused `$_AND_' cell `$and$aiger1217$19'.
+  removing unused `$_NOT_' cell `$not$aiger1217$17'.
+  removing unused `$_AND_' cell `$and$aiger1217$17'.
+  removing unused `$_NOT_' cell `$not$aiger1217$15'.
+  removing unused `$_NOT_' cell `$not$aiger1217$16'.
+  removing unused `$_AND_' cell `$and$aiger1217$16'.
+  removing unused `$_AND_' cell `$and$aiger1217$15'.
+  removing unused `$_NOT_' cell `$not$aiger1217$7'.
+  removing unused `$_NOT_' cell `$not$aiger1217$12'.
+  removing unused `$_AND_' cell `$and$aiger1217$12'.
+  removing unused `$_AND_' cell `$and$aiger1217$11'.
+  removing unused `$_NOT_' cell `$not$aiger1217$9'.
+  removing unused `$_NOT_' cell `$not$aiger1217$10'.
+  removing unused `$_AND_' cell `$and$aiger1217$10'.
+  removing unused `$_AND_' cell `$and$aiger1217$9'.
+  removing unused `$_NOT_' cell `$not$aiger1217$2'.
+  removing unused `$_NOT_' cell `$not$aiger1217$4'.
+  removing unused `$_AND_' cell `$and$aiger1217$8'.
+  removing unused `$_NOT_' cell `$not$aiger1217$5'.
+  removing unused `$_NOT_' cell `$not$aiger1217$6'.
+  removing unused `$_AND_' cell `$and$aiger1217$7'.
+  removing unused `$_AND_' cell `$and$aiger1217$6'.
+  removing unused `$_NOT_' cell `$not$aiger1217$1'.
+  removing unused `$_NOT_' cell `$not$aiger1217$3'.
+  removing unused `$_AND_' cell `$and$aiger1217$5'.
+  removing unused non-port wire $aiger1217$19.
+  removing unused non-port wire $aiger1217$1.
+  removing unused non-port wire $aiger1217$2.
+  removing unused non-port wire $aiger1217$3.
+  removing unused non-port wire $aiger1217$4.
+  removing unused non-port wire $aiger1217$13b.
+  removing unused non-port wire $aiger1217$14.
+  removing unused non-port wire $aiger1217$18.
+  removing unused non-port wire $aiger1217$20.
+  removing unused non-port wire $aiger1217$5.
+  removing unused non-port wire $aiger1217$6.
+  removing unused non-port wire $aiger1217$3b.
+  removing unused non-port wire $aiger1217$1b.
+  removing unused non-port wire $aiger1217$7.
+  removing unused non-port wire $aiger1217$8.
+  removing unused non-port wire $aiger1217$6b.
+  removing unused non-port wire $aiger1217$5b.
+  removing unused non-port wire $aiger1217$9.
+  removing unused non-port wire $aiger1217$4b.
+  removing unused non-port wire $aiger1217$2b.
+  removing unused non-port wire $aiger1217$10.
+  removing unused non-port wire $aiger1217$11.
+  removing unused non-port wire $aiger1217$10b.
+  removing unused non-port wire $aiger1217$9b.
+  removing unused non-port wire $aiger1217$12.
+  removing unused non-port wire $aiger1217$12b.
+  removing unused non-port wire $aiger1217$7b.
+  removing unused non-port wire $aiger1217$15.
+  removing unused non-port wire $aiger1217$16.
+  removing unused non-port wire $aiger1217$17.
+  removing unused non-port wire $aiger1217$16b.
+  removing unused non-port wire $aiger1217$15b.
+  removing unused non-port wire $aiger1217$17b.
+Removed 25 unused cells and 33 unused wires.
+
+2.42.12.7. Executing ABC9_OPS pass (helper functions for ABC9).
+ABC RESULTS:              $lut cells:        4
+ABC RESULTS:           input signals:        1
+ABC RESULTS:          output signals:        1
+Removing temp directory.
+
+2.42.13. Executing TECHMAP pass (map to technology primitives).
+
+2.42.13.1. Executing Verilog-2005 frontend: /home/user/yosys/share/abc9_unmap.v
+Parsing Verilog input from `/home/user/yosys/share/abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `$__DFF_x__$abc9_flop'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Successfully finished Verilog frontend.
+
+2.42.13.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $__DFF_P__$abc9_flop: $__DFF_x__$abc9_flop
+    $__DFF_N__$abc9_flop: $__DFF_x__$abc9_flop
+    $__ABC9_SCC_BREAKER: $__ABC9_SCC_BREAKER
+
+No more expansions possible.
+
+2.43. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+2.44. Executing TECHMAP pass (map to technology primitives).
+
+2.44.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/ff_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+2.44.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $_DFF_N_: $_DFF_N_
+    $_DFF_P_: $_DFF_P_
+    $_DFFE_NP_: $_DFFE_NP_
+    $_DFFE_PP_: $_DFFE_PP_
+    $_DFF_NP0_: $_DFF_NP0_
+    $_DFF_NP1_: $_DFF_NP1_
+    $_DFF_PP0_: $_DFF_PP0_
+    $_DFF_PP1_: $_DFF_PP1_
+    $_DFFE_NP0P_: $_DFFE_NP0P_
+    $_DFFE_NP1P_: $_DFFE_NP1P_
+    $_DFFE_PP0P_: $_DFFE_PP0P_
+    $_DFFE_PP1P_: $_DFFE_PP1P_
+    $_SDFF_NP0_: $_SDFF_NP0_
+    $_SDFF_NP1_: $_SDFF_NP1_
+    $_SDFF_PP0_: $_SDFF_PP0_
+    $_SDFF_PP1_: $_SDFF_PP1_
+    $_SDFFCE_NP0P_: $_SDFFCE_NP0P_
+    $_SDFFCE_NP1P_: $_SDFFCE_NP1P_
+    $_SDFFCE_PP0P_: $_SDFFCE_PP0P_
+    $_SDFFCE_PP1P_: $_SDFFCE_PP1P_
+
+No more expansions possible.
+Finding unused cells or wires in module \OBrienII_to_bin..
+  removing unused `$lut' cell `$abc$1218$lut$aiger1217$13'.
+  removing unused non-port wire $techmap$procmux$393.$reduce_or$/home/user/yosys/share/techmap.v:605$525_Y.
+  removing unused non-port wire $techmap$procmux$386.$reduce_or$/home/user/yosys/share/techmap.v:605$512_Y.
+  removing unused non-port wire $procmux$393.Y_B.
+  removing unused non-port wire $procmux$393.S.
+  removing unused non-port wire $procmux$393.B_AND_S.
+  removing unused non-port wire $procmux$393.A.
+  removing unused non-port wire $procmux$386.Y_B.
+  removing unused non-port wire $procmux$386.Y.
+  removing unused non-port wire $procmux$386.B_AND_S.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$677.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$662.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$647.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$632.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$617.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$602.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$587.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$572.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$557.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$542.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$776.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$773.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$649.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$634.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$619.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$604.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$574.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$559.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$544.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$795.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$787.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$785.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$781.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$909.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$911.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$913.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$915.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$917.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$919.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$921.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$923.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$925.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$927.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$929.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$931.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$933.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$935.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$937.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$939.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$941.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$943.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$945.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$947.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$949.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$951.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$953.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$955.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$957.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$959.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$961.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$963.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$965.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$967.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$969.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$971.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$973.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$975.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$977.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$979.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$981.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$983.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$985.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$987.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$989.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$991.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$993.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$995.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$997.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$999.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1001.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1003.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1005.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1007.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1009.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1011.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1013.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1015.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1017.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1019.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1021.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1023.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1025.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1027.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1029.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1031.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1033.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1035.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1037.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1039.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1041.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1043.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1045.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1047.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1049.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1051.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1053.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1055.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1057.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1059.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1061.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1063.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1065.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1067.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1069.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1071.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1073.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1075.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1077.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1079.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1081.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1083.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1085.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1087.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1089.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1091.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1093.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1095.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1097.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1099.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1101.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1103.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1105.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1107.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1109.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1111.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1113.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1115.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1117.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1119.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1121.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1123.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1125.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1127.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1129.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1131.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1133.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1135.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1137.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1139.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1141.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1143.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1145.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1147.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1149.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1151.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1153.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1155.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1157.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1159.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1161.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1163.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1165.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1167.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1169.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1171.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1173.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1175.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1177.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1179.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1181.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1183.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1185.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1187.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1189.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1191.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1193.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1195.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1197.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1199.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1201.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1203.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1205.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1207.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1209.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1211.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1213.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1215.
+  removing unused non-port wire $abc$1218$aiger1217$13.
+  removing unused non-port wire $abc$1218$Y[1].
+  removing unused non-port wire $abc$1218$A[3].
+  removing unused non-port wire $abc$1218$Y[2].
+  removing unused non-port wire $abc$1218$A[2].
+  removing unused non-port wire $abc$1218$Y[3].
+  removing unused non-port wire $abc$1218$A[1].
+  removing unused non-port wire $abc$1218$Y[0].
+  removing unused non-port wire $abc$1218$Y.
+  removing unused non-port wire $abc$1218$A[0].
+  removing unused non-port wire $abc$1218$A.
+Removed 1 unused cells and 197 unused wires.
+
+2.45. Executing OPT_LUT pass (optimize LUTs).
+Discovering LUTs.
+Found $lut\WIDTH=3 cell OBrienII_to_bin.$abc$1218$lut\Y[3].
+  Cell implements a 3-LUT.
+Found $lut\WIDTH=4 cell OBrienII_to_bin.$abc$1218$lut\Y[2].
+  Cell implements a 4-LUT.
+Found $lut\WIDTH=4 cell OBrienII_to_bin.$auto$abc9_ops.cc:1613:reintegrate$1219.
+  Cell implements a 4-LUT.
+Found $lut\WIDTH=2 cell OBrienII_to_bin.$abc$1218$lut\Y[1].
+  Cell implements a 2-LUT.
+Number of LUTs:        4
+  2-LUT                1
+  3-LUT                1
+  4-LUT                2
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Eliminating LUTs.
+Number of LUTs:        4
+  2-LUT                1
+  3-LUT                1
+  4-LUT                2
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Combining LUTs.
+Number of LUTs:        4
+  2-LUT                1
+  3-LUT                1
+  4-LUT                2
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Eliminated 0 LUTs.
+Combined 0 LUTs.
+
+2.46. Executing TECHMAP pass (map to technology primitives).
+
+2.46.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/cells_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+2.46.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $lut: $lut
+
+Parameter \WIDTH = 4
+Parameter \LUT = 16'0001001001101000
+
+2.46.3. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'0001001001101000
+Generating RTLIL representation for module `$paramod$79acfa22153775983c2b069e2137bb879d3e31f4$lut'.
+
+2.46.4. Continuing TECHMAP pass.
+Using template $paramod$79acfa22153775983c2b069e2137bb879d3e31f4$lut for cells of type $lut.
+Mapping OBrienII_to_bin.$auto$abc9_ops.cc:1613:reintegrate$1219 ($lut) using $paramod$79acfa22153775983c2b069e2137bb879d3e31f4$lut.
+Parameter \WIDTH = 3
+Parameter \LUT = 8'00100000
+
+2.46.5. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 3
+Parameter \LUT = 8'00100000
+Generating RTLIL representation for module `$paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00100000'.
+
+2.46.6. Continuing TECHMAP pass.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00100000 for cells of type $lut.
+Mapping OBrienII_to_bin.$abc$1218$lut\Y[3] ($lut) using $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00100000.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'0000000010101100
+
+2.46.7. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'0000000010101100
+Generating RTLIL representation for module `$paramod$6b7c9c56fc2a32a479d463d5f3b0d3f4673b67f1$lut'.
+
+2.46.8. Continuing TECHMAP pass.
+Using template $paramod$6b7c9c56fc2a32a479d463d5f3b0d3f4673b67f1$lut for cells of type $lut.
+Mapping OBrienII_to_bin.$abc$1218$lut\Y[2] ($lut) using $paramod$6b7c9c56fc2a32a479d463d5f3b0d3f4673b67f1$lut.
+Parameter \WIDTH = 2
+Parameter \LUT = 4'0010
+
+2.46.9. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 2
+Parameter \LUT = 4'0010
+Generating RTLIL representation for module `$paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0010'.
+
+2.46.10. Continuing TECHMAP pass.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0010 for cells of type $lut.
+Mapping OBrienII_to_bin.$abc$1218$lut\Y[1] ($lut) using $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0010.
+No more expansions possible.
+Finding unused cells or wires in module \OBrienII_to_bin..
+  removing unused non-port wire $techmap1220$auto$abc9_ops.cc:1613:reintegrate$1219.Y.
+  removing unused non-port wire $techmap1220$auto$abc9_ops.cc:1613:reintegrate$1219.A.
+  removing unused non-port wire $techmap1221$abc$1218$lut\Y[3].Y.
+  removing unused non-port wire $techmap1221$abc$1218$lut\Y[3].A.
+  removing unused non-port wire $techmap1222$abc$1218$lut\Y[2].Y.
+  removing unused non-port wire $techmap1222$abc$1218$lut\Y[2].A.
+  removing unused non-port wire $techmap1223$abc$1218$lut\Y[1].Y.
+  removing unused non-port wire $techmap1223$abc$1218$lut\Y[1].A.
+Removed 0 unused cells and 8 unused wires.
+
+2.47. Executing AUTONAME pass.
+Rename cell $abc$1218$lut\Y[2] in OBrienII_to_bin to Y_SB_LUT4_O.
+Rename cell $auto$abc9_ops.cc:1613:reintegrate$1219 in OBrienII_to_bin to Y_SB_LUT4_O_1.
+Rename cell $abc$1218$lut\Y[3] in OBrienII_to_bin to Y_SB_LUT4_O_2.
+Rename cell $abc$1218$lut\Y[1] in OBrienII_to_bin to Y_SB_LUT4_O_3.
+Renamed 4 objects in module OBrienII_to_bin (2 iterations).
+
+2.48. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `OBrienII_to_bin'. Setting top module to OBrienII_to_bin.
+
+2.48.1. Analyzing design hierarchy..
+Top module:  \OBrienII_to_bin
+
+2.48.2. Analyzing design hierarchy..
+Top module:  \OBrienII_to_bin
+Removed 0 unused modules.
+
+2.49. Printing statistics.
+
+=== OBrienII_to_bin ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       24 wire bits
+        6 public wires
+       24 public wire bits
+        2 ports
+        8 port bits
+        4 submodules
+        4   SB_LUT4
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+        - OBrienII_to_bin
+
+        +----------Count including submodules.
+        | 
+        6 wires
+       24 wire bits
+        6 public wires
+       24 public wire bits
+        2 ports
+        8 port bits
+        - memories
+        - memory bits
+        - processes
+        - cells
+        4 submodules
+        4   SB_LUT4
+
+2.50. Executing CHECK pass (checking for obvious problems).
+Checking module OBrienII_to_bin...
+Found and reported 0 problems.
+
+Warnings: 8 unique messages, 8 total
+End of script. Logfile hash: ebf804a790, time: 0.50s, user: 0.32s, system: 0.12s, MEM: 30.88 MB peak
+Yosys 0.64 (git sha1 6d2c445ae, g++ 11.4.0-1ubuntu1~22.04.3 -fPIC -O3)
+Time spent:
+   61%    20 calls    0.286 sec read_verilog
+   10%     1 calls    0.048 sec synth_ice40
+    7%     1 calls    0.034 sec abc9_exe
+    4%    19 calls    0.020 sec opt_clean
+    3%     1 calls    0.015 sec abc9
+    2%    18 calls    0.014 sec id_gc
+    2%    10 calls    0.011 sec techmap
+    1%     7 calls    0.006 sec opt
+    1%    21 calls    0.006 sec opt_expr
+    1%    17 calls    0.005 sec opt_merge
+    0%     7 calls    0.005 sec design
+    0%     3 calls    0.003 sec clean
+    0%     2 calls    0.003 sec ice40_opt
+    0%    12 calls    0.002 sec opt_dff
+    0%     2 calls    0.001 sec hierarchy
+    0%     7 calls    0.001 sec opt_muxtree
+    0%     9 calls    0.001 sec abc9_ops
+    0%     7 calls    0.001 sec opt_reduce
+    0%     1 calls    0.001 sec proc_dlatch
+    0%     2 calls    0.001 sec check
+    0%     1 calls    0.000 sec proc_mux
+    0%     2 calls    0.000 sec read_aiger
+    0%     1 calls    0.000 sec fsm_extract
+    0%     1 calls    0.000 sec opt_lut
+    0%     1 calls    0.000 sec stat
+    0%     1 calls    0.000 sec share
+    0%     1 calls    0.000 sec memory_libmap
+    0%     2 calls    0.000 sec write_xaiger
+    0%     1 calls    0.000 sec fsm_detect
+    0%     1 calls    0.000 sec aigmap
+    0%     1 calls    0.000 sec scc
+    0%     1 calls    0.000 sec blackbox
+    0%     2 calls    0.000 sec proc_clean
+    0%     2 calls    0.000 sec ice40_wrapcarry
+    0%     1 calls    0.000 sec wreduce
+    0%     1 calls    0.000 sec proc_rmdead
+    0%     1 calls    0.000 sec opt_mem_priority
+    0%     1 calls    0.000 sec alumacc
+    0%     1 calls    0.000 sec proc
+    0%     2 calls    0.000 sec fsm_opt
+    0%     1 calls    0.000 sec memory_share
+    0%     1 calls    0.000 sec memory_dff
+    0%     1 calls    0.000 sec autoname
+    0%     1 calls    0.000 sec proc_dff
+    0%     1 calls    0.000 sec memory
+    0%     1 calls    0.000 sec peepopt
+    0%     1 calls    0.000 sec simplemap
+    0%     1 calls    0.000 sec dfflegalize
+    0%     1 calls    0.000 sec proc_prune
+    0%     1 calls    0.000 sec deminout
+    0%     1 calls    0.000 sec fsm
+    0%     1 calls    0.000 sec memory_map
+    0%     1 calls    0.000 sec opt_mem_feedback
+    0%     1 calls    0.000 sec opt_mem
+    0%     1 calls    0.000 sec ice40_braminit
+    0%     1 calls    0.000 sec opt_mem_widen
+    0%     1 calls    0.000 sec tribuf
+    0%     1 calls    0.000 sec proc_rom
+    0%     1 calls    0.000 sec memory_bmux2rom
+    0%     1 calls    0.000 sec fsm_recode
+    0%     1 calls    0.000 sec proc_memwr
+    0%     1 calls    0.000 sec flatten
+    0%     1 calls    0.000 sec memory_collect
+    0%     1 calls    0.000 sec fsm_info
+    0%     1 calls    0.000 sec fsm_map
+    0%     1 calls    0.000 sec proc_arst
+    0%     1 calls    0.000 sec proc_init
+    0%     1 calls    0.000 sec setattr
+    0%     1 calls    0.000 sec read
+    0%     1 calls    0.000 sec wbflip

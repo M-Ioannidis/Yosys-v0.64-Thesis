@@ -1,0 +1,8 @@
+{
+    "explorer.autoRevealExclude": {
+        "**/*.png": true
+    },
+    "files.exclude": {
+        "**/*.png": true
+    }
+}

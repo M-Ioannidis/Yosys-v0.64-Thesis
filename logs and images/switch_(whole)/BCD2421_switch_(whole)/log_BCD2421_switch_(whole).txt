@@ -1,0 +1,1692 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.64 (git sha1 6d2c445ae, g++ 11.4.0-1ubuntu1~22.04.3 -fPIC -O3)
+
+-- Parsing `/home/user/files/switch_(whole)/BCD2421.v' using frontend ` -vlog2k' --
+
+1. Executing Verilog-2005 frontend: /home/user/files/switch_(whole)/BCD2421.v
+Parsing Verilog input from `/home/user/files/switch_(whole)/BCD2421.v' to AST representation.
+Storing AST representation for module `$abstract\BCD2421'.
+Successfully finished Verilog frontend.
+
+-- Running command `synth_ice40 -top BCD2421' --
+
+2. Executing SYNTH_ICE40 pass.
+
+2.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/cells_sim.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\SB_IO'.
+Generating RTLIL representation for module `\SB_GB_IO'.
+Generating RTLIL representation for module `\SB_GB'.
+Generating RTLIL representation for module `\SB_LUT4'.
+Generating RTLIL representation for module `\SB_CARRY'.
+Generating RTLIL representation for module `\SB_DFF'.
+Generating RTLIL representation for module `\SB_DFFE'.
+Generating RTLIL representation for module `\SB_DFFSR'.
+Generating RTLIL representation for module `\SB_DFFR'.
+Generating RTLIL representation for module `\SB_DFFSS'.
+Generating RTLIL representation for module `\SB_DFFS'.
+Generating RTLIL representation for module `\SB_DFFESR'.
+Generating RTLIL representation for module `\SB_DFFER'.
+Generating RTLIL representation for module `\SB_DFFESS'.
+Generating RTLIL representation for module `\SB_DFFES'.
+Generating RTLIL representation for module `\SB_DFFN'.
+Generating RTLIL representation for module `\SB_DFFNE'.
+Generating RTLIL representation for module `\SB_DFFNSR'.
+Generating RTLIL representation for module `\SB_DFFNR'.
+Generating RTLIL representation for module `\SB_DFFNSS'.
+Generating RTLIL representation for module `\SB_DFFNS'.
+Generating RTLIL representation for module `\SB_DFFNESR'.
+Generating RTLIL representation for module `\SB_DFFNER'.
+Generating RTLIL representation for module `\SB_DFFNESS'.
+Generating RTLIL representation for module `\SB_DFFNES'.
+Generating RTLIL representation for module `\SB_RAM40_4K'.
+Generating RTLIL representation for module `\SB_RAM40_4KNR'.
+Generating RTLIL representation for module `\SB_RAM40_4KNW'.
+Generating RTLIL representation for module `\SB_RAM40_4KNRNW'.
+Generating RTLIL representation for module `\ICESTORM_LC'.
+Generating RTLIL representation for module `\SB_PLL40_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2F_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_2F_PAD'.
+Generating RTLIL representation for module `\SB_WARMBOOT'.
+Generating RTLIL representation for module `\SB_SPRAM256KA'.
+Generating RTLIL representation for module `\SB_HFOSC'.
+Generating RTLIL representation for module `\SB_LFOSC'.
+Generating RTLIL representation for module `\SB_RGBA_DRV'.
+Generating RTLIL representation for module `\SB_LED_DRV_CUR'.
+Generating RTLIL representation for module `\SB_RGB_DRV'.
+Generating RTLIL representation for module `\SB_I2C'.
+Generating RTLIL representation for module `\SB_SPI'.
+Generating RTLIL representation for module `\SB_LEDDA_IP'.
+Generating RTLIL representation for module `\SB_FILTER_50NS'.
+Generating RTLIL representation for module `\SB_IO_I3C'.
+Generating RTLIL representation for module `\SB_IO_OD'.
+Generating RTLIL representation for module `\SB_MAC16'.
+Generating RTLIL representation for module `\ICESTORM_RAM'.
+Successfully finished Verilog frontend.
+
+2.2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\BCD2421'.
+Generating RTLIL representation for module `\BCD2421'.
+Note: Assuming pure combinatorial block at /home/user/files/switch_(whole)/BCD2421.v:4.5-32.12 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+
+2.3.1. Analyzing design hierarchy..
+Top module:  \BCD2421
+
+2.3.2. Analyzing design hierarchy..
+Top module:  \BCD2421
+Removing unused module `$abstract\BCD2421'.
+Removed 1 unused modules.
+
+2.4. Executing PROC pass (convert processes to netlists).
+
+2.4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$/home/user/files/switch_(whole)/BCD2421.v:4$381 in module BCD2421.
+Removed a total of 0 dead cases.
+
+2.4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 1 assignment to connection.
+
+2.4.4. Executing PROC_INIT pass (extract init attributes).
+
+2.4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 2 switches.
+
+2.4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\BCD2421.$proc$/home/user/files/switch_(whole)/BCD2421.v:4$381'.
+     1/2: $2\Y[3:0]
+     2/2: $1\Y[3:0]
+
+2.4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\BCD2421.\Y' from process `\BCD2421.$proc$/home/user/files/switch_(whole)/BCD2421.v:4$381'.
+
+2.4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+2.4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\BCD2421.$proc$/home/user/files/switch_(whole)/BCD2421.v:4$381'.
+Removing empty process `BCD2421.$proc$/home/user/files/switch_(whole)/BCD2421.v:4$381'.
+Cleaned up 2 empty switches.
+
+2.4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.5. Executing FLATTEN pass (flatten design).
+
+2.6. Executing TRIBUF pass.
+
+2.7. Executing DEMINOUT pass (demote inout ports to input or output).
+
+2.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+  removing unused `$meminit' cell `$auto$mem.cc:351:emit$385'.
+  removing unused `$memrd_v2' cell `$auto$mem.cc:305:emit$384'.
+  removing unused memory `$auto$proc_rom.cc:155:do_switch$383'.
+  removing unused non-port wire $0\Y[3:0].
+  removing unused non-port wire $1\Y[3:0].
+  removing unused non-port wire $2\Y[3:0].
+  removing unused non-port wire $auto$proc_rom.cc:154:do_switch$382.
+  removing unused non-port wire $auto$proc_rom.cc:154:do_switch$386.
+Removed 2 unused cells and 5 unused wires.
+
+2.10. Executing CHECK pass (checking for obvious problems).
+Checking module BCD2421...
+Found and reported 0 problems.
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421'.
+Computing hashes of 2 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+Removed a total of 0 cells.
+
+2.11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \BCD2421..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \BCD2421.
+Performed a total of 0 changes.
+
+2.11.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421'.
+Computing hashes of 2 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+Removed a total of 0 cells.
+
+2.11.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+
+2.11.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.11.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.12. Executing FSM pass (extract and optimize FSM).
+
+2.12.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+2.12.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+2.12.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.12.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+
+2.12.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.12.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+2.12.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+2.12.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+2.13. Executing OPT pass (performing simple optimizations).
+
+2.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421'.
+Computing hashes of 2 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+Removed a total of 0 cells.
+
+2.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \BCD2421..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \BCD2421.
+Performed a total of 0 changes.
+
+2.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421'.
+Computing hashes of 2 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+Removed a total of 0 cells.
+
+2.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+
+2.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.13.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.14. Executing WREDUCE pass (reducing word size of cells).
+Removed top 28 address bits (of 32) from memory init port BCD2421.$auto$mem.cc:351:emit$389 ($auto$proc_rom.cc:155:do_switch$387).
+
+2.15. Executing PEEPOPT pass (run peephole optimizers).
+
+2.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+
+2.17. Executing SHARE pass (SAT-based resource sharing).
+
+2.18. Executing TECHMAP pass (map to technology primitives).
+
+2.18.1. Executing Verilog-2005 frontend: /home/user/yosys/share/cmp2lut.v
+Parsing Verilog input from `/home/user/yosys/share/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+2.18.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $ge: _90_lut_cmp_
+    $gt: _90_lut_cmp_
+    $le: _90_lut_cmp_
+    $lt: _90_lut_cmp_
+
+No more expansions possible.
+
+2.19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.20. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+
+2.21. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module BCD2421:
+  created 0 $alu and 0 $macc cells.
+
+2.22. Executing OPT pass (performing simple optimizations).
+
+2.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421'.
+Computing hashes of 2 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+Removed a total of 0 cells.
+
+2.22.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \BCD2421..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.22.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \BCD2421.
+Performed a total of 0 changes.
+
+2.22.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421'.
+Computing hashes of 2 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+Removed a total of 0 cells.
+
+2.22.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.22.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+
+2.22.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.22.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.23. Executing MEMORY pass.
+
+2.23.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+2.23.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+2.23.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+2.23.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+2.23.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+Checking read port `$auto$proc_rom.cc:155:do_switch$387'[0] in module `\BCD2421': no output FF found.
+Checking read port address `$auto$proc_rom.cc:155:do_switch$387'[0] in module `\BCD2421': no address FF found.
+
+2.23.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+
+2.23.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+2.23.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+2.23.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+
+2.23.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+
+2.25. Executing MEMORY_LIBMAP pass (mapping memories to cells).
+Memory BCD2421.$auto$proc_rom.cc:155:do_switch$387 mapping candidates (post-geometry):
+- logic fallback
+  - cost: 4.000000
+Memory BCD2421.$auto$proc_rom.cc:155:do_switch$387 mapping candidates (after post-geometry prune):
+- logic fallback
+  - cost: 4.000000
+using FF mapping for memory BCD2421.$auto$proc_rom.cc:155:do_switch$387
+
+2.26. Executing TECHMAP pass (map to technology primitives).
+
+2.26.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/brams_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/brams_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_RAM4K_'.
+Successfully finished Verilog frontend.
+
+2.26.2. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/spram_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/spram_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_SPRAM_'.
+Successfully finished Verilog frontend.
+
+2.26.3. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $__ICE40_RAM4K_: $__ICE40_RAM4K_
+    $__ICE40_SPRAM_: $__ICE40_SPRAM_
+
+No more expansions possible.
+
+2.27. Executing ICE40_BRAMINIT pass.
+
+2.28. Executing OPT pass (performing simple optimizations).
+
+2.28.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.28.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421'.
+Computing hashes of 1 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+Removed a total of 0 cells.
+
+2.28.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+
+2.28.5. Finished fast OPT passes.
+
+2.29. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+Mapping memory $auto$proc_rom.cc:155:do_switch$387 in module \BCD2421:
+  created 16 $dff cells and 0 static cells of width 4.
+  read interface: 0 $dff and 15 $mux cells.
+  write interface: 0 write mux blocks.
+
+2.30. Executing OPT pass (performing simple optimizations).
+
+2.30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+Replacing $mux cell `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][6]$454' (?) in module `\BCD2421' with constant driver `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][3]$a$434 = $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][6]$a$455'.
+Replacing $mux cell `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][7]$457' (?) in module `\BCD2421' with constant driver `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][3]$b$435 = $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][7]$a$458'.
+Replacing $mux cell `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][3]$433' (?) in module `\BCD2421' with constant driver `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$b$423 = $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][3]$a$434'.
+Replacing $mux cell `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][5]$451' (?) in module `\BCD2421' with constant driver `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][2]$b$432 = $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][5]$a$452'.
+
+2.30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421'.
+Computing hashes of 11 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+Removed a total of 0 cells.
+
+2.30.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \BCD2421..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][0][0]$415 (pure)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][0][0]$415 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$421 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][2]$430 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][4]$448 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$418 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$427 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][3]$445 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][2]$442 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$424 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][0]$436 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \BCD2421.
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][2]$442:
+      Old ports: A=4'0100, B=4'1011, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$a$428
+      New ports: A=2'10, B=2'01, Y={ $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$a$428 [2] $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$a$428 [0] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$a$428 [3] $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$a$428 [1] } = { $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$a$428 [0] $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$a$428 [0] }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439:
+      Old ports: A=4'0010, B=4'0011, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$b$426
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$b$426 [0]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$b$426 [3:1] = 3'001
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][0]$436:
+      Old ports: A=4'0000, B=4'0001, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$a$425
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$a$425 [0]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$a$425 [3:1] = 3'000
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][4]$448:
+      Old ports: A=4'1110, B=4'1111, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][2]$a$431
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][2]$a$431 [0]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][2]$a$431 [3:1] = 3'111
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][3]$445:
+      Old ports: A=4'1100, B=4'1101, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$b$429
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$b$429 [0]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$b$429 [3:1] = 3'110
+  Optimizing cells in module \BCD2421.
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][2]$430:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][2]$a$431, B=4'0000, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$a$422
+      New ports: A={ 1'1 $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][2]$a$431 [0] }, B=2'00, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$a$422 [1:0]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$a$422 [3:2] = { $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$a$422 [1] $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$a$422 [1] }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$424:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$a$425, B=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$b$426, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$a$419
+      New ports: A={ 1'0 $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$a$425 [0] }, B={ 1'1 $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$b$426 [0] }, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$a$419 [1:0]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$a$419 [3:2] = 2'00
+  Optimizing cells in module \BCD2421.
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$421:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$a$422, B=4'0000, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][0][0]$b$417
+      New ports: A=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$a$422 [1:0], B=2'00, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][0][0]$b$417 [1:0]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][0][0]$b$417 [3:2] = { $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][0][0]$b$417 [1] $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][0][0]$b$417 [1] }
+  Optimizing cells in module \BCD2421.
+Performed a total of 8 changes.
+
+2.30.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421'.
+Computing hashes of 11 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+  Cell `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][0]$436' is identical to cell `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439'.
+    Redirecting output \Y: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$a$425 [0] = $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$b$426 [0]
+    Removing $mux cell `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][0]$436' from module `\BCD2421'.
+  Cell `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][4]$448' is identical to cell `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439'.
+    Redirecting output \Y: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][2]$a$431 [0] = $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$b$426 [0]
+    Removing $mux cell `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][4]$448' from module `\BCD2421'.
+  Cell `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][3]$445' is identical to cell `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439'.
+    Redirecting output \Y: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$b$429 [0] = $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$b$426 [0]
+    Removing $mux cell `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][3]$445' from module `\BCD2421'.
+Computing hashes of 8 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+Removed a total of 3 cells.
+
+2.30.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.30.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$b$423.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$b$426.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$b$429.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][2]$a$431.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][2]$b$432.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][3]$a$434.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][3]$b$435.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][0]$a$437.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][0]$b$438.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$a$440.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$b$441.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][2]$a$443.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][2]$b$444.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][3]$a$446.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][3]$b$447.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][4]$a$449.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][4]$b$450.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][5]$a$452.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][5]$b$453.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][6]$a$455.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][6]$b$456.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][7]$a$458.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][7]$b$459.
+Removed 0 unused cells and 23 unused wires.
+
+2.30.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.30.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.30.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \BCD2421..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439 (replace 1 enable 0)
+    Root of a mux tree: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][0][0]$415 (pure)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][0][0]$415 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$421 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][2]$430 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439 (replace 0 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$418 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$427 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439 (replace 0 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][2]$442 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$424 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439 (replace 0 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439 (replace 0 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.30.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \BCD2421.
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$424:
+      Old ports: A={ 1'0 $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$a$425 [0] }, B={ 1'1 $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$a$425 [0] }, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$a$419 [1:0]
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$a$419 [1]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$a$419 [0] = $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$a$425 [0]
+  Optimizing cells in module \BCD2421.
+Performed a total of 1 changes.
+
+2.30.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421'.
+Computing hashes of 8 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+Removed a total of 0 cells.
+
+2.30.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.30.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$a$425.
+Removed 0 unused cells and 1 unused wires.
+
+2.30.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.30.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.30.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \BCD2421..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439 (replace 1 enable 0)
+    Root of a mux tree: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][0][0]$415 (pure)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][0][0]$415 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$421 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][2]$430 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439 (replace 0 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$418 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$427 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439 (replace 0 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][2]$442 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$424 (replace 1 enable 1)
+		eval $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439 (replace 0 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.30.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \BCD2421.
+Performed a total of 0 changes.
+
+2.30.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421'.
+Computing hashes of 8 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+Removed a total of 0 cells.
+
+2.30.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.30.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+
+2.30.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.30.23. Finished fast OPT passes. (There is nothing left to do.)
+
+2.31. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+2.32. Executing TECHMAP pass (map to technology primitives).
+
+2.32.1. Executing Verilog-2005 frontend: /home/user/yosys/share/techmap.v
+Parsing Verilog input from `/home/user/yosys/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+2.32.2. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/arith_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_ice40_alu'.
+Successfully finished Verilog frontend.
+
+2.32.3. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $xnor: _90_simplemap_bool_ops
+    $xor: _90_simplemap_bool_ops
+    $or: _90_simplemap_bool_ops
+    $and: _90_simplemap_bool_ops
+    $not: _90_simplemap_bool_ops
+    $reduce_bool: _90_simplemap_reduce_ops
+    $reduce_xnor: _90_simplemap_reduce_ops
+    $reduce_xor: _90_simplemap_reduce_ops
+    $reduce_or: _90_simplemap_reduce_ops
+    $reduce_and: _90_simplemap_reduce_ops
+    $logic_or: _90_simplemap_logic_ops
+    $logic_and: _90_simplemap_logic_ops
+    $logic_not: _90_simplemap_logic_ops
+    $nex: _90_simplemap_compare_ops
+    $ne: _90_simplemap_compare_ops
+    $eqx: _90_simplemap_compare_ops
+    $eq: _90_simplemap_compare_ops
+    $bweqx: _90_simplemap_various
+    $bwmux: _90_simplemap_various
+    $bmux: _90_simplemap_various
+    $tribuf: _90_simplemap_various
+    $mux: _90_simplemap_various
+    $concat: _90_simplemap_various
+    $slice: _90_simplemap_various
+    $pos: _90_simplemap_various
+    $buf: _90_simplemap_various
+    $dlatchsr: _90_simplemap_registers
+    $adlatch: _90_simplemap_registers
+    $dlatch: _90_simplemap_registers
+    $dffsre: _90_simplemap_registers
+    $dffsr: _90_simplemap_registers
+    $sdffce: _90_simplemap_registers
+    $sdffe: _90_simplemap_registers
+    $sdff: _90_simplemap_registers
+    $aldffe: _90_simplemap_registers
+    $aldff: _90_simplemap_registers
+    $adffe: _90_simplemap_registers
+    $adff: _90_simplemap_registers
+    $dffe: _90_simplemap_registers
+    $dff: _90_simplemap_registers
+    $ff: _90_simplemap_registers
+    $sr: _90_simplemap_registers
+    $sshr: _90_shift_ops_shr_shl_sshl_sshr
+    $sshl: _90_shift_ops_shr_shl_sshl_sshr
+    $shl: _90_shift_ops_shr_shl_sshl_sshr
+    $shr: _90_shift_ops_shr_shl_sshl_sshr
+    $shiftx: _90_shift_shiftx
+    $shift: _90_shift_shiftx
+    $fa: _90_fa
+    $lcu: _90_lcu_brent_kung
+    $macc_v2: _90_macc
+    $macc: _90_macc
+    $mul: _90_alumacc
+    $neg: _90_alumacc
+    $sub: _90_alumacc
+    $add: _90_alumacc
+    $gt: _90_alumacc
+    $ge: _90_alumacc
+    $le: _90_alumacc
+    $lt: _90_alumacc
+    $__div_mod_u: $__div_mod_u
+    $__div_mod_trunc: $__div_mod_trunc
+    $div: _90_div
+    $mod: _90_mod
+    $__div_mod_floor: $__div_mod_floor
+    $divfloor: _90_divfloor
+    $modfloor: _90_modfloor
+    $pow: _90_pow
+    $pmux: _90_pmux
+    $demux: _90_demux
+    $sop: _90_lut
+    $lut: _90_lut
+    $connect: $connect
+    $input_port: $input_port
+    $alu: _80_ice40_alu _90_alu
+
+Using extmapper simplemap for cells of type $mux.
+Mapping BCD2421.$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][2]$430 ($mux) with simplemap.
+Mapping BCD2421.$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$427 ($mux) with simplemap.
+Mapping BCD2421.$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][0]$424 ($mux) with simplemap.
+Mapping BCD2421.$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$421 ($mux) with simplemap.
+Mapping BCD2421.$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$418 ($mux) with simplemap.
+Mapping BCD2421.$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][0][0]$415 ($mux) with simplemap.
+Mapping BCD2421.$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][1]$439 ($mux) with simplemap.
+Mapping BCD2421.$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][3][2]$442 ($mux) with simplemap.
+No more expansions possible.
+
+2.33. Executing OPT pass (performing simple optimizations).
+
+2.33.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$556' (01?) in module `\BCD2421' with constant driver `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$a$428 [0] = \A [0]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$555' (01?) in module `\BCD2421' with constant driver `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$a$419 [0] = \A [0]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$544' (01?) in module `\BCD2421' with constant driver `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$a$419 [1] = \A [1]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$540' (???) in module `\BCD2421' with constant driver `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$b$420 [0] = \A [0]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$547' (???) in module `\BCD2421' with constant driver `$memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][0][0]$a$416 [0] = \A [0]'.
+
+2.33.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421'.
+Computing hashes of 15 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+  Cell `$auto$simplemap.cc:298:simplemap_mux$538' is identical to cell `$auto$simplemap.cc:298:simplemap_mux$541'.
+    Redirecting output \Y: $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$a$422 [0] = $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$b$420 [1]
+    Removing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$538' from module `\BCD2421'.
+Computing hashes of 14 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+Removed a total of 1 cells.
+
+2.33.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.33.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$a$419.
+Removed 0 unused cells and 1 unused wires.
+
+2.33.5. Finished fast OPT passes.
+
+2.34. Executing ICE40_OPT pass (performing simple optimizations).
+
+2.34.1. Running ICE40 specific optimizations.
+
+2.34.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.34.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421'.
+Computing hashes of 14 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+Removed a total of 0 cells.
+
+2.34.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.34.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+
+2.34.6. Finished OPT passes. (There is nothing left to do.)
+
+2.35. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+2.36. Executing TECHMAP pass (map to technology primitives).
+
+2.36.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/ff_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+2.36.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $_DFF_N_: $_DFF_N_
+    $_DFF_P_: $_DFF_P_
+    $_DFFE_NP_: $_DFFE_NP_
+    $_DFFE_PP_: $_DFFE_PP_
+    $_DFF_NP0_: $_DFF_NP0_
+    $_DFF_NP1_: $_DFF_NP1_
+    $_DFF_PP0_: $_DFF_PP0_
+    $_DFF_PP1_: $_DFF_PP1_
+    $_DFFE_NP0P_: $_DFFE_NP0P_
+    $_DFFE_NP1P_: $_DFFE_NP1P_
+    $_DFFE_PP0P_: $_DFFE_PP0P_
+    $_DFFE_PP1P_: $_DFFE_PP1P_
+    $_SDFF_NP0_: $_SDFF_NP0_
+    $_SDFF_NP1_: $_SDFF_NP1_
+    $_SDFF_PP0_: $_SDFF_PP0_
+    $_SDFF_PP1_: $_SDFF_PP1_
+    $_SDFFCE_NP0P_: $_SDFFCE_NP0P_
+    $_SDFFCE_NP1P_: $_SDFFCE_NP1P_
+    $_SDFFCE_PP0P_: $_SDFFCE_PP0P_
+    $_SDFFCE_PP1P_: $_SDFFCE_PP1P_
+
+No more expansions possible.
+
+2.37. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.38. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+2.39. Executing ICE40_OPT pass (performing simple optimizations).
+
+2.39.1. Running ICE40 specific optimizations.
+
+2.39.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$543' in module `BCD2421' with or-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$550' in module `BCD2421' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$542' in module `BCD2421' with or-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$549' in module `BCD2421' with and-gate.
+
+2.39.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421'.
+Computing hashes of 14 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+Removed a total of 0 cells.
+
+2.39.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.39.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+
+2.39.6. Rerunning OPT passes. (Removed registers in this run.)
+
+2.39.7. Running ICE40 specific optimizations.
+
+2.39.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421.
+
+2.39.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421'.
+Computing hashes of 14 cells of `\BCD2421'.
+Finding duplicate cells in `\BCD2421'.
+Removed a total of 0 cells.
+
+2.39.10. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.39.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421..
+
+2.39.12. Finished OPT passes. (There is nothing left to do.)
+
+2.40. Executing TECHMAP pass (map to technology primitives).
+
+2.40.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/latches_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/latches_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Successfully finished Verilog frontend.
+
+2.40.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $_DLATCH_N_: $_DLATCH_N_
+    $_DLATCH_P_: $_DLATCH_P_
+
+No more expansions possible.
+
+2.41. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/abc9_model.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_CARRY_WRAPPER'.
+Successfully finished Verilog frontend.
+
+2.42. Executing ABC9 pass.
+
+2.42.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module BCD2421.
+Found 0 SCCs.
+
+2.42.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.5. Executing TECHMAP pass (map to technology primitives).
+
+2.42.5.1. Executing Verilog-2005 frontend: /home/user/yosys/share/techmap.v
+Parsing Verilog input from `/home/user/yosys/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+2.42.5.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    SB_WARMBOOT: SB_WARMBOOT
+    SB_SPRAM256KA: SB_SPRAM256KA
+    SB_SPI: SB_SPI
+    SB_RGB_DRV: SB_RGB_DRV
+    SB_RGBA_DRV: SB_RGBA_DRV
+    SB_RAM40_4KNW: SB_RAM40_4KNW
+    SB_RAM40_4KNRNW: SB_RAM40_4KNRNW
+    SB_RAM40_4KNR: SB_RAM40_4KNR
+    SB_RAM40_4K: SB_RAM40_4K
+    SB_PLL40_PAD: SB_PLL40_PAD
+    SB_PLL40_CORE: SB_PLL40_CORE
+    SB_PLL40_2_PAD: SB_PLL40_2_PAD
+    SB_PLL40_2F_PAD: SB_PLL40_2F_PAD
+    SB_PLL40_2F_CORE: SB_PLL40_2F_CORE
+    SB_MAC16: SB_MAC16
+    SB_LUT4: SB_LUT4
+    SB_LFOSC: SB_LFOSC
+    SB_LED_DRV_CUR: SB_LED_DRV_CUR
+    SB_LEDDA_IP: SB_LEDDA_IP
+    SB_IO_OD: SB_IO_OD
+    SB_IO_I3C: SB_IO_I3C
+    SB_IO: SB_IO
+    SB_I2C: SB_I2C
+    SB_HFOSC: SB_HFOSC
+    SB_GB_IO: SB_GB_IO
+    SB_GB: SB_GB
+    SB_FILTER_50NS: SB_FILTER_50NS
+    SB_DFFSS: SB_DFFSS
+    SB_DFFSR: SB_DFFSR
+    SB_DFFS: SB_DFFS
+    SB_DFFR: SB_DFFR
+    SB_DFFNSS: SB_DFFNSS
+    SB_DFFNSR: SB_DFFNSR
+    SB_DFFNS: SB_DFFNS
+    SB_DFFNR: SB_DFFNR
+    SB_DFFNESS: SB_DFFNESS
+    SB_DFFNESR: SB_DFFNESR
+    SB_DFFNES: SB_DFFNES
+    SB_DFFNER: SB_DFFNER
+    SB_DFFNE: SB_DFFNE
+    SB_DFFN: SB_DFFN
+    SB_DFFESS: SB_DFFESS
+    SB_DFFESR: SB_DFFESR
+    SB_DFFES: SB_DFFES
+    SB_DFFER: SB_DFFER
+    SB_DFFE: SB_DFFE
+    SB_DFF: SB_DFF
+    SB_CARRY: SB_CARRY
+    ICESTORM_RAM: ICESTORM_RAM
+    ICESTORM_LC: ICESTORM_LC
+    BCD2421: BCD2421
+    $__ICE40_CARRY_WRAPPER: $__ICE40_CARRY_WRAPPER
+    $xnor: _90_simplemap_bool_ops
+    $xor: _90_simplemap_bool_ops
+    $or: _90_simplemap_bool_ops
+    $and: _90_simplemap_bool_ops
+    $not: _90_simplemap_bool_ops
+    $reduce_bool: _90_simplemap_reduce_ops
+    $reduce_xnor: _90_simplemap_reduce_ops
+    $reduce_xor: _90_simplemap_reduce_ops
+    $reduce_or: _90_simplemap_reduce_ops
+    $reduce_and: _90_simplemap_reduce_ops
+    $logic_or: _90_simplemap_logic_ops
+    $logic_and: _90_simplemap_logic_ops
+    $logic_not: _90_simplemap_logic_ops
+    $nex: _90_simplemap_compare_ops
+    $ne: _90_simplemap_compare_ops
+    $eqx: _90_simplemap_compare_ops
+    $eq: _90_simplemap_compare_ops
+    $bweqx: _90_simplemap_various
+    $bwmux: _90_simplemap_various
+    $bmux: _90_simplemap_various
+    $tribuf: _90_simplemap_various
+    $mux: _90_simplemap_various
+    $concat: _90_simplemap_various
+    $slice: _90_simplemap_various
+    $pos: _90_simplemap_various
+    $buf: _90_simplemap_various
+    $dlatchsr: _90_simplemap_registers
+    $adlatch: _90_simplemap_registers
+    $dlatch: _90_simplemap_registers
+    $dffsre: _90_simplemap_registers
+    $dffsr: _90_simplemap_registers
+    $sdffce: _90_simplemap_registers
+    $sdffe: _90_simplemap_registers
+    $sdff: _90_simplemap_registers
+    $aldffe: _90_simplemap_registers
+    $aldff: _90_simplemap_registers
+    $adffe: _90_simplemap_registers
+    $adff: _90_simplemap_registers
+    $dffe: _90_simplemap_registers
+    $dff: _90_simplemap_registers
+    $ff: _90_simplemap_registers
+    $sr: _90_simplemap_registers
+    $sshr: _90_shift_ops_shr_shl_sshl_sshr
+    $sshl: _90_shift_ops_shr_shl_sshl_sshr
+    $shl: _90_shift_ops_shr_shl_sshl_sshr
+    $shr: _90_shift_ops_shr_shl_sshl_sshr
+    $shiftx: _90_shift_shiftx
+    $shift: _90_shift_shiftx
+    $fa: _90_fa
+    $lcu: _90_lcu_brent_kung
+    $alu: _90_alu
+    $macc_v2: _90_macc
+    $macc: _90_macc
+    $mul: _90_alumacc
+    $neg: _90_alumacc
+    $sub: _90_alumacc
+    $add: _90_alumacc
+    $gt: _90_alumacc
+    $ge: _90_alumacc
+    $le: _90_alumacc
+    $lt: _90_alumacc
+    $__div_mod_u: $__div_mod_u
+    $__div_mod_trunc: $__div_mod_trunc
+    $div: _90_div
+    $mod: _90_mod
+    $__div_mod_floor: $__div_mod_floor
+    $divfloor: _90_divfloor
+    $modfloor: _90_modfloor
+    $pow: _90_pow
+    $pmux: _90_pmux
+    $demux: _90_demux
+    $sop: _90_lut
+    $lut: _90_lut
+    $connect: $connect
+    $input_port: $input_port
+
+No more expansions possible.
+
+2.42.6. Executing OPT pass (performing simple optimizations).
+
+2.42.6.1. Executing OPT_EXPR pass (perform const folding).
+
+2.42.6.2. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+2.42.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+2.42.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+2.42.6.5. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+2.42.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.42.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+2.42.6.8. Executing OPT_EXPR pass (perform const folding).
+
+2.42.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.42.7. Executing TECHMAP pass (map to technology primitives).
+
+2.42.7.1. Executing Verilog-2005 frontend: /home/user/yosys/share/abc9_map.v
+Parsing Verilog input from `/home/user/yosys/share/abc9_map.v' to AST representation.
+Successfully finished Verilog frontend.
+
+2.42.7.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+
+No more expansions possible.
+
+2.42.8. Executing Verilog-2005 frontend: /home/user/yosys/share/abc9_model.v
+Parsing Verilog input from `/home/user/yosys/share/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+2.42.9. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.10. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.11. Executing ABC9_OPS pass (helper functions for ABC9).
+$__DFF_P__$abc9_flop.D abc9_required = 0
+$__DFF_N__$abc9_flop.D abc9_required = 0
+
+2.42.12. Executing AIGMAP pass (map logic to AIG).
+Module BCD2421: replaced 10 cells with 64 new cells, skipped 4 cells.
+  replaced 2 cell types:
+       8 $_MUX_
+       2 $_OR_
+  not replaced 2 cell types:
+       2 $_AND_
+       2 $_NOT_
+
+2.42.12.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.12.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.12.3. Executing XAIGER backend.
+ciNum = 4
+coNum = 4
+piNum = 4
+poNum = 4
+boxNum = 0
+Extracted 28 AND gates and 74 wires from module `BCD2421' to a netlist network with 4 inputs and 4 outputs.
+
+2.42.12.4. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+2.42.12.5. Executing ABC9.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_lut <abc-temp-dir>/input.lut 
+ABC: + read_box <abc-temp-dir>/input.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =      4/      4  and =      19  lev =    5 (4.25)  mem = 0.00 MB  box = 0  bb = 0
+ABC: + &scorr 
+ABC: Warning: The network is combinational.
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &dch -f -r 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =      4/      4  and =      18  lev =    4 (3.25)  mem = 0.00 MB  ch =    2  box = 0  bb = 0
+ABC: cst =       0  cls =      2  lit =       2  unused =      18  proof =     0
+ABC: + &if -W 250 -v 
+ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
+ABC: Node =      18.  Ch =     2.  Total mem =    0.00 MB. Peak cut mem =    0.00 MB.
+ABC: P:  Del =  699.00.  Ar =       4.0.  Edge =       16.  Cut =       96.  T =     0.00 sec
+ABC: P:  Del =  699.00.  Ar =       4.0.  Edge =       16.  Cut =       96.  T =     0.00 sec
+ABC: P:  Del =  699.00.  Ar =       4.0.  Edge =       16.  Cut =       96.  T =     0.00 sec
+ABC: F:  Del =  699.00.  Ar =       4.0.  Edge =       16.  Cut =       96.  T =     0.00 sec
+ABC: A:  Del =  699.00.  Ar =       4.0.  Edge =       16.  Cut =       96.  T =     0.00 sec
+ABC: A:  Del =  699.00.  Ar =       4.0.  Edge =       16.  Cut =       96.  T =     0.00 sec
+ABC: Total time =     0.00 sec
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &mfs 
+ABC: Timing manager is given but there is no GIA of boxes.
+ABC: Error: Abc_FrameUpdateGia(): Transformation has failed.
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =      4/      4  and =      23  lev =    4 (3.25)  mem = 0.00 MB  box = 0  bb = 0
+ABC: Mapping (K=4)  :  lut =      4  edge =      16  lev =    1 (1.00)  mem = 0.00 MB
+ABC: LUT = 4 : 2=0 0.0 %  3=0 0.0 %  4=4 100.0 %  Ave = 4.00
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &verify 
+ABC: Networks are equivalent.  Time =     0.01 sec
+ABC: + time 
+ABC: elapse: 0.01 seconds, total: 0.01 seconds
+
+2.42.12.6. Executing AIGER frontend.
+M=27 I=4 L=0 O=4 A=23
+ciNum = 4
+coNum = 4
+piNum = 4
+poNum = 4
+boxNum = 0
+m: dataSize=104 lutNum=4 lutSize=4
+n: '/tmp/yosys-abc-z4Dkof/inputRenaming input $i1 -> A
+Renaming input $i2 -> A[1]
+Renaming input $i3 -> A[2]
+Renaming input $i4 -> A[3]
+Renaming output $o0 -> Y
+Renaming output $o1 -> Y[1]
+Renaming output $o2 -> Y[2]
+Renaming output $o3 -> Y[3]
+Finding unused cells or wires in module \BCD2421$abc9..
+  removing unused `$_NOT_' cell `$not$aiger777$23'.
+  removing unused `$_NOT_' cell `$not$aiger777$26'.
+  removing unused `$_AND_' cell `$and$aiger777$26'.
+  removing unused `$_NOT_' cell `$not$aiger777$25'.
+  removing unused `$_AND_' cell `$and$aiger777$25'.
+  removing unused `$_NOT_' cell `$not$aiger777$1'.
+  removing unused `$_AND_' cell `$and$aiger777$24'.
+  removing unused `$_AND_' cell `$and$aiger777$23'.
+  removing unused `$_AND_' cell `$and$aiger777$22'.
+  removing unused `$_NOT_' cell `$not$aiger777$18'.
+  removing unused `$_NOT_' cell `$not$aiger777$20'.
+  removing unused `$_AND_' cell `$and$aiger777$20'.
+  removing unused `$_AND_' cell `$and$aiger777$19'.
+  removing unused `$_AND_' cell `$and$aiger777$18'.
+  removing unused `$_NOT_' cell `$not$aiger777$16'.
+  removing unused `$_AND_' cell `$and$aiger777$17'.
+  removing unused `$_AND_' cell `$and$aiger777$16'.
+  removing unused `$_NOT_' cell `$not$aiger777$10'.
+  removing unused `$_AND_' cell `$and$aiger777$14'.
+  removing unused `$_NOT_' cell `$not$aiger777$12'.
+  removing unused `$_NOT_' cell `$not$aiger777$13'.
+  removing unused `$_AND_' cell `$and$aiger777$13'.
+  removing unused `$_AND_' cell `$and$aiger777$12'.
+  removing unused `$_NOT_' cell `$not$aiger777$11'.
+  removing unused `$_AND_' cell `$and$aiger777$11'.
+  removing unused `$_AND_' cell `$and$aiger777$10'.
+  removing unused `$_NOT_' cell `$not$aiger777$8'.
+  removing unused `$_AND_' cell `$and$aiger777$9'.
+  removing unused `$_NOT_' cell `$not$aiger777$4'.
+  removing unused `$_AND_' cell `$and$aiger777$8'.
+  removing unused `$_NOT_' cell `$not$aiger777$6'.
+  removing unused `$_AND_' cell `$and$aiger777$6'.
+  removing unused `$_NOT_' cell `$not$aiger777$5'.
+  removing unused `$_AND_' cell `$and$aiger777$5'.
+  removing unused `$_NOT_' cell `$not$aiger777$2'.
+  removing unused `$_NOT_' cell `$not$aiger777$3'.
+  removing unused non-port wire $aiger777$23b.
+  removing unused non-port wire $aiger777$1.
+  removing unused non-port wire $aiger777$2.
+  removing unused non-port wire $aiger777$3.
+  removing unused non-port wire $aiger777$4.
+  removing unused non-port wire $aiger777$7.
+  removing unused non-port wire $aiger777$15.
+  removing unused non-port wire $aiger777$21b.
+  removing unused non-port wire $aiger777$27b.
+  removing unused non-port wire $aiger777$5.
+  removing unused non-port wire $aiger777$3b.
+  removing unused non-port wire $aiger777$2b.
+  removing unused non-port wire $aiger777$6.
+  removing unused non-port wire $aiger777$5b.
+  removing unused non-port wire $aiger777$6b.
+  removing unused non-port wire $aiger777$8.
+  removing unused non-port wire $aiger777$9.
+  removing unused non-port wire $aiger777$4b.
+  removing unused non-port wire $aiger777$10.
+  removing unused non-port wire $aiger777$8b.
+  removing unused non-port wire $aiger777$11.
+  removing unused non-port wire $aiger777$12.
+  removing unused non-port wire $aiger777$11b.
+  removing unused non-port wire $aiger777$13.
+  removing unused non-port wire $aiger777$14.
+  removing unused non-port wire $aiger777$13b.
+  removing unused non-port wire $aiger777$12b.
+  removing unused non-port wire $aiger777$10b.
+  removing unused non-port wire $aiger777$16.
+  removing unused non-port wire $aiger777$17.
+  removing unused non-port wire $aiger777$18.
+  removing unused non-port wire $aiger777$16b.
+  removing unused non-port wire $aiger777$19.
+  removing unused non-port wire $aiger777$20.
+  removing unused non-port wire $aiger777$20b.
+  removing unused non-port wire $aiger777$18b.
+  removing unused non-port wire $aiger777$22.
+  removing unused non-port wire $aiger777$23.
+  removing unused non-port wire $aiger777$24.
+  removing unused non-port wire $aiger777$25.
+  removing unused non-port wire $aiger777$1b.
+  removing unused non-port wire $aiger777$26.
+  removing unused non-port wire $aiger777$25b.
+  removing unused non-port wire $aiger777$26b.
+Removed 36 unused cells and 44 unused wires.
+
+2.42.12.7. Executing ABC9_OPS pass (helper functions for ABC9).
+ABC RESULTS:              $lut cells:        4
+ABC RESULTS:           input signals:        1
+ABC RESULTS:          output signals:        1
+Removing temp directory.
+
+2.42.13. Executing TECHMAP pass (map to technology primitives).
+
+2.42.13.1. Executing Verilog-2005 frontend: /home/user/yosys/share/abc9_unmap.v
+Parsing Verilog input from `/home/user/yosys/share/abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `$__DFF_x__$abc9_flop'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Successfully finished Verilog frontend.
+
+2.42.13.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $__DFF_P__$abc9_flop: $__DFF_x__$abc9_flop
+    $__DFF_N__$abc9_flop: $__DFF_x__$abc9_flop
+    $__ABC9_SCC_BREAKER: $__ABC9_SCC_BREAKER
+
+No more expansions possible.
+
+2.43. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+2.44. Executing TECHMAP pass (map to technology primitives).
+
+2.44.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/ff_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+2.44.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $_DFF_N_: $_DFF_N_
+    $_DFF_P_: $_DFF_P_
+    $_DFFE_NP_: $_DFFE_NP_
+    $_DFFE_PP_: $_DFFE_PP_
+    $_DFF_NP0_: $_DFF_NP0_
+    $_DFF_NP1_: $_DFF_NP1_
+    $_DFF_PP0_: $_DFF_PP0_
+    $_DFF_PP1_: $_DFF_PP1_
+    $_DFFE_NP0P_: $_DFFE_NP0P_
+    $_DFFE_NP1P_: $_DFFE_NP1P_
+    $_DFFE_PP0P_: $_DFFE_PP0P_
+    $_DFFE_PP1P_: $_DFFE_PP1P_
+    $_SDFF_NP0_: $_SDFF_NP0_
+    $_SDFF_NP1_: $_SDFF_NP1_
+    $_SDFF_PP0_: $_SDFF_PP0_
+    $_SDFF_PP1_: $_SDFF_PP1_
+    $_SDFFCE_NP0P_: $_SDFFCE_NP0P_
+    $_SDFFCE_NP1P_: $_SDFFCE_NP1P_
+    $_SDFFCE_PP0P_: $_SDFFCE_PP0P_
+    $_SDFFCE_PP1P_: $_SDFFCE_PP1P_
+
+No more expansions possible.
+Finding unused cells or wires in module \BCD2421..
+  removing unused `$lut' cell `$abc$778$lut$aiger777$21'.
+  removing unused `$lut' cell `$abc$778$lut$aiger777$27'.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][2][1]$a$428.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][1]$a$422.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][1][0]$b$420.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][0][0]$b$417.
+  removing unused non-port wire $memory$auto$proc_rom.cc:155:do_switch$387$rdmux[0][0][0]$a$416.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$649.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$651.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$653.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$655.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$657.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$659.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$661.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$663.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$665.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$667.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$669.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$671.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$673.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$675.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$677.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$679.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$681.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$683.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$685.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$687.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$689.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$691.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$693.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$695.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$697.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$699.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$701.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$703.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$705.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$707.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$709.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$711.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$713.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$715.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$717.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$719.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$721.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$723.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$725.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$727.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$729.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$731.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$733.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$735.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$737.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$739.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$741.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$743.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$745.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$747.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$749.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$751.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$753.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$755.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$757.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$759.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$761.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$763.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$765.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$767.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$769.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$771.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$773.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$775.
+  removing unused non-port wire $abc$778$Y[2].
+  removing unused non-port wire $abc$778$Y[3].
+  removing unused non-port wire $abc$778$aiger777$21.
+  removing unused non-port wire $abc$778$A[3].
+  removing unused non-port wire $abc$778$aiger777$27.
+  removing unused non-port wire $abc$778$A[2].
+  removing unused non-port wire $abc$778$Y[1].
+  removing unused non-port wire $abc$778$A[1].
+  removing unused non-port wire $abc$778$Y[0].
+  removing unused non-port wire $abc$778$Y.
+  removing unused non-port wire $abc$778$A[0].
+  removing unused non-port wire $abc$778$A.
+Removed 2 unused cells and 81 unused wires.
+
+2.45. Executing OPT_LUT pass (optimize LUTs).
+Discovering LUTs.
+Found $lut\WIDTH=4 cell BCD2421.$abc$778$lut\Y[1].
+  Cell implements a 4-LUT.
+Found $lut\WIDTH=4 cell BCD2421.$auto$abc9_ops.cc:1613:reintegrate$780.
+  Cell implements a 4-LUT.
+Found $lut\WIDTH=4 cell BCD2421.$auto$abc9_ops.cc:1613:reintegrate$779.
+  Cell implements a 4-LUT.
+Found $lut\WIDTH=4 cell BCD2421.$abc$778$lut\Y[0].
+  Cell implements a 4-LUT.
+Number of LUTs:        4
+  4-LUT                4
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Eliminating LUTs.
+Number of LUTs:        4
+  4-LUT                4
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Combining LUTs.
+Number of LUTs:        4
+  4-LUT                4
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Eliminated 0 LUTs.
+Combined 0 LUTs.
+
+2.46. Executing TECHMAP pass (map to technology primitives).
+
+2.46.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/cells_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+2.46.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $lut: $lut
+
+Parameter \WIDTH = 4
+Parameter \LUT = 16'0100001001000110
+
+2.46.3. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'0100001001000110
+Generating RTLIL representation for module `$paramod$0d8cfc39ee4adc250affadb96f873906a3ace5d3$lut'.
+
+2.46.4. Continuing TECHMAP pass.
+Using template $paramod$0d8cfc39ee4adc250affadb96f873906a3ace5d3$lut for cells of type $lut.
+Mapping BCD2421.$auto$abc9_ops.cc:1613:reintegrate$780 ($lut) using $paramod$0d8cfc39ee4adc250affadb96f873906a3ace5d3$lut.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'0100011001000010
+
+2.46.5. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'0100011001000010
+Generating RTLIL representation for module `$paramod$767fc066b31b8be0e8582e2deeebacf0ff3c1465$lut'.
+
+2.46.6. Continuing TECHMAP pass.
+Using template $paramod$767fc066b31b8be0e8582e2deeebacf0ff3c1465$lut for cells of type $lut.
+Mapping BCD2421.$auto$abc9_ops.cc:1613:reintegrate$779 ($lut) using $paramod$767fc066b31b8be0e8582e2deeebacf0ff3c1465$lut.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'0001011000010010
+
+2.46.7. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'0001011000010010
+Generating RTLIL representation for module `$paramod$a9f4f6db843ea669cb2ca5413baedb2fea082ff5$lut'.
+
+2.46.8. Continuing TECHMAP pass.
+Using template $paramod$a9f4f6db843ea669cb2ca5413baedb2fea082ff5$lut for cells of type $lut.
+Mapping BCD2421.$abc$778$lut\Y[1] ($lut) using $paramod$a9f4f6db843ea669cb2ca5413baedb2fea082ff5$lut.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'0101011100000000
+
+2.46.9. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'0101011100000000
+Generating RTLIL representation for module `$paramod$6be53ab59e0a69757fc32adb071ddcb64e8c87b6$lut'.
+
+2.46.10. Continuing TECHMAP pass.
+Using template $paramod$6be53ab59e0a69757fc32adb071ddcb64e8c87b6$lut for cells of type $lut.
+Mapping BCD2421.$abc$778$lut\Y[0] ($lut) using $paramod$6be53ab59e0a69757fc32adb071ddcb64e8c87b6$lut.
+No more expansions possible.
+Finding unused cells or wires in module \BCD2421..
+  removing unused non-port wire $techmap781$auto$abc9_ops.cc:1613:reintegrate$780.Y.
+  removing unused non-port wire $techmap781$auto$abc9_ops.cc:1613:reintegrate$780.A.
+  removing unused non-port wire $techmap782$auto$abc9_ops.cc:1613:reintegrate$779.Y.
+  removing unused non-port wire $techmap782$auto$abc9_ops.cc:1613:reintegrate$779.A.
+  removing unused non-port wire $techmap783$abc$778$lut\Y[1].Y.
+  removing unused non-port wire $techmap783$abc$778$lut\Y[1].A.
+  removing unused non-port wire $techmap784$abc$778$lut\Y[0].Y.
+  removing unused non-port wire $techmap784$abc$778$lut\Y[0].A.
+Removed 0 unused cells and 8 unused wires.
+
+2.47. Executing AUTONAME pass.
+Rename cell $abc$778$lut\Y[1] in BCD2421 to Y_SB_LUT4_O.
+Rename cell $auto$abc9_ops.cc:1613:reintegrate$780 in BCD2421 to Y_SB_LUT4_O_1.
+Rename cell $auto$abc9_ops.cc:1613:reintegrate$779 in BCD2421 to Y_SB_LUT4_O_2.
+Rename cell $abc$778$lut\Y[0] in BCD2421 to Y_SB_LUT4_O_3.
+Renamed 4 objects in module BCD2421 (2 iterations).
+
+2.48. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `BCD2421'. Setting top module to BCD2421.
+
+2.48.1. Analyzing design hierarchy..
+Top module:  \BCD2421
+
+2.48.2. Analyzing design hierarchy..
+Top module:  \BCD2421
+Removed 0 unused modules.
+
+2.49. Printing statistics.
+
+=== BCD2421 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+        8 wire bits
+        2 public wires
+        8 public wire bits
+        2 ports
+        8 port bits
+        4 submodules
+        4   SB_LUT4
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+        - BCD2421
+
+        +----------Count including submodules.
+        | 
+        2 wires
+        8 wire bits
+        2 public wires
+        8 public wire bits
+        2 ports
+        8 port bits
+        - memories
+        - memory bits
+        - processes
+        - cells
+        4 submodules
+        4   SB_LUT4
+
+2.50. Executing CHECK pass (checking for obvious problems).
+Checking module BCD2421...
+Found and reported 0 problems.
+
+End of script. Logfile hash: e89c439acf, time: 0.45s, user: 0.29s, system: 0.11s, MEM: 30.75 MB peak
+Yosys 0.64 (git sha1 6d2c445ae, g++ 11.4.0-1ubuntu1~22.04.3 -fPIC -O3)
+Time spent:
+   59%    20 calls    0.257 sec read_verilog
+   10%     1 calls    0.047 sec synth_ice40
+    7%     1 calls    0.033 sec abc9_exe
+    4%    19 calls    0.019 sec opt_clean
+    3%     1 calls    0.016 sec abc9
+    3%    18 calls    0.014 sec id_gc
+    1%    10 calls    0.008 sec techmap
+    1%     7 calls    0.006 sec opt
+    1%    17 calls    0.006 sec opt_merge
+    1%     7 calls    0.005 sec design
+    0%    21 calls    0.003 sec opt_expr
+    0%     3 calls    0.003 sec clean
+    0%     2 calls    0.003 sec ice40_opt
+    0%    12 calls    0.001 sec opt_dff
+    0%     7 calls    0.001 sec opt_reduce
+    0%     2 calls    0.001 sec hierarchy
+    0%     7 calls    0.001 sec opt_muxtree
+    0%     9 calls    0.001 sec abc9_ops
+    0%     2 calls    0.001 sec read_aiger
+    0%     1 calls    0.000 sec fsm_extract
+    0%     1 calls    0.000 sec memory_libmap
+    0%     1 calls    0.000 sec stat
+    0%     1 calls    0.000 sec opt_lut
+    0%     1 calls    0.000 sec fsm_detect
+    0%     1 calls    0.000 sec scc
+    0%     2 calls    0.000 sec write_xaiger
+    0%     1 calls    0.000 sec memory_map
+    0%     1 calls    0.000 sec aigmap
+    0%     2 calls    0.000 sec check
+    0%     1 calls    0.000 sec share
+    0%     1 calls    0.000 sec proc_dlatch
+    0%     1 calls    0.000 sec blackbox
+    0%     2 calls    0.000 sec ice40_wrapcarry
+    0%     1 calls    0.000 sec opt_mem_priority
+    0%     1 calls    0.000 sec autoname
+    0%     1 calls    0.000 sec memory_dff
+    0%     1 calls    0.000 sec fsm
+    0%     1 calls    0.000 sec wreduce
+    0%     1 calls    0.000 sec memory_share
+    0%     1 calls    0.000 sec alumacc
+    0%     2 calls    0.000 sec proc_clean
+    0%     1 calls    0.000 sec proc_rom
+    0%     1 calls    0.000 sec proc_prune
+    0%     1 calls    0.000 sec memory_collect
+    0%     1 calls    0.000 sec proc_mux
+    0%     1 calls    0.000 sec proc
+    0%     2 calls    0.000 sec fsm_opt
+    0%     1 calls    0.000 sec peepopt
+    0%     1 calls    0.000 sec simplemap
+    0%     1 calls    0.000 sec opt_mem_widen
+    0%     1 calls    0.000 sec proc_rmdead
+    0%     1 calls    0.000 sec memory
+    0%     1 calls    0.000 sec dfflegalize
+    0%     1 calls    0.000 sec deminout
+    0%     1 calls    0.000 sec ice40_braminit
+    0%     1 calls    0.000 sec opt_mem
+    0%     1 calls    0.000 sec opt_mem_feedback
+    0%     1 calls    0.000 sec tribuf
+    0%     1 calls    0.000 sec proc_dff
+    0%     1 calls    0.000 sec flatten
+    0%     1 calls    0.000 sec memory_bmux2rom
+    0%     1 calls    0.000 sec proc_init
+    0%     1 calls    0.000 sec fsm_recode
+    0%     1 calls    0.000 sec fsm_map
+    0%     1 calls    0.000 sec proc_arst
+    0%     1 calls    0.000 sec proc_memwr
+    0%     1 calls    0.000 sec fsm_info
+    0%     1 calls    0.000 sec setattr
+    0%     1 calls    0.000 sec read
+    0%     1 calls    0.000 sec wbflip

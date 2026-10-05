@@ -1,0 +1,2680 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.64 (git sha1 6d2c445ae, g++ 11.4.0-1ubuntu1~22.04.3 -fPIC -O3)
+
+-- Parsing `/home/user/files/top_down/susskind_to_bin.v' using frontend ` -vlog2k' --
+
+1. Executing Verilog-2005 frontend: /home/user/files/top_down/susskind_to_bin.v
+Parsing Verilog input from `/home/user/files/top_down/susskind_to_bin.v' to AST representation.
+Storing AST representation for module `$abstract\if1'.
+Storing AST representation for module `$abstract\if2'.
+Storing AST representation for module `$abstract\if3'.
+Storing AST representation for module `$abstract\if4'.
+Storing AST representation for module `$abstract\if5'.
+Storing AST representation for module `$abstract\if6'.
+Storing AST representation for module `$abstract\if7'.
+Storing AST representation for module `$abstract\if8'.
+Storing AST representation for module `$abstract\if0000'.
+Storing AST representation for module `$abstract\if0001'.
+Storing AST representation for module `$abstract\if0010'.
+Storing AST representation for module `$abstract\if0011'.
+Storing AST representation for module `$abstract\if0100'.
+Storing AST representation for module `$abstract\if0101'.
+Storing AST representation for module `$abstract\if0110'.
+Storing AST representation for module `$abstract\if0111'.
+Storing AST representation for module `$abstract\if1000'.
+Storing AST representation for module `$abstract\if1001'.
+Storing AST representation for module `$abstract\if1010'.
+Storing AST representation for module `$abstract\if1011'.
+Storing AST representation for module `$abstract\if1100'.
+Storing AST representation for module `$abstract\if1101'.
+Storing AST representation for module `$abstract\if1110'.
+Storing AST representation for module `$abstract\if1111'.
+Storing AST representation for module `$abstract\susskind_to_bin'.
+Successfully finished Verilog frontend.
+
+-- Running command `synth_ice40 -top susskind_to_bin' --
+
+2. Executing SYNTH_ICE40 pass.
+
+2.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/cells_sim.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\SB_IO'.
+Generating RTLIL representation for module `\SB_GB_IO'.
+Generating RTLIL representation for module `\SB_GB'.
+Generating RTLIL representation for module `\SB_LUT4'.
+Generating RTLIL representation for module `\SB_CARRY'.
+Generating RTLIL representation for module `\SB_DFF'.
+Generating RTLIL representation for module `\SB_DFFE'.
+Generating RTLIL representation for module `\SB_DFFSR'.
+Generating RTLIL representation for module `\SB_DFFR'.
+Generating RTLIL representation for module `\SB_DFFSS'.
+Generating RTLIL representation for module `\SB_DFFS'.
+Generating RTLIL representation for module `\SB_DFFESR'.
+Generating RTLIL representation for module `\SB_DFFER'.
+Generating RTLIL representation for module `\SB_DFFESS'.
+Generating RTLIL representation for module `\SB_DFFES'.
+Generating RTLIL representation for module `\SB_DFFN'.
+Generating RTLIL representation for module `\SB_DFFNE'.
+Generating RTLIL representation for module `\SB_DFFNSR'.
+Generating RTLIL representation for module `\SB_DFFNR'.
+Generating RTLIL representation for module `\SB_DFFNSS'.
+Generating RTLIL representation for module `\SB_DFFNS'.
+Generating RTLIL representation for module `\SB_DFFNESR'.
+Generating RTLIL representation for module `\SB_DFFNER'.
+Generating RTLIL representation for module `\SB_DFFNESS'.
+Generating RTLIL representation for module `\SB_DFFNES'.
+Generating RTLIL representation for module `\SB_RAM40_4K'.
+Generating RTLIL representation for module `\SB_RAM40_4KNR'.
+Generating RTLIL representation for module `\SB_RAM40_4KNW'.
+Generating RTLIL representation for module `\SB_RAM40_4KNRNW'.
+Generating RTLIL representation for module `\ICESTORM_LC'.
+Generating RTLIL representation for module `\SB_PLL40_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2F_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_2F_PAD'.
+Generating RTLIL representation for module `\SB_WARMBOOT'.
+Generating RTLIL representation for module `\SB_SPRAM256KA'.
+Generating RTLIL representation for module `\SB_HFOSC'.
+Generating RTLIL representation for module `\SB_LFOSC'.
+Generating RTLIL representation for module `\SB_RGBA_DRV'.
+Generating RTLIL representation for module `\SB_LED_DRV_CUR'.
+Generating RTLIL representation for module `\SB_RGB_DRV'.
+Generating RTLIL representation for module `\SB_I2C'.
+Generating RTLIL representation for module `\SB_SPI'.
+Generating RTLIL representation for module `\SB_LEDDA_IP'.
+Generating RTLIL representation for module `\SB_FILTER_50NS'.
+Generating RTLIL representation for module `\SB_IO_I3C'.
+Generating RTLIL representation for module `\SB_IO_OD'.
+Generating RTLIL representation for module `\SB_MAC16'.
+Generating RTLIL representation for module `\ICESTORM_RAM'.
+Successfully finished Verilog frontend.
+
+2.2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\susskind_to_bin'.
+Generating RTLIL representation for module `\susskind_to_bin'.
+
+2.3.1. Analyzing design hierarchy..
+Top module:  \susskind_to_bin
+
+2.3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\if1'.
+Generating RTLIL representation for module `\if1'.
+
+2.3.3. Analyzing design hierarchy..
+Top module:  \susskind_to_bin
+Used module:     \if1
+
+2.3.4. Executing AST frontend in derive mode using pre-parsed AST for module `\if2'.
+Generating RTLIL representation for module `\if2'.
+
+2.3.5. Executing AST frontend in derive mode using pre-parsed AST for module `\if0001'.
+Generating RTLIL representation for module `\if0001'.
+
+2.3.6. Executing AST frontend in derive mode using pre-parsed AST for module `\if0000'.
+Generating RTLIL representation for module `\if0000'.
+
+2.3.7. Analyzing design hierarchy..
+Top module:  \susskind_to_bin
+Used module:     \if1
+Used module:         \if2
+Used module:         \if0001
+Used module:         \if0000
+
+2.3.8. Executing AST frontend in derive mode using pre-parsed AST for module `\if3'.
+Generating RTLIL representation for module `\if3'.
+
+2.3.9. Executing AST frontend in derive mode using pre-parsed AST for module `\if0011'.
+Generating RTLIL representation for module `\if0011'.
+
+2.3.10. Executing AST frontend in derive mode using pre-parsed AST for module `\if0010'.
+Generating RTLIL representation for module `\if0010'.
+
+2.3.11. Analyzing design hierarchy..
+Top module:  \susskind_to_bin
+Used module:     \if1
+Used module:         \if2
+Used module:             \if3
+Used module:             \if0011
+Used module:             \if0010
+Used module:         \if0001
+Used module:         \if0000
+
+2.3.12. Executing AST frontend in derive mode using pre-parsed AST for module `\if4'.
+Generating RTLIL representation for module `\if4'.
+
+2.3.13. Executing AST frontend in derive mode using pre-parsed AST for module `\if0101'.
+Generating RTLIL representation for module `\if0101'.
+
+2.3.14. Executing AST frontend in derive mode using pre-parsed AST for module `\if0100'.
+Generating RTLIL representation for module `\if0100'.
+
+2.3.15. Analyzing design hierarchy..
+Top module:  \susskind_to_bin
+Used module:     \if1
+Used module:         \if2
+Used module:             \if3
+Used module:                 \if4
+Used module:                 \if0101
+Used module:                 \if0100
+Used module:             \if0011
+Used module:             \if0010
+Used module:         \if0001
+Used module:         \if0000
+
+2.3.16. Executing AST frontend in derive mode using pre-parsed AST for module `\if5'.
+Generating RTLIL representation for module `\if5'.
+
+2.3.17. Executing AST frontend in derive mode using pre-parsed AST for module `\if0111'.
+Generating RTLIL representation for module `\if0111'.
+
+2.3.18. Executing AST frontend in derive mode using pre-parsed AST for module `\if0110'.
+Generating RTLIL representation for module `\if0110'.
+
+2.3.19. Analyzing design hierarchy..
+Top module:  \susskind_to_bin
+Used module:     \if1
+Used module:         \if2
+Used module:             \if3
+Used module:                 \if4
+Used module:                     \if5
+Used module:                     \if0111
+Used module:                     \if0110
+Used module:                 \if0101
+Used module:                 \if0100
+Used module:             \if0011
+Used module:             \if0010
+Used module:         \if0001
+Used module:         \if0000
+
+2.3.20. Executing AST frontend in derive mode using pre-parsed AST for module `\if6'.
+Generating RTLIL representation for module `\if6'.
+
+2.3.21. Executing AST frontend in derive mode using pre-parsed AST for module `\if1001'.
+Generating RTLIL representation for module `\if1001'.
+
+2.3.22. Executing AST frontend in derive mode using pre-parsed AST for module `\if1000'.
+Generating RTLIL representation for module `\if1000'.
+
+2.3.23. Analyzing design hierarchy..
+Top module:  \susskind_to_bin
+Used module:     \if1
+Used module:         \if2
+Used module:             \if3
+Used module:                 \if4
+Used module:                     \if5
+Used module:                         \if6
+Used module:                         \if1001
+Used module:                         \if1000
+Used module:                     \if0111
+Used module:                     \if0110
+Used module:                 \if0101
+Used module:                 \if0100
+Used module:             \if0011
+Used module:             \if0010
+Used module:         \if0001
+Used module:         \if0000
+
+2.3.24. Executing AST frontend in derive mode using pre-parsed AST for module `\if7'.
+Generating RTLIL representation for module `\if7'.
+
+2.3.25. Executing AST frontend in derive mode using pre-parsed AST for module `\if1011'.
+Generating RTLIL representation for module `\if1011'.
+
+2.3.26. Executing AST frontend in derive mode using pre-parsed AST for module `\if1010'.
+Generating RTLIL representation for module `\if1010'.
+
+2.3.27. Analyzing design hierarchy..
+Top module:  \susskind_to_bin
+Used module:     \if1
+Used module:         \if2
+Used module:             \if3
+Used module:                 \if4
+Used module:                     \if5
+Used module:                         \if6
+Used module:                             \if7
+Used module:                             \if1011
+Used module:                             \if1010
+Used module:                         \if1001
+Used module:                         \if1000
+Used module:                     \if0111
+Used module:                     \if0110
+Used module:                 \if0101
+Used module:                 \if0100
+Used module:             \if0011
+Used module:             \if0010
+Used module:         \if0001
+Used module:         \if0000
+
+2.3.28. Executing AST frontend in derive mode using pre-parsed AST for module `\if8'.
+Generating RTLIL representation for module `\if8'.
+
+2.3.29. Executing AST frontend in derive mode using pre-parsed AST for module `\if1101'.
+Generating RTLIL representation for module `\if1101'.
+
+2.3.30. Executing AST frontend in derive mode using pre-parsed AST for module `\if1100'.
+Generating RTLIL representation for module `\if1100'.
+
+2.3.31. Analyzing design hierarchy..
+Top module:  \susskind_to_bin
+Used module:     \if1
+Used module:         \if2
+Used module:             \if3
+Used module:                 \if4
+Used module:                     \if5
+Used module:                         \if6
+Used module:                             \if7
+Used module:                                 \if8
+Used module:                                 \if1101
+Used module:                                 \if1100
+Used module:                             \if1011
+Used module:                             \if1010
+Used module:                         \if1001
+Used module:                         \if1000
+Used module:                     \if0111
+Used module:                     \if0110
+Used module:                 \if0101
+Used module:                 \if0100
+Used module:             \if0011
+Used module:             \if0010
+Used module:         \if0001
+Used module:         \if0000
+
+2.3.32. Executing AST frontend in derive mode using pre-parsed AST for module `\if1111'.
+Generating RTLIL representation for module `\if1111'.
+
+2.3.33. Executing AST frontend in derive mode using pre-parsed AST for module `\if1110'.
+Generating RTLIL representation for module `\if1110'.
+
+2.3.34. Analyzing design hierarchy..
+Top module:  \susskind_to_bin
+Used module:     \if1
+Used module:         \if2
+Used module:             \if3
+Used module:                 \if4
+Used module:                     \if5
+Used module:                         \if6
+Used module:                             \if7
+Used module:                                 \if8
+Used module:                                     \if1111
+Used module:                                     \if1110
+Used module:                                 \if1101
+Used module:                                 \if1100
+Used module:                             \if1011
+Used module:                             \if1010
+Used module:                         \if1001
+Used module:                         \if1000
+Used module:                     \if0111
+Used module:                     \if0110
+Used module:                 \if0101
+Used module:                 \if0100
+Used module:             \if0011
+Used module:             \if0010
+Used module:         \if0001
+Used module:         \if0000
+
+2.3.35. Analyzing design hierarchy..
+Top module:  \susskind_to_bin
+Used module:     \if1
+Used module:         \if2
+Used module:             \if3
+Used module:                 \if4
+Used module:                     \if5
+Used module:                         \if6
+Used module:                             \if7
+Used module:                                 \if8
+Used module:                                     \if1111
+Used module:                                     \if1110
+Used module:                                 \if1101
+Used module:                                 \if1100
+Used module:                             \if1011
+Used module:                             \if1010
+Used module:                         \if1001
+Used module:                         \if1000
+Used module:                     \if0111
+Used module:                     \if0110
+Used module:                 \if0101
+Used module:                 \if0100
+Used module:             \if0011
+Used module:             \if0010
+Used module:         \if0001
+Used module:         \if0000
+Removing unused module `$abstract\susskind_to_bin'.
+Removing unused module `$abstract\if1111'.
+Removing unused module `$abstract\if1110'.
+Removing unused module `$abstract\if1101'.
+Removing unused module `$abstract\if1100'.
+Removing unused module `$abstract\if1011'.
+Removing unused module `$abstract\if1010'.
+Removing unused module `$abstract\if1001'.
+Removing unused module `$abstract\if1000'.
+Removing unused module `$abstract\if0111'.
+Removing unused module `$abstract\if0110'.
+Removing unused module `$abstract\if0101'.
+Removing unused module `$abstract\if0100'.
+Removing unused module `$abstract\if0011'.
+Removing unused module `$abstract\if0010'.
+Removing unused module `$abstract\if0001'.
+Removing unused module `$abstract\if0000'.
+Removing unused module `$abstract\if8'.
+Removing unused module `$abstract\if7'.
+Removing unused module `$abstract\if6'.
+Removing unused module `$abstract\if5'.
+Removing unused module `$abstract\if4'.
+Removing unused module `$abstract\if3'.
+Removing unused module `$abstract\if2'.
+Removing unused module `$abstract\if1'.
+Removed 25 unused modules.
+
+2.4. Executing PROC pass (convert processes to netlists).
+
+2.4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/user/files/top_down/susskind_to_bin.v:204$402 in module if8.
+Marked 2 switch rules as full_case in process $proc$/home/user/files/top_down/susskind_to_bin.v:182$399 in module if7.
+Marked 2 switch rules as full_case in process $proc$/home/user/files/top_down/susskind_to_bin.v:155$396 in module if6.
+Marked 2 switch rules as full_case in process $proc$/home/user/files/top_down/susskind_to_bin.v:128$393 in module if5.
+Marked 2 switch rules as full_case in process $proc$/home/user/files/top_down/susskind_to_bin.v:101$390 in module if4.
+Marked 2 switch rules as full_case in process $proc$/home/user/files/top_down/susskind_to_bin.v:74$387 in module if3.
+Marked 2 switch rules as full_case in process $proc$/home/user/files/top_down/susskind_to_bin.v:47$384 in module if2.
+Marked 2 switch rules as full_case in process $proc$/home/user/files/top_down/susskind_to_bin.v:20$381 in module if1.
+Removed a total of 0 dead cases.
+
+2.4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 8 assignments to connections.
+
+2.4.4. Executing PROC_INIT pass (extract init attributes).
+
+2.4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.4.6. Executing PROC_ROM pass (convert switches to ROMs).
+rejecting switch: rhs not const
+rejecting switch: rhs not const
+rejecting switch: rhs not const
+rejecting switch: rhs not const
+rejecting switch: rhs not const
+rejecting switch: rhs not const
+rejecting switch: rhs not const
+rejecting switch: rhs not const
+rejecting switch: rhs not const
+rejecting switch: rhs not const
+rejecting switch: rhs not const
+rejecting switch: rhs not const
+rejecting switch: rhs not const
+rejecting switch: rhs not const
+rejecting switch: rhs not const
+Converted 0 switches.
+
+2.4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\if8.$proc$/home/user/files/top_down/susskind_to_bin.v:204$402'.
+     1/1: $1\Y[3:0]
+Creating decoders for process `\if7.$proc$/home/user/files/top_down/susskind_to_bin.v:182$399'.
+     1/2: $2\Y[3:0]
+     2/2: $1\Y[3:0]
+Creating decoders for process `\if6.$proc$/home/user/files/top_down/susskind_to_bin.v:155$396'.
+     1/2: $2\Y[3:0]
+     2/2: $1\Y[3:0]
+Creating decoders for process `\if5.$proc$/home/user/files/top_down/susskind_to_bin.v:128$393'.
+     1/2: $2\Y[3:0]
+     2/2: $1\Y[3:0]
+Creating decoders for process `\if4.$proc$/home/user/files/top_down/susskind_to_bin.v:101$390'.
+     1/2: $2\Y[3:0]
+     2/2: $1\Y[3:0]
+Creating decoders for process `\if3.$proc$/home/user/files/top_down/susskind_to_bin.v:74$387'.
+     1/2: $2\Y[3:0]
+     2/2: $1\Y[3:0]
+Creating decoders for process `\if2.$proc$/home/user/files/top_down/susskind_to_bin.v:47$384'.
+     1/2: $2\Y[3:0]
+     2/2: $1\Y[3:0]
+Creating decoders for process `\if1.$proc$/home/user/files/top_down/susskind_to_bin.v:20$381'.
+     1/2: $2\Y[3:0]
+     2/2: $1\Y[3:0]
+
+2.4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\if8.\Y' from process `\if8.$proc$/home/user/files/top_down/susskind_to_bin.v:204$402'.
+No latch inferred for signal `\if7.\Y' from process `\if7.$proc$/home/user/files/top_down/susskind_to_bin.v:182$399'.
+No latch inferred for signal `\if6.\Y' from process `\if6.$proc$/home/user/files/top_down/susskind_to_bin.v:155$396'.
+No latch inferred for signal `\if5.\Y' from process `\if5.$proc$/home/user/files/top_down/susskind_to_bin.v:128$393'.
+No latch inferred for signal `\if4.\Y' from process `\if4.$proc$/home/user/files/top_down/susskind_to_bin.v:101$390'.
+No latch inferred for signal `\if3.\Y' from process `\if3.$proc$/home/user/files/top_down/susskind_to_bin.v:74$387'.
+No latch inferred for signal `\if2.\Y' from process `\if2.$proc$/home/user/files/top_down/susskind_to_bin.v:47$384'.
+No latch inferred for signal `\if1.\Y' from process `\if1.$proc$/home/user/files/top_down/susskind_to_bin.v:20$381'.
+
+2.4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+2.4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\if8.$proc$/home/user/files/top_down/susskind_to_bin.v:204$402'.
+Removing empty process `if8.$proc$/home/user/files/top_down/susskind_to_bin.v:204$402'.
+Found and cleaned up 2 empty switches in `\if7.$proc$/home/user/files/top_down/susskind_to_bin.v:182$399'.
+Removing empty process `if7.$proc$/home/user/files/top_down/susskind_to_bin.v:182$399'.
+Found and cleaned up 2 empty switches in `\if6.$proc$/home/user/files/top_down/susskind_to_bin.v:155$396'.
+Removing empty process `if6.$proc$/home/user/files/top_down/susskind_to_bin.v:155$396'.
+Found and cleaned up 2 empty switches in `\if5.$proc$/home/user/files/top_down/susskind_to_bin.v:128$393'.
+Removing empty process `if5.$proc$/home/user/files/top_down/susskind_to_bin.v:128$393'.
+Found and cleaned up 2 empty switches in `\if4.$proc$/home/user/files/top_down/susskind_to_bin.v:101$390'.
+Removing empty process `if4.$proc$/home/user/files/top_down/susskind_to_bin.v:101$390'.
+Found and cleaned up 2 empty switches in `\if3.$proc$/home/user/files/top_down/susskind_to_bin.v:74$387'.
+Removing empty process `if3.$proc$/home/user/files/top_down/susskind_to_bin.v:74$387'.
+Found and cleaned up 2 empty switches in `\if2.$proc$/home/user/files/top_down/susskind_to_bin.v:47$384'.
+Removing empty process `if2.$proc$/home/user/files/top_down/susskind_to_bin.v:47$384'.
+Found and cleaned up 2 empty switches in `\if1.$proc$/home/user/files/top_down/susskind_to_bin.v:20$381'.
+Removing empty process `if1.$proc$/home/user/files/top_down/susskind_to_bin.v:20$381'.
+Cleaned up 15 empty switches.
+
+2.4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module if1110.
+Optimizing module if1111.
+Optimizing module if1100.
+Optimizing module if1101.
+Optimizing module if8.
+Optimizing module if1010.
+Optimizing module if1011.
+Optimizing module if7.
+Optimizing module if1000.
+Optimizing module if1001.
+Optimizing module if6.
+Optimizing module if0110.
+Optimizing module if0111.
+Optimizing module if5.
+Optimizing module if0100.
+Optimizing module if0101.
+Optimizing module if4.
+Optimizing module if0010.
+Optimizing module if0011.
+Optimizing module if3.
+Optimizing module if0000.
+Optimizing module if0001.
+Optimizing module if2.
+Optimizing module if1.
+Replacing $eq cell `$eq$/home/user/files/top_down/susskind_to_bin.v:21$382' in module `if1' with $logic_not.
+Optimizing module susskind_to_bin.
+
+2.5. Executing FLATTEN pass (flatten design).
+Flattening if8.u22 (if1110).
+Flattening if8.u23 (if1111).
+Flattening if7.u19 (if1100).
+Flattening if7.u20 (if1101).
+Flattening if7.u21 (if8).
+Flattening if6.u16 (if1010).
+Flattening if6.u17 (if1011).
+Flattening if6.u18 (if7).
+Flattening if5.u13 (if1000).
+Flattening if5.u14 (if1001).
+Flattening if5.u15 (if6).
+Flattening if4.u10 (if0110).
+Flattening if4.u11 (if0111).
+Flattening if4.u12 (if5).
+Flattening if3.u7 (if0100).
+Flattening if3.u8 (if0101).
+Flattening if3.u9 (if4).
+Flattening if2.u4 (if0010).
+Flattening if2.u5 (if0011).
+Flattening if2.u6 (if3).
+Flattening if1.u1 (if0000).
+Flattening if1.u2 (if0001).
+Flattening if1.u3 (if2).
+Flattening susskind_to_bin.u24 (if1).
+Deleting now unused module if1110.
+Deleting now unused module if1111.
+Deleting now unused module if1100.
+Deleting now unused module if1101.
+Deleting now unused module if8.
+Deleting now unused module if1010.
+Deleting now unused module if1011.
+Deleting now unused module if7.
+Deleting now unused module if1000.
+Deleting now unused module if1001.
+Deleting now unused module if6.
+Deleting now unused module if0110.
+Deleting now unused module if0111.
+Deleting now unused module if5.
+Deleting now unused module if0100.
+Deleting now unused module if0101.
+Deleting now unused module if4.
+Deleting now unused module if0010.
+Deleting now unused module if0011.
+Deleting now unused module if3.
+Deleting now unused module if0000.
+Deleting now unused module if0001.
+Deleting now unused module if2.
+Deleting now unused module if1.
+
+2.6. Executing TRIBUF pass.
+
+2.7. Executing DEMINOUT pass (demote inout ports to input or output).
+
+2.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+  removing unused non-port wire $flatten\u24.\u3.$0\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.$1\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.$procmux$454_CMP.
+  removing unused non-port wire $flatten\u24.\u3.$procmux$457_CMP.
+  removing unused non-port wire $flatten\u24.\u3.$procmux$456_Y.
+  removing unused non-port wire $flatten\u24.\u3.$procmux$460_CMP.
+  removing unused non-port wire $flatten\u24.\u3.$procmux$459_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.$0\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.$1\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.$procmux$436_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.$procmux$439_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.$procmux$438_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.$procmux$442_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.$procmux$441_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.$0\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.$1\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$418_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$421_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$420_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$424_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$423_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.\u21.$0\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.\u21.$1\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.\u21.$procmux$406_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.\u21.$procmux$405_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$414_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$415_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$411_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$412_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$409_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$1\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$0\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.$procmux$432_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.$procmux$433_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.$procmux$429_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.$procmux$430_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.$procmux$427_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.$1\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.$0\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.\u6.$procmux$450_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.$procmux$451_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.$procmux$447_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.$procmux$448_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.$procmux$445_CMP.
+  removing unused non-port wire $flatten\u24.\u3.\u6.$1\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.\u6.$0\Y[3:0].
+  removing unused non-port wire $flatten\u24.$procmux$468_Y.
+  removing unused non-port wire $flatten\u24.$procmux$469_CMP.
+  removing unused non-port wire $flatten\u24.$procmux$465_Y.
+  removing unused non-port wire $flatten\u24.$procmux$466_CMP.
+  removing unused non-port wire $flatten\u24.$procmux$463_CMP.
+  removing unused non-port wire $flatten\u24.$1\Y[3:0].
+  removing unused non-port wire $flatten\u24.$0\Y[3:0].
+Removed 0 unused cells and 53 unused wires.
+
+2.10. Executing CHECK pass (checking for obvious problems).
+Checking module susskind_to_bin...
+Found and reported 0 problems.
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\susskind_to_bin'.
+Computing hashes of 61 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+Removed a total of 0 cells.
+
+2.11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \susskind_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $flatten\u24.$procmux$468 (pure)
+		eval $flatten\u24.$procmux$468 (replace 1 enable 1)
+		eval $flatten\u24.$procmux$465 (replace 1 enable 1)
+		eval $flatten\u24.$procmux$462 (replace 1 enable 1)
+		eval $flatten\u24.\u3.$procmux$459 (replace 1 enable 1)
+		eval $flatten\u24.\u3.$procmux$456 (replace 1 enable 1)
+		eval $flatten\u24.\u3.$procmux$453 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.$procmux$450 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.$procmux$447 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.$procmux$444 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.$procmux$441 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.$procmux$438 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.$procmux$435 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.$procmux$432 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.$procmux$429 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.$procmux$426 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$423 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$420 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$417 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$414 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$411 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$408 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.\u21.$procmux$405 (replace 1 enable 1)
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $flatten\u24.$procmux$465.
+    dead port 1/2 on $mux $flatten\u24.\u3.\u6.$procmux$447.
+    dead port 1/2 on $mux $flatten\u24.\u3.\u6.\u9.\u12.$procmux$429.
+    dead port 1/2 on $mux $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$411.
+    dead port 1/2 on $mux $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$420.
+    dead port 1/2 on $mux $flatten\u24.\u3.\u6.\u9.$procmux$438.
+    dead port 1/2 on $mux $flatten\u24.\u3.$procmux$456.
+Removed 7 multiplexer ports.
+
+2.11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \susskind_to_bin.
+Performed a total of 0 changes.
+
+2.11.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\susskind_to_bin'.
+Computing hashes of 54 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+Removed a total of 0 cells.
+
+2.11.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+  removing unused non-port wire $flatten\u24.\u3.$procmux$453_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.$procmux$435_Y.
+  removing unused non-port wire $flatten\u24.$procmux$462_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.$procmux$426_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$417_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$408_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.$procmux$444_Y.
+Removed 0 unused cells and 7 unused wires.
+
+2.11.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.11.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.11.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \susskind_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $flatten\u24.$procmux$468 (pure)
+		eval $flatten\u24.$procmux$468 (replace 1 enable 1)
+		eval $flatten\u24.$procmux$462 (replace 1 enable 1)
+		eval $flatten\u24.\u3.$procmux$459 (replace 1 enable 1)
+		eval $flatten\u24.\u3.$procmux$453 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.$procmux$450 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.$procmux$444 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.$procmux$441 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.$procmux$435 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.$procmux$432 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.$procmux$426 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$423 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$417 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$414 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$408 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.\u21.$procmux$405 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.11.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \susskind_to_bin.
+Performed a total of 0 changes.
+
+2.11.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\susskind_to_bin'.
+Computing hashes of 54 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+Removed a total of 0 cells.
+
+2.11.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.11.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+
+2.11.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.11.16. Finished fast OPT passes. (There is nothing left to do.)
+
+2.12. Executing FSM pass (extract and optimize FSM).
+
+2.12.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+2.12.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+2.12.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.12.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+
+2.12.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.12.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+2.12.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+2.12.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+2.13. Executing OPT pass (performing simple optimizations).
+
+2.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\susskind_to_bin'.
+Computing hashes of 54 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+Removed a total of 0 cells.
+
+2.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \susskind_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $flatten\u24.$procmux$468 (pure)
+		eval $flatten\u24.$procmux$468 (replace 1 enable 1)
+		eval $flatten\u24.$procmux$462 (replace 1 enable 1)
+		eval $flatten\u24.\u3.$procmux$459 (replace 1 enable 1)
+		eval $flatten\u24.\u3.$procmux$453 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.$procmux$450 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.$procmux$444 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.$procmux$441 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.$procmux$435 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.$procmux$432 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.$procmux$426 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$423 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$417 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$414 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$408 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.\u21.$procmux$405 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \susskind_to_bin.
+Performed a total of 0 changes.
+
+2.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\susskind_to_bin'.
+Computing hashes of 54 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+Removed a total of 0 cells.
+
+2.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+
+2.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.13.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.14. Executing WREDUCE pass (reducing word size of cells).
+Removed top 2 bits (of 4) from port B of cell susskind_to_bin.$flatten\u24.\u3.$eq$/home/user/files/top_down/susskind_to_bin.v:48$385 ($eq).
+Removed top 2 bits (of 4) from port B of cell susskind_to_bin.$flatten\u24.\u3.$eq$/home/user/files/top_down/susskind_to_bin.v:50$386 ($eq).
+Removed top 1 bits (of 4) from port B of cell susskind_to_bin.$flatten\u24.\u3.\u6.\u9.$eq$/home/user/files/top_down/susskind_to_bin.v:102$391 ($eq).
+Removed top 1 bits (of 4) from port B of cell susskind_to_bin.$flatten\u24.\u3.\u6.\u9.$eq$/home/user/files/top_down/susskind_to_bin.v:104$392 ($eq).
+Removed top 3 bits (of 4) from mux cell susskind_to_bin.$flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.\u21.$procmux$405 ($mux).
+Removed top 1 bits (of 4) from port B of cell susskind_to_bin.$flatten\u24.\u3.\u6.$eq$/home/user/files/top_down/susskind_to_bin.v:77$389 ($eq).
+Removed top 1 bits (of 4) from port B of cell susskind_to_bin.$flatten\u24.\u3.\u6.$eq$/home/user/files/top_down/susskind_to_bin.v:75$388 ($eq).
+Removed top 3 bits (of 4) from port B of cell susskind_to_bin.$flatten\u24.$eq$/home/user/files/top_down/susskind_to_bin.v:23$383 ($eq).
+
+2.15. Executing PEEPOPT pass (run peephole optimizers).
+
+2.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+
+2.17. Executing SHARE pass (SAT-based resource sharing).
+
+2.18. Executing TECHMAP pass (map to technology primitives).
+
+2.18.1. Executing Verilog-2005 frontend: /home/user/yosys/share/cmp2lut.v
+Parsing Verilog input from `/home/user/yosys/share/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+2.18.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $ge: _90_lut_cmp_
+    $gt: _90_lut_cmp_
+    $le: _90_lut_cmp_
+    $lt: _90_lut_cmp_
+
+No more expansions possible.
+
+2.19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.20. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+
+2.21. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module susskind_to_bin:
+  created 0 $alu and 0 $macc cells.
+
+2.22. Executing OPT pass (performing simple optimizations).
+
+2.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\susskind_to_bin'.
+Computing hashes of 54 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+Removed a total of 0 cells.
+
+2.22.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \susskind_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $flatten\u24.$procmux$468 (pure)
+		eval $flatten\u24.$procmux$468 (replace 1 enable 1)
+		eval $flatten\u24.$procmux$462 (replace 1 enable 1)
+		eval $flatten\u24.\u3.$procmux$459 (replace 1 enable 1)
+		eval $flatten\u24.\u3.$procmux$453 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.$procmux$450 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.$procmux$444 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.$procmux$441 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.$procmux$435 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.$procmux$432 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.$procmux$426 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$423 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$417 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$414 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$408 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.\u21.$procmux$405 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.22.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \susskind_to_bin.
+Performed a total of 0 changes.
+
+2.22.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\susskind_to_bin'.
+Computing hashes of 54 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+Removed a total of 0 cells.
+
+2.22.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.22.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+
+2.22.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.22.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.23. Executing MEMORY pass.
+
+2.23.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+2.23.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+2.23.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+2.23.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+2.23.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+2.23.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+
+2.23.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+2.23.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+2.23.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+
+2.23.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+
+2.25. Executing MEMORY_LIBMAP pass (mapping memories to cells).
+
+2.26. Executing TECHMAP pass (map to technology primitives).
+
+2.26.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/brams_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/brams_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_RAM4K_'.
+Successfully finished Verilog frontend.
+
+2.26.2. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/spram_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/spram_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_SPRAM_'.
+Successfully finished Verilog frontend.
+
+2.26.3. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $__ICE40_RAM4K_: $__ICE40_RAM4K_
+    $__ICE40_SPRAM_: $__ICE40_SPRAM_
+
+No more expansions possible.
+
+2.27. Executing ICE40_BRAMINIT pass.
+
+2.28. Executing OPT pass (performing simple optimizations).
+
+2.28.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.28.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\susskind_to_bin'.
+Computing hashes of 54 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+Removed a total of 0 cells.
+
+2.28.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+
+2.28.5. Finished fast OPT passes.
+
+2.29. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+2.30. Executing OPT pass (performing simple optimizations).
+
+2.30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\susskind_to_bin'.
+Computing hashes of 54 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+Removed a total of 0 cells.
+
+2.30.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \susskind_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $flatten\u24.$procmux$468 (pure)
+		eval $flatten\u24.$procmux$468 (replace 1 enable 1)
+		eval $flatten\u24.$procmux$462 (replace 1 enable 1)
+		eval $flatten\u24.\u3.$procmux$459 (replace 1 enable 1)
+		eval $flatten\u24.\u3.$procmux$453 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.$procmux$450 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.$procmux$444 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.$procmux$441 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.$procmux$435 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.$procmux$432 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.$procmux$426 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$423 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$417 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$414 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$408 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.\u21.$procmux$405 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \susskind_to_bin.
+    Consolidated identical input bits for $mux cell $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$408:
+      Old ports: A={ 3'011 \u24.u3.u6.u9.u12.u15.u18.if_out21 [0] }, B=4'0000, Y=$flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$2\Y[3:0]
+      New ports: A={ 1'1 \u24.u3.u6.u9.u12.u15.u18.if_out21 [0] }, B=2'00, Y=$flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$2\Y[3:0] [1:0]
+      New connections: $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$2\Y[3:0] [3:2] = { 1'0 $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$2\Y[3:0] [1] }
+  Optimizing cells in module \susskind_to_bin.
+    Consolidated identical input bits for $mux cell $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$414:
+      Old ports: A=$flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$2\Y[3:0], B=4'0101, Y=\u24.u3.u6.u9.u12.u15.if_out18
+      New ports: A={ $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$2\Y[3:0] [1] $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$2\Y[3:0] [1:0] }, B=3'101, Y=\u24.u3.u6.u9.u12.u15.if_out18 [2:0]
+      New connections: \u24.u3.u6.u9.u12.u15.if_out18 [3] = 1'0
+  Optimizing cells in module \susskind_to_bin.
+Performed a total of 2 changes.
+
+2.30.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\susskind_to_bin'.
+Computing hashes of 54 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+Removed a total of 0 cells.
+
+2.30.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.30.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+
+2.30.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.30.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.30.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \susskind_to_bin..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $flatten\u24.$procmux$468 (pure)
+		eval $flatten\u24.$procmux$468 (replace 1 enable 1)
+		eval $flatten\u24.$procmux$462 (replace 1 enable 1)
+		eval $flatten\u24.\u3.$procmux$459 (replace 1 enable 1)
+		eval $flatten\u24.\u3.$procmux$453 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.$procmux$450 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.$procmux$444 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.$procmux$441 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.$procmux$435 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.$procmux$432 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.$procmux$426 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$423 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$417 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$414 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$408 (replace 1 enable 1)
+		eval $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.\u21.$procmux$405 (replace 1 enable 1)
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+2.30.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \susskind_to_bin.
+Performed a total of 0 changes.
+
+2.30.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\susskind_to_bin'.
+Computing hashes of 54 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+Removed a total of 0 cells.
+
+2.30.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.30.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+
+2.30.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.30.16. Finished fast OPT passes. (There is nothing left to do.)
+
+2.31. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+2.32. Executing TECHMAP pass (map to technology primitives).
+
+2.32.1. Executing Verilog-2005 frontend: /home/user/yosys/share/techmap.v
+Parsing Verilog input from `/home/user/yosys/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+2.32.2. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/arith_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_ice40_alu'.
+Successfully finished Verilog frontend.
+
+2.32.3. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $xnor: _90_simplemap_bool_ops
+    $xor: _90_simplemap_bool_ops
+    $or: _90_simplemap_bool_ops
+    $and: _90_simplemap_bool_ops
+    $not: _90_simplemap_bool_ops
+    $reduce_bool: _90_simplemap_reduce_ops
+    $reduce_xnor: _90_simplemap_reduce_ops
+    $reduce_xor: _90_simplemap_reduce_ops
+    $reduce_or: _90_simplemap_reduce_ops
+    $reduce_and: _90_simplemap_reduce_ops
+    $logic_or: _90_simplemap_logic_ops
+    $logic_and: _90_simplemap_logic_ops
+    $logic_not: _90_simplemap_logic_ops
+    $nex: _90_simplemap_compare_ops
+    $ne: _90_simplemap_compare_ops
+    $eqx: _90_simplemap_compare_ops
+    $eq: _90_simplemap_compare_ops
+    $bweqx: _90_simplemap_various
+    $bwmux: _90_simplemap_various
+    $bmux: _90_simplemap_various
+    $tribuf: _90_simplemap_various
+    $mux: _90_simplemap_various
+    $concat: _90_simplemap_various
+    $slice: _90_simplemap_various
+    $pos: _90_simplemap_various
+    $buf: _90_simplemap_various
+    $dlatchsr: _90_simplemap_registers
+    $adlatch: _90_simplemap_registers
+    $dlatch: _90_simplemap_registers
+    $dffsre: _90_simplemap_registers
+    $dffsr: _90_simplemap_registers
+    $sdffce: _90_simplemap_registers
+    $sdffe: _90_simplemap_registers
+    $sdff: _90_simplemap_registers
+    $aldffe: _90_simplemap_registers
+    $aldff: _90_simplemap_registers
+    $adffe: _90_simplemap_registers
+    $adff: _90_simplemap_registers
+    $dffe: _90_simplemap_registers
+    $dff: _90_simplemap_registers
+    $ff: _90_simplemap_registers
+    $sr: _90_simplemap_registers
+    $sshr: _90_shift_ops_shr_shl_sshl_sshr
+    $sshl: _90_shift_ops_shr_shl_sshl_sshr
+    $shl: _90_shift_ops_shr_shl_sshl_sshr
+    $shr: _90_shift_ops_shr_shl_sshl_sshr
+    $shiftx: _90_shift_shiftx
+    $shift: _90_shift_shiftx
+    $fa: _90_fa
+    $lcu: _90_lcu_brent_kung
+    $macc_v2: _90_macc
+    $macc: _90_macc
+    $mul: _90_alumacc
+    $neg: _90_alumacc
+    $sub: _90_alumacc
+    $add: _90_alumacc
+    $gt: _90_alumacc
+    $ge: _90_alumacc
+    $le: _90_alumacc
+    $lt: _90_alumacc
+    $__div_mod_u: $__div_mod_u
+    $__div_mod_trunc: $__div_mod_trunc
+    $div: _90_div
+    $mod: _90_mod
+    $__div_mod_floor: $__div_mod_floor
+    $divfloor: _90_divfloor
+    $modfloor: _90_modfloor
+    $pow: _90_pow
+    $pmux: _90_pmux
+    $demux: _90_demux
+    $sop: _90_lut
+    $lut: _90_lut
+    $connect: $connect
+    $input_port: $input_port
+    $alu: _80_ice40_alu _90_alu
+
+Using extmapper simplemap for cells of type $mux.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.$procmux$450 ($mux) with simplemap.
+Using extmapper simplemap for cells of type $eq.
+Mapping susskind_to_bin.$flatten\u24.\u3.$eq$/home/user/files/top_down/susskind_to_bin.v:48$385 ($eq) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.$eq$/home/user/files/top_down/susskind_to_bin.v:50$386 ($eq) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.$procmux$453 ($mux) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.\u12.$procmux$432 ($mux) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.$eq$/home/user/files/top_down/susskind_to_bin.v:102$391 ($eq) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.$eq$/home/user/files/top_down/susskind_to_bin.v:104$392 ($eq) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.$procmux$435 ($mux) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$414 ($mux) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.\u12.\u15.$eq$/home/user/files/top_down/susskind_to_bin.v:156$397 ($eq) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.\u12.\u15.$eq$/home/user/files/top_down/susskind_to_bin.v:158$398 ($eq) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$417 ($mux) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.\u21.$eq$/home/user/files/top_down/susskind_to_bin.v:205$403 ($eq) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$procmux$408 ($mux) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$eq$/home/user/files/top_down/susskind_to_bin.v:185$401 ($eq) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$eq$/home/user/files/top_down/susskind_to_bin.v:183$400 ($eq) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.\u21.$procmux$405 ($mux) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.\u12.$procmux$426 ($mux) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.\u12.$eq$/home/user/files/top_down/susskind_to_bin.v:131$395 ($eq) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.\u12.$eq$/home/user/files/top_down/susskind_to_bin.v:129$394 ($eq) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.\u12.\u15.$procmux$423 ($mux) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.$procmux$444 ($mux) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.$eq$/home/user/files/top_down/susskind_to_bin.v:77$389 ($eq) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.$eq$/home/user/files/top_down/susskind_to_bin.v:75$388 ($eq) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.\u6.\u9.$procmux$441 ($mux) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.$procmux$462 ($mux) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.$eq$/home/user/files/top_down/susskind_to_bin.v:23$383 ($eq) with simplemap.
+Using extmapper simplemap for cells of type $logic_not.
+Mapping susskind_to_bin.$flatten\u24.$eq$/home/user/files/top_down/susskind_to_bin.v:21$382 ($logic_not) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.\u3.$procmux$459 ($mux) with simplemap.
+Mapping susskind_to_bin.$flatten\u24.$procmux$468 ($mux) with simplemap.
+No more expansions possible.
+
+2.33. Executing OPT pass (performing simple optimizations).
+
+2.33.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$617' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$612 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$616' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$612 [2] = \A [2]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$615' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$612 [1] = $auto$rtlil.cc:3492:NotGate$864'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$614' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$612 [0] = $auto$rtlil.cc:3492:NotGate$866'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$816' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$811 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$815' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$811 [2] = $auto$rtlil.cc:3492:NotGate$868'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$814' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$811 [1] = \A [1]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$813' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$811 [0] = \A [0]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$655' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$650 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$654' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$650 [2] = $auto$rtlil.cc:3492:NotGate$870'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$653' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$650 [1] = $auto$rtlil.cc:3492:NotGate$872'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$652' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$650 [0] = $auto$rtlil.cc:3492:NotGate$874'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$778' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$773 [3] = $auto$rtlil.cc:3492:NotGate$876'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$777' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$773 [2] = \A [2]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$776' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$773 [1] = \A [1]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$775' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$773 [0] = \A [0]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$692' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$687 [3] = $auto$rtlil.cc:3492:NotGate$878'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$691' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$687 [2] = \A [2]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$690' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$687 [1] = $auto$rtlil.cc:3492:NotGate$880'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$689' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$687 [0] = $auto$rtlil.cc:3492:NotGate$882'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$705' in module `susskind_to_bin'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$677' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$672 [3] = $auto$rtlil.cc:3492:NotGate$884'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$676' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$672 [2] = \A [2]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$675' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$672 [1] = $auto$rtlil.cc:3492:NotGate$886'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$674' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$672 [0] = \A [0]'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$791' in module `susskind_to_bin'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$763' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$758 [3] = $auto$rtlil.cc:3492:NotGate$888'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$762' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$758 [2] = \A [2]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$761' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$758 [1] = \A [1]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$760' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$758 [0] = $auto$rtlil.cc:3492:NotGate$890'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$757' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$634' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$668' in module `susskind_to_bin'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$640' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$635 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$639' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$635 [2] = $auto$rtlil.cc:3492:NotGate$892'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$638' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$635 [1] = $auto$rtlil.cc:3492:NotGate$894'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$637' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$635 [0] = \A [0]'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$829' in module `susskind_to_bin'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$801' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$796 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$800' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$796 [2] = $auto$rtlil.cc:3492:NotGate$896'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$799' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$796 [1] = \A [1]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$798' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$796 [0] = $auto$rtlil.cc:3492:NotGate$898'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$795' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$596' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$630' in module `susskind_to_bin'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$602' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$597 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$601' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$597 [2] = \A [2]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$600' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$597 [1] = $auto$rtlil.cc:3492:NotGate$900'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$599' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$597 [0] = \A [0]'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$858' in module `susskind_to_bin'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$839' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$834 [3] = \A [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$838' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$834 [2] = \A [2]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$837' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$834 [1] = \A [1]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$836' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$834 [0] = $auto$rtlil.cc:3492:NotGate$902'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$833' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$862' in module `susskind_to_bin'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$743' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$738 [3] = $auto$rtlil.cc:3492:NotGate$904'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$742' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$738 [2] = $auto$rtlil.cc:3492:NotGate$906'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$741' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$738 [1] = \A [1]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$740' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$738 [0] = \A [0]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$728' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$723 [3] = $auto$rtlil.cc:3492:NotGate$908'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$727' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$723 [2] = $auto$rtlil.cc:3492:NotGate$910'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$726' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$723 [1] = \A [1]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$725' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$723 [0] = $auto$rtlil.cc:3492:NotGate$912'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$722' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$671' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$704' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$790' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$756' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$633' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$667' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$828' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$794' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$595' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$629' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$857' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$832' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$861' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$670' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$703' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$789' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$755' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$632' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$666' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$827' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$793' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$594' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$628' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$856' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$831' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$860' in module `susskind_to_bin'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$711' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$706 [3] = $auto$rtlil.cc:3492:NotGate$914'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$710' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$706 [2] = $auto$rtlil.cc:3492:NotGate$916'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$709' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$706 [1] = $auto$rtlil.cc:3492:NotGate$918'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:106:simplemap_bitop$708' (xor_buffer) in module `\susskind_to_bin' with constant driver `$auto$simplemap.cc:271:simplemap_eqne$706 [0] = \A [0]'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$753' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$721' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$669' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$702' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$788' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$754' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$631' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$665' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$826' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$792' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$593' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$627' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$855' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$830' in module `susskind_to_bin'.
+Optimizing away select inverter for $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$859' in module `susskind_to_bin'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$722' (01?) in module `\susskind_to_bin' with constant driver `$flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$2\Y[3:0] [1] = $auto$simplemap.cc:277:simplemap_eqne$729'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$753' (01?) in module `\susskind_to_bin' with constant driver `\u24.u3.u6.u9.u12.u15.u18.if_out21 [0] = $auto$simplemap.cc:277:simplemap_eqne$712'.
+
+2.33.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\susskind_to_bin'.
+Computing hashes of 164 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:198:logic_reduce$850' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$782'.
+    Redirecting output \Y: $auto$simplemap.cc:189:logic_reduce$849 [0] = $auto$simplemap.cc:148:simplemap_reduce$781 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:198:logic_reduce$850' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$820' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$782'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$819 [0] = $auto$simplemap.cc:148:simplemap_reduce$781 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$820' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$889' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$897'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$890 = $auto$rtlil.cc:3492:NotGate$898
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$889' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$887' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$875'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$888 = $auto$rtlil.cc:3492:NotGate$876
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$887' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$747' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$782'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$746 [0] = $auto$simplemap.cc:148:simplemap_reduce$781 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$747' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$905' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$895'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$906 = $auto$rtlil.cc:3492:NotGate$896
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$905' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$867' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$895'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$868 = $auto$rtlil.cc:3492:NotGate$896
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$867' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$903' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$875'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$904 = $auto$rtlil.cc:3492:NotGate$876
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$903' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$909' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$895'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$910 = $auto$rtlil.cc:3492:NotGate$896
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$909' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$911' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$897'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$912 = $auto$rtlil.cc:3492:NotGate$898
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$911' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$907' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$875'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$908 = $auto$rtlil.cc:3492:NotGate$876
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$907' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$915' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$895'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$916 = $auto$rtlil.cc:3492:NotGate$896
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$915' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$913' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$875'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$914 = $auto$rtlil.cc:3492:NotGate$876
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$913' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$844' is identical to cell `$auto$simplemap.cc:198:logic_reduce$851'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$842 [1] = $auto$simplemap.cc:189:logic_reduce$849 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$844' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$879' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$917'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$880 = $auto$rtlil.cc:3492:NotGate$918
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$879' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$881' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$897'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$882 = $auto$rtlil.cc:3492:NotGate$898
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$881' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$877' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$875'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$878 = $auto$rtlil.cc:3492:NotGate$876
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$877' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$885' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$917'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$886 = $auto$rtlil.cc:3492:NotGate$918
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$885' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$883' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$875'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$884 = $auto$rtlil.cc:3492:NotGate$876
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$883' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$869' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$895'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$870 = $auto$rtlil.cc:3492:NotGate$896
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$869' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$871' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$917'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$872 = $auto$rtlil.cc:3492:NotGate$918
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$871' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$873' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$897'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$874 = $auto$rtlil.cc:3492:NotGate$898
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$873' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$891' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$895'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$892 = $auto$rtlil.cc:3492:NotGate$896
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$891' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$893' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$917'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$894 = $auto$rtlil.cc:3492:NotGate$918
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$893' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$901' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$897'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$902 = $auto$rtlil.cc:3492:NotGate$898
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$901' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$622' is identical to cell `$auto$simplemap.cc:198:logic_reduce$851'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$620 [1] = $auto$simplemap.cc:189:logic_reduce$849 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$622' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$863' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$917'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$864 = $auto$rtlil.cc:3492:NotGate$918
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$863' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$865' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$897'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$866 = $auto$rtlil.cc:3492:NotGate$898
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$865' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$607' is identical to cell `$auto$simplemap.cc:198:logic_reduce$851'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$605 [1] = $auto$simplemap.cc:189:logic_reduce$849 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$607' from module `\susskind_to_bin'.
+  Cell `$auto$opt_expr.cc:607:replace_const_cells$899' is identical to cell `$auto$opt_expr.cc:607:replace_const_cells$917'.
+    Redirecting output \Y: $auto$rtlil.cc:3492:NotGate$900 = $auto$rtlil.cc:3492:NotGate$918
+    Removing $_NOT_ cell `$auto$opt_expr.cc:607:replace_const_cells$899' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:227:simplemap_lognot$701' is identical to cell `$auto$simplemap.cc:298:simplemap_mux$705'.
+    Redirecting output \Y: $flatten\u24.\u3.\u6.\u9.\u12.\u15.$eq$/home/user/files/top_down/susskind_to_bin.v:158$398_Y = $flatten\u24.\u3.\u6.\u9.\u12.\u15.$2\Y[3:0] [3]
+    Removing $_NOT_ cell `$auto$simplemap.cc:227:simplemap_lognot$701' from module `\susskind_to_bin'.
+Computing hashes of 133 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$716' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$733'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$714 [1] = $auto$simplemap.cc:148:simplemap_reduce$731 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$716' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$697' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$783'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$695 [1] = $auto$simplemap.cc:148:simplemap_reduce$781 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$697' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$682' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$783'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$680 [1] = $auto$simplemap.cc:148:simplemap_reduce$781 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$682' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$681' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$715'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$680 [0] = $auto$simplemap.cc:148:simplemap_reduce$714 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$681' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$843' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$732'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$842 [0] = $auto$simplemap.cc:148:simplemap_reduce$731 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$843' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$805' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$732'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$804 [0] = $auto$simplemap.cc:148:simplemap_reduce$731 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$805' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$659' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$696'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$658 [0] = $auto$simplemap.cc:148:simplemap_reduce$695 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$659' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$768' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$783'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$766 [1] = $auto$simplemap.cc:148:simplemap_reduce$781 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$768' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$767' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$732'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$766 [0] = $auto$simplemap.cc:148:simplemap_reduce$731 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$767' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$645' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$660'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$643 [1] = $auto$simplemap.cc:148:simplemap_reduce$658 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$645' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$644' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$715'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$643 [0] = $auto$simplemap.cc:148:simplemap_reduce$714 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$644' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$821' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$660'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$819 [1] = $auto$simplemap.cc:148:simplemap_reduce$658 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$821' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$621' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$696'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$620 [0] = $auto$simplemap.cc:148:simplemap_reduce$695 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$621' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$606' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$715'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$605 [0] = $auto$simplemap.cc:148:simplemap_reduce$714 [0]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$606' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$748' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$733'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$746 [1] = $auto$simplemap.cc:148:simplemap_reduce$731 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$748' from module `\susskind_to_bin'.
+  Cell `$auto$simplemap.cc:157:simplemap_reduce$806' is identical to cell `$auto$simplemap.cc:157:simplemap_reduce$660'.
+    Redirecting output \Y: $auto$simplemap.cc:148:simplemap_reduce$804 [1] = $auto$simplemap.cc:148:simplemap_reduce$658 [1]
+    Removing $_OR_ cell `$auto$simplemap.cc:157:simplemap_reduce$806' from module `\susskind_to_bin'.
+Computing hashes of 117 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+Removed a total of 47 cells.
+
+2.33.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.33.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+  removing unused `$_NOT_' cell `$auto$simplemap.cc:227:simplemap_lognot$854'.
+  removing unused `$_NOT_' cell `$auto$simplemap.cc:227:simplemap_lognot$848'.
+  removing unused `$_NOT_' cell `$auto$simplemap.cc:227:simplemap_lognot$825'.
+  removing unused `$_NOT_' cell `$auto$simplemap.cc:227:simplemap_lognot$810'.
+  removing unused `$_NOT_' cell `$auto$simplemap.cc:227:simplemap_lognot$787'.
+  removing unused `$_NOT_' cell `$auto$simplemap.cc:227:simplemap_lognot$772'.
+  removing unused `$_NOT_' cell `$auto$simplemap.cc:227:simplemap_lognot$752'.
+  removing unused `$_NOT_' cell `$auto$simplemap.cc:227:simplemap_lognot$737'.
+  removing unused `$_NOT_' cell `$auto$simplemap.cc:227:simplemap_lognot$720'.
+  removing unused `$_NOT_' cell `$auto$simplemap.cc:227:simplemap_lognot$686'.
+  removing unused `$_NOT_' cell `$auto$simplemap.cc:227:simplemap_lognot$664'.
+  removing unused `$_NOT_' cell `$auto$simplemap.cc:227:simplemap_lognot$649'.
+  removing unused `$_NOT_' cell `$auto$simplemap.cc:227:simplemap_lognot$626'.
+  removing unused `$_NOT_' cell `$auto$simplemap.cc:227:simplemap_lognot$611'.
+  removing unused non-port wire $flatten\u24.\u3.$eq$/home/user/files/top_down/susskind_to_bin.v:48$385_Y.
+  removing unused non-port wire $flatten\u24.\u3.$eq$/home/user/files/top_down/susskind_to_bin.v:50$386_Y.
+  removing unused non-port wire $flatten\u24.$eq$/home/user/files/top_down/susskind_to_bin.v:21$382_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.$eq$/home/user/files/top_down/susskind_to_bin.v:102$391_Y.
+  removing unused non-port wire $flatten\u24.$eq$/home/user/files/top_down/susskind_to_bin.v:23$383_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.$eq$/home/user/files/top_down/susskind_to_bin.v:104$392_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.$eq$/home/user/files/top_down/susskind_to_bin.v:156$397_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.$eq$/home/user/files/top_down/susskind_to_bin.v:158$398_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.\u21.$eq$/home/user/files/top_down/susskind_to_bin.v:205$403_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.$eq$/home/user/files/top_down/susskind_to_bin.v:75$388_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.$eq$/home/user/files/top_down/susskind_to_bin.v:131$395_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.$eq$/home/user/files/top_down/susskind_to_bin.v:77$389_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$eq$/home/user/files/top_down/susskind_to_bin.v:185$401_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.$eq$/home/user/files/top_down/susskind_to_bin.v:129$394_Y.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$eq$/home/user/files/top_down/susskind_to_bin.v:183$400_Y.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$597.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$608.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$612.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$623.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$635.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$646.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$650.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$658.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$661.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$672.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$683.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$687.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$695.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$698.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$706.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$712.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$717.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$723.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$734.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$738.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$749.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$758.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$766.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$769.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$773.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$781.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$784.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$796.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$804.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$807.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$811.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$819.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$822.
+  removing unused non-port wire $auto$simplemap.cc:271:simplemap_eqne$834.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$842.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$845.
+  removing unused non-port wire $auto$simplemap.cc:189:logic_reduce$849.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$870.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$872.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$874.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$878.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$880.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$882.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$884.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$886.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$888.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$890.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$892.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$894.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$896.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$898.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$900.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$902.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$904.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$906.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$908.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$910.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$912.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$914.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$916.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$918.
+Removed 14 unused cells and 76 unused wires.
+
+2.33.5. Finished fast OPT passes.
+
+2.34. Executing ICE40_OPT pass (performing simple optimizations).
+
+2.34.1. Running ICE40 specific optimizations.
+
+2.34.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.34.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\susskind_to_bin'.
+Computing hashes of 103 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+Removed a total of 0 cells.
+
+2.34.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.34.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+
+2.34.6. Finished OPT passes. (There is nothing left to do.)
+
+2.35. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+2.36. Executing TECHMAP pass (map to technology primitives).
+
+2.36.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/ff_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+2.36.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $_DFF_N_: $_DFF_N_
+    $_DFF_P_: $_DFF_P_
+    $_DFFE_NP_: $_DFFE_NP_
+    $_DFFE_PP_: $_DFFE_PP_
+    $_DFF_NP0_: $_DFF_NP0_
+    $_DFF_NP1_: $_DFF_NP1_
+    $_DFF_PP0_: $_DFF_PP0_
+    $_DFF_PP1_: $_DFF_PP1_
+    $_DFFE_NP0P_: $_DFFE_NP0P_
+    $_DFFE_NP1P_: $_DFFE_NP1P_
+    $_DFFE_PP0P_: $_DFFE_PP0P_
+    $_DFFE_PP1P_: $_DFFE_PP1P_
+    $_SDFF_NP0_: $_SDFF_NP0_
+    $_SDFF_NP1_: $_SDFF_NP1_
+    $_SDFF_PP0_: $_SDFF_PP0_
+    $_SDFF_PP1_: $_SDFF_PP1_
+    $_SDFFCE_NP0P_: $_SDFFCE_NP0P_
+    $_SDFFCE_NP1P_: $_SDFFCE_NP1P_
+    $_SDFFCE_PP0P_: $_SDFFCE_PP0P_
+    $_SDFFCE_PP1P_: $_SDFFCE_PP1P_
+
+No more expansions possible.
+
+2.37. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.38. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+2.39. Executing ICE40_OPT pass (performing simple optimizations).
+
+2.39.1. Running ICE40 specific optimizations.
+
+2.39.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$791' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$634' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$668' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$829' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$795' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$596' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$630' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$858' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$833' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$862' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$704' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$790' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$756' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$633' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$667' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$828' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$794' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$629' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$857' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$832' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$861' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$670' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$703' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$789' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$755' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$632' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$793' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$594' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$628' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$856' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$831' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$860' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$721' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$702' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$788' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$631' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$665' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$792' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$593' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$855' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$830' in module `susskind_to_bin' with and-gate.
+Replacing $_MUX_ cell `$auto$simplemap.cc:298:simplemap_mux$859' in module `susskind_to_bin' with and-gate.
+
+2.39.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\susskind_to_bin'.
+Computing hashes of 103 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+Removed a total of 0 cells.
+
+2.39.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.39.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+
+2.39.6. Rerunning OPT passes. (Removed registers in this run.)
+
+2.39.7. Running ICE40 specific optimizations.
+
+2.39.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module susskind_to_bin.
+
+2.39.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\susskind_to_bin'.
+Computing hashes of 103 cells of `\susskind_to_bin'.
+Finding duplicate cells in `\susskind_to_bin'.
+Removed a total of 0 cells.
+
+2.39.10. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.39.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \susskind_to_bin..
+
+2.39.12. Finished OPT passes. (There is nothing left to do.)
+
+2.40. Executing TECHMAP pass (map to technology primitives).
+
+2.40.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/latches_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/latches_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Successfully finished Verilog frontend.
+
+2.40.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $_DLATCH_N_: $_DLATCH_N_
+    $_DLATCH_P_: $_DLATCH_P_
+
+No more expansions possible.
+
+2.41. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/abc9_model.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_CARRY_WRAPPER'.
+Successfully finished Verilog frontend.
+
+2.42. Executing ABC9 pass.
+
+2.42.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module susskind_to_bin.
+Found 0 SCCs.
+
+2.42.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.5. Executing TECHMAP pass (map to technology primitives).
+
+2.42.5.1. Executing Verilog-2005 frontend: /home/user/yosys/share/techmap.v
+Parsing Verilog input from `/home/user/yosys/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+2.42.5.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    susskind_to_bin: susskind_to_bin
+    SB_WARMBOOT: SB_WARMBOOT
+    SB_SPRAM256KA: SB_SPRAM256KA
+    SB_SPI: SB_SPI
+    SB_RGB_DRV: SB_RGB_DRV
+    SB_RGBA_DRV: SB_RGBA_DRV
+    SB_RAM40_4KNW: SB_RAM40_4KNW
+    SB_RAM40_4KNRNW: SB_RAM40_4KNRNW
+    SB_RAM40_4KNR: SB_RAM40_4KNR
+    SB_RAM40_4K: SB_RAM40_4K
+    SB_PLL40_PAD: SB_PLL40_PAD
+    SB_PLL40_CORE: SB_PLL40_CORE
+    SB_PLL40_2_PAD: SB_PLL40_2_PAD
+    SB_PLL40_2F_PAD: SB_PLL40_2F_PAD
+    SB_PLL40_2F_CORE: SB_PLL40_2F_CORE
+    SB_MAC16: SB_MAC16
+    SB_LUT4: SB_LUT4
+    SB_LFOSC: SB_LFOSC
+    SB_LED_DRV_CUR: SB_LED_DRV_CUR
+    SB_LEDDA_IP: SB_LEDDA_IP
+    SB_IO_OD: SB_IO_OD
+    SB_IO_I3C: SB_IO_I3C
+    SB_IO: SB_IO
+    SB_I2C: SB_I2C
+    SB_HFOSC: SB_HFOSC
+    SB_GB_IO: SB_GB_IO
+    SB_GB: SB_GB
+    SB_FILTER_50NS: SB_FILTER_50NS
+    SB_DFFSS: SB_DFFSS
+    SB_DFFSR: SB_DFFSR
+    SB_DFFS: SB_DFFS
+    SB_DFFR: SB_DFFR
+    SB_DFFNSS: SB_DFFNSS
+    SB_DFFNSR: SB_DFFNSR
+    SB_DFFNS: SB_DFFNS
+    SB_DFFNR: SB_DFFNR
+    SB_DFFNESS: SB_DFFNESS
+    SB_DFFNESR: SB_DFFNESR
+    SB_DFFNES: SB_DFFNES
+    SB_DFFNER: SB_DFFNER
+    SB_DFFNE: SB_DFFNE
+    SB_DFFN: SB_DFFN
+    SB_DFFESS: SB_DFFESS
+    SB_DFFESR: SB_DFFESR
+    SB_DFFES: SB_DFFES
+    SB_DFFER: SB_DFFER
+    SB_DFFE: SB_DFFE
+    SB_DFF: SB_DFF
+    SB_CARRY: SB_CARRY
+    ICESTORM_RAM: ICESTORM_RAM
+    ICESTORM_LC: ICESTORM_LC
+    $__ICE40_CARRY_WRAPPER: $__ICE40_CARRY_WRAPPER
+    $xnor: _90_simplemap_bool_ops
+    $xor: _90_simplemap_bool_ops
+    $or: _90_simplemap_bool_ops
+    $and: _90_simplemap_bool_ops
+    $not: _90_simplemap_bool_ops
+    $reduce_bool: _90_simplemap_reduce_ops
+    $reduce_xnor: _90_simplemap_reduce_ops
+    $reduce_xor: _90_simplemap_reduce_ops
+    $reduce_or: _90_simplemap_reduce_ops
+    $reduce_and: _90_simplemap_reduce_ops
+    $logic_or: _90_simplemap_logic_ops
+    $logic_and: _90_simplemap_logic_ops
+    $logic_not: _90_simplemap_logic_ops
+    $nex: _90_simplemap_compare_ops
+    $ne: _90_simplemap_compare_ops
+    $eqx: _90_simplemap_compare_ops
+    $eq: _90_simplemap_compare_ops
+    $bweqx: _90_simplemap_various
+    $bwmux: _90_simplemap_various
+    $bmux: _90_simplemap_various
+    $tribuf: _90_simplemap_various
+    $mux: _90_simplemap_various
+    $concat: _90_simplemap_various
+    $slice: _90_simplemap_various
+    $pos: _90_simplemap_various
+    $buf: _90_simplemap_various
+    $dlatchsr: _90_simplemap_registers
+    $adlatch: _90_simplemap_registers
+    $dlatch: _90_simplemap_registers
+    $dffsre: _90_simplemap_registers
+    $dffsr: _90_simplemap_registers
+    $sdffce: _90_simplemap_registers
+    $sdffe: _90_simplemap_registers
+    $sdff: _90_simplemap_registers
+    $aldffe: _90_simplemap_registers
+    $aldff: _90_simplemap_registers
+    $adffe: _90_simplemap_registers
+    $adff: _90_simplemap_registers
+    $dffe: _90_simplemap_registers
+    $dff: _90_simplemap_registers
+    $ff: _90_simplemap_registers
+    $sr: _90_simplemap_registers
+    $sshr: _90_shift_ops_shr_shl_sshl_sshr
+    $sshl: _90_shift_ops_shr_shl_sshl_sshr
+    $shl: _90_shift_ops_shr_shl_sshl_sshr
+    $shr: _90_shift_ops_shr_shl_sshl_sshr
+    $shiftx: _90_shift_shiftx
+    $shift: _90_shift_shiftx
+    $fa: _90_fa
+    $lcu: _90_lcu_brent_kung
+    $alu: _90_alu
+    $macc_v2: _90_macc
+    $macc: _90_macc
+    $mul: _90_alumacc
+    $neg: _90_alumacc
+    $sub: _90_alumacc
+    $add: _90_alumacc
+    $gt: _90_alumacc
+    $ge: _90_alumacc
+    $le: _90_alumacc
+    $lt: _90_alumacc
+    $__div_mod_u: $__div_mod_u
+    $__div_mod_trunc: $__div_mod_trunc
+    $div: _90_div
+    $mod: _90_mod
+    $__div_mod_floor: $__div_mod_floor
+    $divfloor: _90_divfloor
+    $modfloor: _90_modfloor
+    $pow: _90_pow
+    $pmux: _90_pmux
+    $demux: _90_demux
+    $sop: _90_lut
+    $lut: _90_lut
+    $connect: $connect
+    $input_port: $input_port
+
+No more expansions possible.
+
+2.42.6. Executing OPT pass (performing simple optimizations).
+
+2.42.6.1. Executing OPT_EXPR pass (perform const folding).
+
+2.42.6.2. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+2.42.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+2.42.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+2.42.6.5. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+2.42.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.42.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+2.42.6.8. Executing OPT_EXPR pass (perform const folding).
+
+2.42.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.42.7. Executing TECHMAP pass (map to technology primitives).
+
+2.42.7.1. Executing Verilog-2005 frontend: /home/user/yosys/share/abc9_map.v
+Parsing Verilog input from `/home/user/yosys/share/abc9_map.v' to AST representation.
+Successfully finished Verilog frontend.
+
+2.42.7.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+
+No more expansions possible.
+
+2.42.8. Executing Verilog-2005 frontend: /home/user/yosys/share/abc9_model.v
+Parsing Verilog input from `/home/user/yosys/share/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+2.42.9. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.10. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.11. Executing ABC9_OPS pass (helper functions for ABC9).
+$__DFF_P__$abc9_flop.D abc9_required = 0
+$__DFF_N__$abc9_flop.D abc9_required = 0
+
+2.42.12. Executing AIGMAP pass (map logic to AIG).
+Module susskind_to_bin: replaced 32 cells with 155 new cells, skipped 71 cells.
+  replaced 2 cell types:
+       9 $_MUX_
+      23 $_OR_
+  not replaced 3 cell types:
+      42 $_AND_
+       5 $_NOT_
+      24 $scopeinfo
+
+2.42.12.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.12.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.42.12.3. Executing XAIGER backend.
+ciNum = 4
+coNum = 4
+piNum = 4
+poNum = 4
+boxNum = 0
+Extracted 92 AND gates and 212 wires from module `susskind_to_bin' to a netlist network with 4 inputs and 4 outputs.
+
+2.42.12.4. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+2.42.12.5. Executing ABC9.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_lut <abc-temp-dir>/input.lut 
+ABC: + read_box <abc-temp-dir>/input.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =      4/      4  and =      82  lev =   20 (17.00)  mem = 0.00 MB  box = 0  bb = 0
+ABC: + &scorr 
+ABC: Warning: The network is combinational.
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &dch -f -r 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =      4/      4  and =      26  lev =    4 (2.50)  mem = 0.00 MB  ch =    5  box = 0  bb = 0
+ABC: cst =       0  cls =      5  lit =       5  unused =      20  proof =     0
+ABC: + &if -W 250 -v 
+ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
+ABC: Node =      26.  Ch =     5.  Total mem =    0.01 MB. Peak cut mem =    0.01 MB.
+ABC: P:  Del =  699.00.  Ar =       4.0.  Edge =       13.  Cut =      116.  T =     0.00 sec
+ABC: P:  Del =  699.00.  Ar =       4.0.  Edge =       13.  Cut =      116.  T =     0.00 sec
+ABC: P:  Del =  699.00.  Ar =       4.0.  Edge =       13.  Cut =      116.  T =     0.00 sec
+ABC: F:  Del =  699.00.  Ar =       4.0.  Edge =       13.  Cut =      117.  T =     0.00 sec
+ABC: A:  Del =  699.00.  Ar =       4.0.  Edge =       13.  Cut =      117.  T =     0.00 sec
+ABC: A:  Del =  699.00.  Ar =       4.0.  Edge =       13.  Cut =      117.  T =     0.00 sec
+ABC: Total time =     0.00 sec
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &mfs 
+ABC: Timing manager is given but there is no GIA of boxes.
+ABC: Error: Abc_FrameUpdateGia(): Transformation has failed.
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =      4/      4  and =      18  lev =    4 (2.50)  mem = 0.00 MB  box = 0  bb = 0
+ABC: Mapping (K=4)  :  lut =      4  edge =      13  lev =    1 (1.00)  mem = 0.00 MB
+ABC: LUT = 4 : 2=1 25.0 %  3=1 25.0 %  4=2 50.0 %  Ave = 3.25
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &verify 
+ABC: Networks are equivalent.  Time =     0.02 sec
+ABC: + time 
+ABC: elapse: 0.06 seconds, total: 0.06 seconds
+
+2.42.12.6. Executing AIGER frontend.
+M=22 I=4 L=0 O=4 A=18
+ciNum = 4
+coNum = 4
+piNum = 4
+poNum = 4
+boxNum = 0
+m: dataSize=92 lutNum=4 lutSize=4
+n: '/tmp/yosys-abc-ARhwQk/inputRenaming input $i1 -> A
+Renaming input $i2 -> A[1]
+Renaming input $i3 -> A[2]
+Renaming input $i4 -> A[3]
+Renaming output $o0 -> Y
+Renaming output $o1 -> Y[1]
+Renaming output $o2 -> Y[2]
+Renaming output $o3 -> Y[3]
+Finding unused cells or wires in module \susskind_to_bin$abc9..
+  removing unused `$_AND_' cell `$and$aiger1320$21'.
+  removing unused `$_NOT_' cell `$not$aiger1320$17'.
+  removing unused `$_NOT_' cell `$not$aiger1320$19'.
+  removing unused `$_AND_' cell `$and$aiger1320$19'.
+  removing unused `$_AND_' cell `$and$aiger1320$18'.
+  removing unused `$_AND_' cell `$and$aiger1320$17'.
+  removing unused `$_AND_' cell `$and$aiger1320$16'.
+  removing unused `$_NOT_' cell `$not$aiger1320$7'.
+  removing unused `$_NOT_' cell `$not$aiger1320$13'.
+  removing unused `$_AND_' cell `$and$aiger1320$13'.
+  removing unused `$_NOT_' cell `$not$aiger1320$12'.
+  removing unused `$_AND_' cell `$and$aiger1320$12'.
+  removing unused `$_NOT_' cell `$not$aiger1320$10'.
+  removing unused `$_NOT_' cell `$not$aiger1320$11'.
+  removing unused `$_AND_' cell `$and$aiger1320$11'.
+  removing unused `$_NOT_' cell `$not$aiger1320$1'.
+  removing unused `$_AND_' cell `$and$aiger1320$10'.
+  removing unused `$_NOT_' cell `$not$aiger1320$3'.
+  removing unused `$_AND_' cell `$and$aiger1320$9'.
+  removing unused `$_NOT_' cell `$not$aiger1320$5'.
+  removing unused `$_NOT_' cell `$not$aiger1320$8'.
+  removing unused `$_AND_' cell `$and$aiger1320$8'.
+  removing unused `$_NOT_' cell `$not$aiger1320$2'.
+  removing unused `$_NOT_' cell `$not$aiger1320$4'.
+  removing unused `$_AND_' cell `$and$aiger1320$7'.
+  removing unused `$_AND_' cell `$and$aiger1320$6'.
+  removing unused `$_AND_' cell `$and$aiger1320$5'.
+  removing unused non-port wire $aiger1320$21.
+  removing unused non-port wire $aiger1320$1.
+  removing unused non-port wire $aiger1320$2.
+  removing unused non-port wire $aiger1320$3.
+  removing unused non-port wire $aiger1320$4.
+  removing unused non-port wire $aiger1320$14b.
+  removing unused non-port wire $aiger1320$15.
+  removing unused non-port wire $aiger1320$20b.
+  removing unused non-port wire $aiger1320$22.
+  removing unused non-port wire $aiger1320$5.
+  removing unused non-port wire $aiger1320$6.
+  removing unused non-port wire $aiger1320$7.
+  removing unused non-port wire $aiger1320$8.
+  removing unused non-port wire $aiger1320$4b.
+  removing unused non-port wire $aiger1320$2b.
+  removing unused non-port wire $aiger1320$9.
+  removing unused non-port wire $aiger1320$8b.
+  removing unused non-port wire $aiger1320$5b.
+  removing unused non-port wire $aiger1320$10.
+  removing unused non-port wire $aiger1320$3b.
+  removing unused non-port wire $aiger1320$11.
+  removing unused non-port wire $aiger1320$1b.
+  removing unused non-port wire $aiger1320$12.
+  removing unused non-port wire $aiger1320$11b.
+  removing unused non-port wire $aiger1320$10b.
+  removing unused non-port wire $aiger1320$13.
+  removing unused non-port wire $aiger1320$12b.
+  removing unused non-port wire $aiger1320$13b.
+  removing unused non-port wire $aiger1320$7b.
+  removing unused non-port wire $aiger1320$16.
+  removing unused non-port wire $aiger1320$17.
+  removing unused non-port wire $aiger1320$18.
+  removing unused non-port wire $aiger1320$19.
+  removing unused non-port wire $aiger1320$19b.
+  removing unused non-port wire $aiger1320$17b.
+Removed 27 unused cells and 35 unused wires.
+
+2.42.12.7. Executing ABC9_OPS pass (helper functions for ABC9).
+ABC RESULTS:              $lut cells:        4
+ABC RESULTS:           input signals:        1
+ABC RESULTS:          output signals:        1
+Removing temp directory.
+
+2.42.13. Executing TECHMAP pass (map to technology primitives).
+
+2.42.13.1. Executing Verilog-2005 frontend: /home/user/yosys/share/abc9_unmap.v
+Parsing Verilog input from `/home/user/yosys/share/abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `$__DFF_x__$abc9_flop'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Successfully finished Verilog frontend.
+
+2.42.13.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $__DFF_P__$abc9_flop: $__DFF_x__$abc9_flop
+    $__DFF_N__$abc9_flop: $__DFF_x__$abc9_flop
+    $__ABC9_SCC_BREAKER: $__ABC9_SCC_BREAKER
+
+No more expansions possible.
+
+2.43. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+2.44. Executing TECHMAP pass (map to technology primitives).
+
+2.44.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/ff_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+2.44.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $_DFF_N_: $_DFF_N_
+    $_DFF_P_: $_DFF_P_
+    $_DFFE_NP_: $_DFFE_NP_
+    $_DFFE_PP_: $_DFFE_PP_
+    $_DFF_NP0_: $_DFF_NP0_
+    $_DFF_NP1_: $_DFF_NP1_
+    $_DFF_PP0_: $_DFF_PP0_
+    $_DFF_PP1_: $_DFF_PP1_
+    $_DFFE_NP0P_: $_DFFE_NP0P_
+    $_DFFE_NP1P_: $_DFFE_NP1P_
+    $_DFFE_PP0P_: $_DFFE_PP0P_
+    $_DFFE_PP1P_: $_DFFE_PP1P_
+    $_SDFF_NP0_: $_SDFF_NP0_
+    $_SDFF_NP1_: $_SDFF_NP1_
+    $_SDFF_PP0_: $_SDFF_PP0_
+    $_SDFF_PP1_: $_SDFF_PP1_
+    $_SDFFCE_NP0P_: $_SDFFCE_NP0P_
+    $_SDFFCE_NP1P_: $_SDFFCE_NP1P_
+    $_SDFFCE_PP0P_: $_SDFFCE_PP0P_
+    $_SDFFCE_PP1P_: $_SDFFCE_PP1P_
+
+No more expansions possible.
+Finding unused cells or wires in module \susskind_to_bin..
+  removing unused `$lut' cell `$abc$1321$lut$aiger1320$14'.
+  removing unused `$lut' cell `$abc$1321$lut$aiger1320$20'.
+  removing unused non-port wire \u24.u3.u6.u9.u12.if_out15.
+  removing unused non-port wire \u24.u3.u6.u9.if_out12.
+  removing unused non-port wire \u24.u3.u6.if_out9.
+  removing unused non-port wire \u24.u3.if_out6.
+  removing unused non-port wire \u24.if_out3.
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.\u18.$2\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.\u15.$2\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.\u12.$2\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.\u6.\u9.$2\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.\u6.$2\Y[3:0].
+  removing unused non-port wire $flatten\u24.\u3.$2\Y[3:0].
+  removing unused non-port wire $flatten\u24.$2\Y[3:0].
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$840.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$817.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$802.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$779.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$764.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$744.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$729.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$693.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$678.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$656.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$641.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$618.
+  removing unused non-port wire $auto$simplemap.cc:277:simplemap_eqne$603.
+  removing unused non-port wire $auto$simplemap.cc:189:logic_reduce$852.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$746.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$731.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$714.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$680.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$643.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$620.
+  removing unused non-port wire $auto$simplemap.cc:148:simplemap_reduce$605.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$876.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$868.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$866.
+  removing unused non-port wire $auto$rtlil.cc:3492:NotGate$864.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1010.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1012.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1014.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1016.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1018.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1020.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1022.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1024.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1026.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1028.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1030.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1032.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1034.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1036.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1038.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1040.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1042.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1044.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1046.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1048.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1050.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1052.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1054.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1056.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1058.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1060.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1062.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1064.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1066.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1068.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1070.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1072.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1074.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1076.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1078.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1080.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1082.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1084.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1086.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1088.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1090.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1092.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1094.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1096.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1098.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1100.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1102.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1104.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1106.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1108.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1110.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1112.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1114.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1116.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1118.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1120.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1122.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1124.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1126.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1128.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1130.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1132.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1134.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1136.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1138.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1140.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1142.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1144.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1146.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1148.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1150.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1152.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1154.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1156.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1158.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1160.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1162.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1164.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1166.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1168.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1170.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1172.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1174.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1176.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1178.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1180.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1182.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1184.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1186.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1188.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1190.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1192.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1194.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1196.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1198.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1200.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1202.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1204.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1206.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1208.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1210.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1212.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1214.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1216.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1218.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1220.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1222.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1224.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1226.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1228.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1230.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1232.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1234.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1236.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1238.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1240.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1242.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1244.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1246.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1248.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1250.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1252.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1254.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1256.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1258.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1260.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1262.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1264.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1266.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1268.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1270.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1272.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1274.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1276.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1278.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1280.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1282.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1284.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1286.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1288.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1290.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1292.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1294.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1296.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1298.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1300.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1302.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1304.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1306.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1308.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1310.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1312.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1314.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$1316.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$1318.
+  removing unused non-port wire $abc$1321$Y[3].
+  removing unused non-port wire $abc$1321$aiger1320$14.
+  removing unused non-port wire $abc$1321$Y[2].
+  removing unused non-port wire $abc$1321$A[3].
+  removing unused non-port wire $abc$1321$Y[1].
+  removing unused non-port wire $abc$1321$A[2].
+  removing unused non-port wire $abc$1321$aiger1320$20.
+  removing unused non-port wire $abc$1321$A[1].
+  removing unused non-port wire $abc$1321$Y[0].
+  removing unused non-port wire $abc$1321$Y.
+  removing unused non-port wire $abc$1321$A[0].
+  removing unused non-port wire $abc$1321$A.
+  removing unused non-port wire \u24.u3.u6.u9.u12.u15.Y.
+  removing unused non-port wire \u24.u3.u6.u9.u12.Y.
+  removing unused non-port wire \u24.u3.u6.u9.Y.
+  removing unused non-port wire \u24.u3.u6.Y.
+  removing unused non-port wire \u24.u3.Y.
+Removed 2 unused cells and 209 unused wires.
+
+2.45. Executing OPT_LUT pass (optimize LUTs).
+Discovering LUTs.
+Found $lut\WIDTH=4 cell susskind_to_bin.$auto$abc9_ops.cc:1613:reintegrate$1323.
+  Cell implements a 4-LUT.
+Found $lut\WIDTH=2 cell susskind_to_bin.$abc$1321$lut\Y[1].
+  Cell implements a 2-LUT.
+Found $lut\WIDTH=3 cell susskind_to_bin.$abc$1321$lut\Y[3].
+  Cell implements a 3-LUT.
+Found $lut\WIDTH=4 cell susskind_to_bin.$auto$abc9_ops.cc:1613:reintegrate$1322.
+  Cell implements a 4-LUT.
+Number of LUTs:        4
+  2-LUT                1
+  3-LUT                1
+  4-LUT                2
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Eliminating LUTs.
+Number of LUTs:        4
+  2-LUT                1
+  3-LUT                1
+  4-LUT                2
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Combining LUTs.
+Number of LUTs:        4
+  2-LUT                1
+  3-LUT                1
+  4-LUT                2
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Eliminated 0 LUTs.
+Combined 0 LUTs.
+
+2.46. Executing TECHMAP pass (map to technology primitives).
+
+2.46.1. Executing Verilog-2005 frontend: /home/user/yosys/share/ice40/cells_map.v
+Parsing Verilog input from `/home/user/yosys/share/ice40/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+2.46.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $lut: $lut
+
+Parameter \WIDTH = 4
+Parameter \LUT = 16'1001001001001000
+
+2.46.3. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'1001001001001000
+Generating RTLIL representation for module `$paramod$7699b37fbaf94f181d2ea091828b4a7bc27c432a$lut'.
+
+2.46.4. Continuing TECHMAP pass.
+Using template $paramod$7699b37fbaf94f181d2ea091828b4a7bc27c432a$lut for cells of type $lut.
+Mapping susskind_to_bin.$auto$abc9_ops.cc:1613:reintegrate$1323 ($lut) using $paramod$7699b37fbaf94f181d2ea091828b4a7bc27c432a$lut.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'1000000010001100
+
+2.46.5. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'1000000010001100
+Generating RTLIL representation for module `$paramod$ba07846b1e706d3eb2010a528b0f0417e3645924$lut'.
+
+2.46.6. Continuing TECHMAP pass.
+Using template $paramod$ba07846b1e706d3eb2010a528b0f0417e3645924$lut for cells of type $lut.
+Mapping susskind_to_bin.$auto$abc9_ops.cc:1613:reintegrate$1322 ($lut) using $paramod$ba07846b1e706d3eb2010a528b0f0417e3645924$lut.
+Parameter \WIDTH = 2
+Parameter \LUT = 4'1000
+
+2.46.7. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 2
+Parameter \LUT = 4'1000
+Generating RTLIL representation for module `$paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000'.
+
+2.46.8. Continuing TECHMAP pass.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000 for cells of type $lut.
+Mapping susskind_to_bin.$abc$1321$lut\Y[1] ($lut) using $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000.
+Parameter \WIDTH = 3
+Parameter \LUT = 8'00100000
+
+2.46.9. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 3
+Parameter \LUT = 8'00100000
+Generating RTLIL representation for module `$paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00100000'.
+
+2.46.10. Continuing TECHMAP pass.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00100000 for cells of type $lut.
+Mapping susskind_to_bin.$abc$1321$lut\Y[3] ($lut) using $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00100000.
+No more expansions possible.
+Finding unused cells or wires in module \susskind_to_bin..
+  removing unused non-port wire $techmap1324$auto$abc9_ops.cc:1613:reintegrate$1323.Y.
+  removing unused non-port wire $techmap1324$auto$abc9_ops.cc:1613:reintegrate$1323.A.
+  removing unused non-port wire $techmap1325$auto$abc9_ops.cc:1613:reintegrate$1322.Y.
+  removing unused non-port wire $techmap1325$auto$abc9_ops.cc:1613:reintegrate$1322.A.
+  removing unused non-port wire $techmap1326$abc$1321$lut\Y[1].Y.
+  removing unused non-port wire $techmap1326$abc$1321$lut\Y[1].A.
+  removing unused non-port wire $techmap1327$abc$1321$lut\Y[3].Y.
+  removing unused non-port wire $techmap1327$abc$1321$lut\Y[3].A.
+Removed 0 unused cells and 8 unused wires.
+
+2.47. Executing AUTONAME pass.
+Rename cell $auto$abc9_ops.cc:1613:reintegrate$1323 in susskind_to_bin to Y_SB_LUT4_O.
+Rename cell $abc$1321$lut\Y[1] in susskind_to_bin to Y_SB_LUT4_O_1.
+Rename cell $auto$abc9_ops.cc:1613:reintegrate$1322 in susskind_to_bin to Y_SB_LUT4_O_2.
+Rename cell $abc$1321$lut\Y[3] in susskind_to_bin to Y_SB_LUT4_O_3.
+Renamed 4 objects in module susskind_to_bin (2 iterations).
+
+2.48. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `susskind_to_bin'. Setting top module to susskind_to_bin.
+
+2.48.1. Analyzing design hierarchy..
+Top module:  \susskind_to_bin
+
+2.48.2. Analyzing design hierarchy..
+Top module:  \susskind_to_bin
+Removed 0 unused modules.
+
+2.49. Printing statistics.
+
+=== susskind_to_bin ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       48 wires
+      192 wire bits
+       48 public wires
+      192 public wire bits
+        2 ports
+        8 port bits
+       24 cells
+       24   $scopeinfo
+        4 submodules
+        4   SB_LUT4
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+       24 susskind_to_bin
+
+        +----------Count including submodules.
+        | 
+       48 wires
+      192 wire bits
+       48 public wires
+      192 public wire bits
+        2 ports
+        8 port bits
+        - memories
+        - memory bits
+        - processes
+       24 cells
+       24   $scopeinfo
+        4 submodules
+        4   SB_LUT4
+
+2.50. Executing CHECK pass (checking for obvious problems).
+Checking module susskind_to_bin...
+Found and reported 0 problems.
+
+End of script. Logfile hash: 20156877ab, time: 1.27s, user: 0.75s, system: 0.34s, MEM: 31.75 MB peak
+Yosys 0.64 (git sha1 6d2c445ae, g++ 11.4.0-1ubuntu1~22.04.3 -fPIC -O3)
+Time spent:
+   29%    20 calls    0.348 sec read_verilog
+   21%     1 calls    0.253 sec synth_ice40
+    9%    19 calls    0.106 sec opt_clean
+    8%     1 calls    0.102 sec abc9_exe
+    7%     1 calls    0.084 sec abc9
+    7%    18 calls    0.083 sec id_gc
+    2%     7 calls    0.032 sec opt
+    1%    21 calls    0.020 sec opt_expr
+    1%    10 calls    0.020 sec techmap
+    1%     3 calls    0.019 sec clean
+    1%     2 calls    0.019 sec hierarchy
+    1%    17 calls    0.014 sec opt_merge
+    1%     2 calls    0.012 sec ice40_opt
+    0%     7 calls    0.010 sec design
+    0%     7 calls    0.006 sec opt_muxtree
+    0%    12 calls    0.004 sec opt_dff
+    0%     1 calls    0.004 sec flatten
+    0%     1 calls    0.003 sec proc_dlatch
+    0%     7 calls    0.003 sec opt_reduce
+    0%     9 calls    0.003 sec abc9_ops
+    0%     1 calls    0.002 sec proc_mux
+    0%     1 calls    0.002 sec opt_lut
+    0%     1 calls    0.001 sec stat
+    0%     2 calls    0.001 sec read_aiger
+    0%     1 calls    0.001 sec aigmap
+    0%     2 calls    0.001 sec proc_clean
+    0%     2 calls    0.001 sec write_xaiger
+    0%     2 calls    0.001 sec check
+    0%     1 calls    0.001 sec scc
+    0%     1 calls    0.001 sec wreduce
+    0%     1 calls    0.001 sec share
+    0%     1 calls    0.001 sec proc
+    0%     1 calls    0.001 sec memory_libmap
+    0%     1 calls    0.001 sec proc_rmdead
+    0%     2 calls    0.001 sec ice40_wrapcarry
+    0%     2 calls    0.001 sec fsm_opt
+    0%     1 calls    0.001 sec autoname
+    0%     1 calls    0.001 sec fsm_detect
+    0%     1 calls    0.000 sec fsm_extract
+    0%     1 calls    0.000 sec proc_dff
+    0%     1 calls    0.000 sec memory
+    0%     1 calls    0.000 sec proc_memwr
+    0%     1 calls    0.000 sec fsm
+    0%     1 calls    0.000 sec alumacc
+    0%     1 calls    0.000 sec opt_mem_priority
+    0%     1 calls    0.000 sec memory_dff
+    0%     1 calls    0.000 sec blackbox
+    0%     1 calls    0.000 sec proc_rom
+    0%     1 calls    0.000 sec memory_collect
+    0%     1 calls    0.000 sec opt_mem
+    0%     1 calls    0.000 sec tribuf
+    0%     1 calls    0.000 sec opt_mem_widen
+    0%     1 calls    0.000 sec simplemap
+    0%     1 calls    0.000 sec memory_share
+    0%     1 calls    0.000 sec peepopt
+    0%     1 calls    0.000 sec fsm_map
+    0%     1 calls    0.000 sec memory_bmux2rom
+    0%     1 calls    0.000 sec deminout
+    0%     1 calls    0.000 sec opt_mem_feedback
+    0%     1 calls    0.000 sec fsm_recode
+    0%     1 calls    0.000 sec memory_map
+    0%     1 calls    0.000 sec proc_prune
+    0%     1 calls    0.000 sec ice40_braminit
+    0%     1 calls    0.000 sec dfflegalize
+    0%     1 calls    0.000 sec fsm_info
+    0%     1 calls    0.000 sec proc_arst
+    0%     1 calls    0.000 sec proc_init
+    0%     1 calls    0.000 sec read
+    0%     1 calls    0.000 sec setattr
+    0%     1 calls    0.000 sec wbflip
