@@ -1,0 +1,2077 @@
+
+-- Parsing `/home/user/files/logic_gates/BCD2421_to_bin.v' using frontend ` -vlog2k' --
+
+1. Executing Verilog-2005 frontend: /home/user/files/logic_gates/BCD2421_to_bin.v
+Parsing Verilog input from `/home/user/files/logic_gates/BCD2421_to_bin.v' to AST representation.
+Storing AST representation for module `$abstract\BCD2421_to_bin'.
+Successfully finished Verilog frontend.
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+2. Executing Verilog-2005 frontend: /home/user/yosys_mod/share/ice40/cells_sim.v
+Parsing Verilog input from `/home/user/yosys_mod/share/ice40/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\SB_IO'.
+Generating RTLIL representation for module `\SB_GB_IO'.
+Generating RTLIL representation for module `\SB_GB'.
+Generating RTLIL representation for module `\SB_LUT4'.
+Generating RTLIL representation for module `\SB_CARRY'.
+Generating RTLIL representation for module `\SB_DFF'.
+Generating RTLIL representation for module `\SB_DFFE'.
+Generating RTLIL representation for module `\SB_DFFSR'.
+Generating RTLIL representation for module `\SB_DFFR'.
+Generating RTLIL representation for module `\SB_DFFSS'.
+Generating RTLIL representation for module `\SB_DFFS'.
+Generating RTLIL representation for module `\SB_DFFESR'.
+Generating RTLIL representation for module `\SB_DFFER'.
+Generating RTLIL representation for module `\SB_DFFESS'.
+Generating RTLIL representation for module `\SB_DFFES'.
+Generating RTLIL representation for module `\SB_DFFN'.
+Generating RTLIL representation for module `\SB_DFFNE'.
+Generating RTLIL representation for module `\SB_DFFNSR'.
+Generating RTLIL representation for module `\SB_DFFNR'.
+Generating RTLIL representation for module `\SB_DFFNSS'.
+Generating RTLIL representation for module `\SB_DFFNS'.
+Generating RTLIL representation for module `\SB_DFFNESR'.
+Generating RTLIL representation for module `\SB_DFFNER'.
+Generating RTLIL representation for module `\SB_DFFNESS'.
+Generating RTLIL representation for module `\SB_DFFNES'.
+Generating RTLIL representation for module `\SB_RAM40_4K'.
+Generating RTLIL representation for module `\SB_RAM40_4KNR'.
+Generating RTLIL representation for module `\SB_RAM40_4KNW'.
+Generating RTLIL representation for module `\SB_RAM40_4KNRNW'.
+Generating RTLIL representation for module `\ICESTORM_LC'.
+Generating RTLIL representation for module `\SB_PLL40_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2F_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_2F_PAD'.
+Generating RTLIL representation for module `\SB_WARMBOOT'.
+Generating RTLIL representation for module `\SB_SPRAM256KA'.
+Generating RTLIL representation for module `\SB_HFOSC'.
+Generating RTLIL representation for module `\SB_LFOSC'.
+Generating RTLIL representation for module `\SB_RGBA_DRV'.
+Generating RTLIL representation for module `\SB_LED_DRV_CUR'.
+Generating RTLIL representation for module `\SB_RGB_DRV'.
+Generating RTLIL representation for module `\SB_I2C'.
+Generating RTLIL representation for module `\SB_SPI'.
+Generating RTLIL representation for module `\SB_LEDDA_IP'.
+Generating RTLIL representation for module `\SB_FILTER_50NS'.
+Generating RTLIL representation for module `\SB_IO_I3C'.
+Generating RTLIL representation for module `\SB_IO_OD'.
+Generating RTLIL representation for module `\SB_MAC16'.
+Generating RTLIL representation for module `\ICESTORM_RAM'.
+Successfully finished Verilog frontend.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+4. Executing AST frontend in derive mode using pre-parsed AST for module `\BCD2421_to_bin'.
+Generating RTLIL representation for module `\BCD2421_to_bin'.
+
+4.1. Analyzing design hierarchy..
+Top module:  \BCD2421_to_bin
+
+4.2. Analyzing design hierarchy..
+Top module:  \BCD2421_to_bin
+Removing unused module `$abstract\BCD2421_to_bin'.
+Removed 1 unused modules.
+
+5. Executing PROC pass (convert processes to netlists).
+
+5.1. Generating Graphviz representation of design.
+Writing dot description to `01_hierarchy_BCD2421_to_bin.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '01_hierarchy_BCD2421_to_bin.dot' > '01_hierarchy_BCD2421_to_bin.png.new' && mv '01_hierarchy_BCD2421_to_bin.png.new' '01_hierarchy_BCD2421_to_bin.png'
+
+5.2. Executing RTLIL backend.
+Output filename: 01_hierarchy_BCD2421_to_bin.il
+
+5.3. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.4. Executing RTLIL backend.
+Output filename: 02.1_proc_clean_BCD2421_to_bin.il
+
+5.5. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+5.6. Executing RTLIL backend.
+Output filename: 02.2_proc_rmdead_BCD2421_to_bin.il
+
+5.7. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+5.8. Executing RTLIL backend.
+Output filename: 02.3_proc_prune_BCD2421_to_bin.il
+
+5.9. Executing PROC_INIT pass (extract init attributes).
+
+5.10. Executing PROC_ARST pass (detect async resets in processes).
+
+5.11. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+5.12. Executing RTLIL backend.
+Output filename: 02.6_proc_rom_BCD2421_to_bin.il
+
+5.13. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+5.14. Executing RTLIL backend.
+Output filename: 02.7_proc_mux_BCD2421_to_bin.il
+
+5.15. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+5.16. Executing PROC_DFF pass (convert process syncs to FFs).
+
+5.17. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.18. Executing RTLIL backend.
+Output filename: 02.10_proc_memwr_BCD2421_to_bin.il
+
+5.19. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.20. Executing RTLIL backend.
+Output filename: 02.11_proc_clean_BCD2421_to_bin.il
+
+5.21. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+5.22. Executing RTLIL backend.
+Output filename: 02.12_opt_expr_keepdc_BCD2421_to_bin.il
+
+6. Executing FLATTEN pass (flatten design).
+
+7. Executing RTLIL backend.
+Output filename: 03_flatten.il
+
+8. Executing TRIBUF pass.
+
+9. Executing RTLIL backend.
+Output filename: 04_tribuf.il
+
+10. Executing DEMINOUT pass (demote inout ports to input or output).
+
+11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+12. Executing RTLIL backend.
+Output filename: 05_opt_expr_coarse.il
+
+13. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:4$382_Y.
+  removing unused non-port wire $or$/home/user/files/logic_gates/BCD2421_to_bin.v:5$396_Y.
+  removing unused non-port wire $or$/home/user/files/logic_gates/BCD2421_to_bin.v:6$403_Y.
+  removing unused non-port wire $or$/home/user/files/logic_gates/BCD2421_to_bin.v:7$414_Y.
+Removed 0 unused cells and 4 unused wires.
+
+14. Executing RTLIL backend.
+Output filename: 06_opt_clean_coarse.il
+
+15. Generating Graphviz representation of design.
+Writing dot description to `06_opt_clean_coarse.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '06_opt_clean_coarse.dot' > '06_opt_clean_coarse.png.new' && mv '06_opt_clean_coarse.png.new' '06_opt_clean_coarse.png'
+
+16. Executing CHECK pass (checking for obvious problems).
+Checking module BCD2421_to_bin...
+Found and reported 0 problems.
+
+17. Executing OPT pass (performing simple optimizations).
+
+17.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+17.2. Executing RTLIL backend.
+Output filename: 08.1_opt_expr_coarse.il
+
+17.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421_to_bin'.
+Computing hashes of 34 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+  Cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:6$400' is identical to cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$407'.
+    Redirecting output \Y: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:6$400_Y = $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$407_Y
+    Removing $and cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:6$400' from module `\BCD2421_to_bin'.
+  Cell `$or$/home/user/files/logic_gates/BCD2421_to_bin.v:6$397' is identical to cell `$or$/home/user/files/logic_gates/BCD2421_to_bin.v:7$404'.
+    Redirecting output \Y: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:6$397_Y = $or$/home/user/files/logic_gates/BCD2421_to_bin.v:7$404_Y
+    Removing $or cell `$or$/home/user/files/logic_gates/BCD2421_to_bin.v:6$397' from module `\BCD2421_to_bin'.
+  Cell `$not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$394' is identical to cell `$not$/home/user/files/logic_gates/BCD2421_to_bin.v:6$401'.
+    Redirecting output \Y: $not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$394_Y = $not$/home/user/files/logic_gates/BCD2421_to_bin.v:6$401_Y
+    Removing $not cell `$not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$394' from module `\BCD2421_to_bin'.
+  Cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$393' is identical to cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$407'.
+    Redirecting output \Y: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$393_Y = $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$407_Y
+    Removing $and cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$393' from module `\BCD2421_to_bin'.
+  Cell `$not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$388' is identical to cell `$not$/home/user/files/logic_gates/BCD2421_to_bin.v:7$410'.
+    Redirecting output \Y: $not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$388_Y = $not$/home/user/files/logic_gates/BCD2421_to_bin.v:7$410_Y
+    Removing $not cell `$not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$388' from module `\BCD2421_to_bin'.
+  Cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:4$381' is identical to cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$407'.
+    Redirecting output \Y: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:4$381_Y = $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$407_Y
+    Removing $and cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:4$381' from module `\BCD2421_to_bin'.
+Computing hashes of 28 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+  Cell `$not$/home/user/files/logic_gates/BCD2421_to_bin.v:6$398' is identical to cell `$not$/home/user/files/logic_gates/BCD2421_to_bin.v:7$405'.
+    Redirecting output \Y: $not$/home/user/files/logic_gates/BCD2421_to_bin.v:6$398_Y = $not$/home/user/files/logic_gates/BCD2421_to_bin.v:7$405_Y
+    Removing $not cell `$not$/home/user/files/logic_gates/BCD2421_to_bin.v:6$398' from module `\BCD2421_to_bin'.
+  Cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$395' is identical to cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:6$402'.
+    Redirecting output \Y: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$395_Y = $and$/home/user/files/logic_gates/BCD2421_to_bin.v:6$402_Y
+    Removing $and cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$395' from module `\BCD2421_to_bin'.
+  Cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$389' is identical to cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$411'.
+    Redirecting output \Y: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$389_Y = $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$411_Y
+    Removing $and cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$389' from module `\BCD2421_to_bin'.
+Computing hashes of 25 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+  Cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$390' is identical to cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$412'.
+    Redirecting output \Y: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$390_Y = $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$412_Y
+    Removing $and cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$390' from module `\BCD2421_to_bin'.
+Computing hashes of 24 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+  Cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$391' is identical to cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$413'.
+    Redirecting output \Y: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$391_Y = $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$413_Y
+    Removing $and cell `$and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$391' from module `\BCD2421_to_bin'.
+Computing hashes of 23 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+Removed a total of 11 cells.
+
+17.4. Executing RTLIL backend.
+Output filename: 08.2_opt_merge_coarse.il
+
+17.5. Generating Graphviz representation of design.
+Writing dot description to `08.2_opt_merge_coarse.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '08.2_opt_merge_coarse.dot' > '08.2_opt_merge_coarse.png.new' && mv '08.2_opt_merge_coarse.png.new' '08.2_opt_merge_coarse.png'
+
+17.6. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \BCD2421_to_bin..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+17.7. Executing RTLIL backend.
+Output filename: 08.3_opt_muxtree_coarse.il
+
+17.8. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \BCD2421_to_bin.
+Performed a total of 0 changes.
+
+17.9. Executing RTLIL backend.
+Output filename: 08.4_opt_reduce_coarse.il
+
+17.10. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421_to_bin'.
+Computing hashes of 23 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+Removed a total of 0 cells.
+
+17.11. Executing RTLIL backend.
+Output filename: 08.5_opt_merge_coarse.il
+
+17.12. Executing OPT_DFF pass (perform DFF optimizations).
+
+17.13. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$411_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$393_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$413_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:6$400_Y.
+  removing unused non-port wire $not$/home/user/files/logic_gates/BCD2421_to_bin.v:6$401_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:6$402_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$412_Y.
+  removing unused non-port wire $or$/home/user/files/logic_gates/BCD2421_to_bin.v:7$404_Y.
+  removing unused non-port wire $not$/home/user/files/logic_gates/BCD2421_to_bin.v:7$405_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$407_Y.
+  removing unused non-port wire $not$/home/user/files/logic_gates/BCD2421_to_bin.v:7$410_Y.
+Removed 0 unused cells and 11 unused wires.
+
+17.14. Executing RTLIL backend.
+Output filename: 08.6_opt_clean_coarse.il
+
+17.15. Generating Graphviz representation of design.
+Writing dot description to `08.6_opt_clean_coarse.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '08.6_opt_clean_coarse.dot' > '08.6_opt_clean_coarse.png.new' && mv '08.6_opt_clean_coarse.png.new' '08.6_opt_clean_coarse.png'
+
+17.16. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+17.17. Executing RTLIL backend.
+Output filename: 08.7_opt_expr_coarse.il
+
+17.18. Rerunning OPT passes. (Maybe there is more to do..)
+
+17.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \BCD2421_to_bin..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+17.20. Executing RTLIL backend.
+Output filename: 08.8_opt_muxtree_coarse.il
+
+17.21. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \BCD2421_to_bin.
+Performed a total of 0 changes.
+
+17.22. Executing RTLIL backend.
+Output filename: 08.9_opt_reduce_coarse.il
+
+17.23. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421_to_bin'.
+Computing hashes of 23 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+Removed a total of 0 cells.
+
+17.24. Executing RTLIL backend.
+Output filename: 08.10_opt_merge_coarse.il
+
+17.25. Executing OPT_DFF pass (perform DFF optimizations).
+
+17.26. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+
+17.27. Executing RTLIL backend.
+Output filename: 08.11_opt_clean_coarse.il
+
+17.28. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+17.29. Executing RTLIL backend.
+Output filename: 08.12_opt_expr_coarse.il
+
+17.30. Finished fast OPT passes. (There is nothing left to do.)
+
+18. Executing FSM pass (extract and optimize FSM).
+
+18.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+18.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+18.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+18.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+
+18.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+18.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+18.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+18.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+19. Executing OPT pass (performing simple optimizations).
+
+19.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+19.2. Executing RTLIL backend.
+Output filename: 09.1_opt_expr_coarse2.il
+
+19.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421_to_bin'.
+Computing hashes of 23 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+Removed a total of 0 cells.
+
+19.4. Executing RTLIL backend.
+Output filename: 09.2_opt_merge_coarse2.il
+
+19.5. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \BCD2421_to_bin..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+19.6. Executing RTLIL backend.
+Output filename: 09.3_opt_muxtree_coarse2.il
+
+19.7. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \BCD2421_to_bin.
+Performed a total of 0 changes.
+
+19.8. Executing RTLIL backend.
+Output filename: 09.4_opt_reduce_coarse2.il
+
+19.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421_to_bin'.
+Computing hashes of 23 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+Removed a total of 0 cells.
+
+19.10. Executing RTLIL backend.
+Output filename: 09.5_opt_merge_coarse2.il
+
+19.11. Executing OPT_DFF pass (perform DFF optimizations).
+
+19.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+
+19.13. Executing RTLIL backend.
+Output filename: 09.6_opt_clean_coarse2.il
+
+19.14. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+19.15. Executing RTLIL backend.
+Output filename: 09.7_opt_expr_coarse2.il
+
+19.16. Finished fast OPT passes. (There is nothing left to do.)
+
+20. Executing WREDUCE pass (reducing word size of cells).
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:4$382
+sig_a cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:4$381_Y
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:4$382
+sig_b cell: \A [1]
+sig: 1
+max_port: 1
+
+cell: $not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$383
+sig_a cell: \A [3]
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$384
+sig_a cell: $not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$383_Y
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$384
+sig_b cell: \A [2]
+sig: 1
+max_port: 1
+
+cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:5$385
+sig_a cell: \A [1]
+sig: 1
+max_port: 1
+
+cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:5$385
+sig_b cell: \A [0]
+sig: 1
+max_port: 1
+
+cell: $not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$386
+sig_a cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:5$385_Y
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$387
+sig_a cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$384_Y
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$387
+sig_b cell: $not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$386_Y
+sig: 1
+max_port: 1
+
+cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:5$392
+sig_a cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$387_Y
+sig: 1
+max_port: 1
+
+cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:5$392
+sig_b cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$391_Y
+sig: 1
+max_port: 1
+
+cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:5$396
+sig_a cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:5$392_Y
+sig: 1
+max_port: 1
+
+cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:5$396
+sig_b cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$395_Y
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:6$399
+sig_a cell: $not$/home/user/files/logic_gates/BCD2421_to_bin.v:6$398_Y
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:6$399
+sig_b cell: \A [1]
+sig: 1
+max_port: 1
+
+cell: $not$/home/user/files/logic_gates/BCD2421_to_bin.v:6$401
+sig_a cell: \A [1]
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:6$402
+sig_a cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:4$381_Y
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:6$402
+sig_b cell: $not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$394_Y
+sig: 1
+max_port: 1
+
+cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:6$403
+sig_a cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:6$399_Y
+sig: 1
+max_port: 1
+
+cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:6$403
+sig_b cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$395_Y
+sig: 1
+max_port: 1
+
+cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:7$404
+sig_a cell: \A [3]
+sig: 1
+max_port: 1
+
+cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:7$404
+sig_b cell: \A [2]
+sig: 1
+max_port: 1
+
+cell: $not$/home/user/files/logic_gates/BCD2421_to_bin.v:7$405
+sig_a cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:6$397_Y
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$406
+sig_a cell: $not$/home/user/files/logic_gates/BCD2421_to_bin.v:6$398_Y
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$406
+sig_b cell: \A [0]
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$407
+sig_a cell: \A [3]
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$407
+sig_b cell: \A [2]
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$408
+sig_a cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:4$381_Y
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$408
+sig_b cell: \A [0]
+sig: 1
+max_port: 1
+
+cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:7$409
+sig_a cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$406_Y
+sig: 1
+max_port: 1
+
+cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:7$409
+sig_b cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$408_Y
+sig: 1
+max_port: 1
+
+cell: $not$/home/user/files/logic_gates/BCD2421_to_bin.v:7$410
+sig_a cell: \A [2]
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$411
+sig_a cell: \A [3]
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$411
+sig_b cell: $not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$388_Y
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$412
+sig_a cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$389_Y
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$412
+sig_b cell: \A [1]
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$413
+sig_a cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$390_Y
+sig: 1
+max_port: 1
+
+cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$413
+sig_b cell: \A [0]
+sig: 1
+max_port: 1
+
+cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:7$414
+sig_a cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:7$409_Y
+sig: 1
+max_port: 1
+
+cell: $or$/home/user/files/logic_gates/BCD2421_to_bin.v:7$414
+sig_b cell: $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$391_Y
+sig: 1
+max_port: 1
+
+21. Executing RTLIL backend.
+Output filename: 10_wreduce.il
+
+22. Generating Graphviz representation of design.
+Writing dot description to `10_wreduce.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '10_wreduce.dot' > '10_wreduce.png.new' && mv '10_wreduce.png.new' '10_wreduce.png'
+
+23. Executing PEEPOPT pass (run peephole optimizers).
+
+24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+
+25. Executing RTLIL backend.
+Output filename: 11_opt_clean_coarse2.il
+
+26. Executing SHARE pass (SAT-based resource sharing).
+
+27. Executing TECHMAP pass (map to technology primitives).
+
+27.1. Executing Verilog-2005 frontend: /home/user/yosys_mod/share/cmp2lut.v
+Parsing Verilog input from `/home/user/yosys_mod/share/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+27.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $ge: _90_lut_cmp_
+    $gt: _90_lut_cmp_
+    $le: _90_lut_cmp_
+    $lt: _90_lut_cmp_
+
+No more expansions possible.
+
+28. Executing RTLIL backend.
+Output filename: 12_techmap_cmp2lut.il
+
+29. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+30. Executing RTLIL backend.
+Output filename: 13_opt_expr_coarse2.il
+
+31. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+
+32. Executing RTLIL backend.
+Output filename: 14_opt_clean_coarse3.il
+
+33. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+34. Executing WREDUCE pass (reducing word size of cells).
+
+35. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module BCD2421_to_bin:
+  created 0 $alu and 0 $macc cells.
+
+36. Executing RTLIL backend.
+Output filename: 15_alumacc.il
+
+37. Executing OPT pass (performing simple optimizations).
+
+37.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+37.2. Executing RTLIL backend.
+Output filename: 16.1_opt_expr_coarse3.il
+
+37.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421_to_bin'.
+Computing hashes of 23 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+Removed a total of 0 cells.
+
+37.4. Executing RTLIL backend.
+Output filename: 16.2_opt_merge_coarse3.il
+
+37.5. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \BCD2421_to_bin..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+37.6. Executing RTLIL backend.
+Output filename: 16.3_opt_muxtree_coarse3.il
+
+37.7. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \BCD2421_to_bin.
+Performed a total of 0 changes.
+
+37.8. Executing RTLIL backend.
+Output filename: 16.4_opt_reduce_coarse3.il
+
+37.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421_to_bin'.
+Computing hashes of 23 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+Removed a total of 0 cells.
+
+37.10. Executing RTLIL backend.
+Output filename: 16.5_opt_merge_coarse3.il
+
+37.11. Executing OPT_DFF pass (perform DFF optimizations).
+
+37.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+
+37.13. Executing RTLIL backend.
+Output filename: 16.6_opt_clean_coarse3.il
+
+37.14. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+37.15. Executing RTLIL backend.
+Output filename: 16.7_opt_expr_coarse3.il
+
+37.16. Finished fast OPT passes. (There is nothing left to do.)
+
+38. Executing MEMORY pass.
+
+38.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+38.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+38.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+38.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+38.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+38.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+
+38.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+38.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+38.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+
+38.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+39. Executing RTLIL backend.
+Output filename: 17_memory_nomap.il
+
+40. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+
+41. Executing RTLIL backend.
+Output filename: 18_opt_clean_coarse4.il
+
+42. Executing MEMORY_LIBMAP pass (mapping memories to cells).
+
+43. Executing TECHMAP pass (map to technology primitives).
+
+43.1. Executing Verilog-2005 frontend: /home/user/yosys_mod/share/ice40/brams_map.v
+Parsing Verilog input from `/home/user/yosys_mod/share/ice40/brams_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_RAM4K_'.
+Successfully finished Verilog frontend.
+
+43.2. Executing Verilog-2005 frontend: /home/user/yosys_mod/share/ice40/spram_map.v
+Parsing Verilog input from `/home/user/yosys_mod/share/ice40/spram_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_SPRAM_'.
+Successfully finished Verilog frontend.
+
+43.3. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $__ICE40_RAM4K_: $__ICE40_RAM4K_
+    $__ICE40_SPRAM_: $__ICE40_SPRAM_
+
+No more expansions possible.
+
+44. Executing ICE40_BRAMINIT pass.
+
+45. Executing OPT pass (performing simple optimizations).
+
+45.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+45.2. Executing RTLIL backend.
+Output filename: 19.1_opt_expr_ffram.il
+
+45.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421_to_bin'.
+Computing hashes of 23 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+Removed a total of 0 cells.
+
+45.4. Executing RTLIL backend.
+Output filename: 19.2_opt_merge_ffram.il
+
+45.5. Executing OPT_DFF pass (perform DFF optimizations).
+
+45.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+
+45.7. Executing RTLIL backend.
+Output filename: 19.3_opt_clean_ffram.il
+
+45.8. Finished fast OPT passes.
+
+46. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+47. Executing RTLIL backend.
+Output filename: 20_memory_map.il
+
+48. Executing OPT pass (performing simple optimizations).
+
+48.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+48.2. Executing RTLIL backend.
+Output filename: 21.1_opt_expr_ffram2.il
+
+48.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421_to_bin'.
+Computing hashes of 23 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+Removed a total of 0 cells.
+
+48.4. Executing RTLIL backend.
+Output filename: 21.2_opt_merge_ffram2.il
+
+48.5. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \BCD2421_to_bin..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+48.6. Executing RTLIL backend.
+Output filename: 21.3_opt_muxtree_ffram2.il
+
+48.7. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \BCD2421_to_bin.
+Performed a total of 0 changes.
+
+48.8. Executing RTLIL backend.
+Output filename: 21.4_opt_reduce_ffram2.il
+
+48.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421_to_bin'.
+Computing hashes of 23 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+Removed a total of 0 cells.
+
+48.10. Executing RTLIL backend.
+Output filename: 21.5_opt_merge_ffram2.il
+
+48.11. Executing OPT_DFF pass (perform DFF optimizations).
+
+48.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+
+48.13. Executing RTLIL backend.
+Output filename: 21.6_opt_clean_ffram2.il
+
+48.14. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+48.15. Executing RTLIL backend.
+Output filename: 21.7_opt_expr_ffram2.il
+
+48.16. Finished fast OPT passes. (There is nothing left to do.)
+
+49. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+50. Executing TECHMAP pass (map to technology primitives).
+
+50.1. Executing Verilog-2005 frontend: /home/user/yosys_mod/share/techmap.v
+Parsing Verilog input from `/home/user/yosys_mod/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+50.2. Executing Verilog-2005 frontend: /home/user/yosys_mod/share/ice40/arith_map.v
+Parsing Verilog input from `/home/user/yosys_mod/share/ice40/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_ice40_alu'.
+Successfully finished Verilog frontend.
+
+50.3. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $xnor: _90_simplemap_bool_ops
+    $xor: _90_simplemap_bool_ops
+    $or: _90_simplemap_bool_ops
+    $and: _90_simplemap_bool_ops
+    $not: _90_simplemap_bool_ops
+    $reduce_bool: _90_simplemap_reduce_ops
+    $reduce_xnor: _90_simplemap_reduce_ops
+    $reduce_xor: _90_simplemap_reduce_ops
+    $reduce_or: _90_simplemap_reduce_ops
+    $reduce_and: _90_simplemap_reduce_ops
+    $logic_or: _90_simplemap_logic_ops
+    $logic_and: _90_simplemap_logic_ops
+    $logic_not: _90_simplemap_logic_ops
+    $nex: _90_simplemap_compare_ops
+    $ne: _90_simplemap_compare_ops
+    $eqx: _90_simplemap_compare_ops
+    $eq: _90_simplemap_compare_ops
+    $bweqx: _90_simplemap_various
+    $bwmux: _90_simplemap_various
+    $bmux: _90_simplemap_various
+    $tribuf: _90_simplemap_various
+    $mux: _90_simplemap_various
+    $concat: _90_simplemap_various
+    $slice: _90_simplemap_various
+    $pos: _90_simplemap_various
+    $buf: _90_simplemap_various
+    $dlatchsr: _90_simplemap_registers
+    $adlatch: _90_simplemap_registers
+    $dlatch: _90_simplemap_registers
+    $dffsre: _90_simplemap_registers
+    $dffsr: _90_simplemap_registers
+    $sdffce: _90_simplemap_registers
+    $sdffe: _90_simplemap_registers
+    $sdff: _90_simplemap_registers
+    $aldffe: _90_simplemap_registers
+    $aldff: _90_simplemap_registers
+    $adffe: _90_simplemap_registers
+    $adff: _90_simplemap_registers
+    $dffe: _90_simplemap_registers
+    $dff: _90_simplemap_registers
+    $ff: _90_simplemap_registers
+    $sr: _90_simplemap_registers
+    $sshr: _90_shift_ops_shr_shl_sshl_sshr
+    $sshl: _90_shift_ops_shr_shl_sshl_sshr
+    $shl: _90_shift_ops_shr_shl_sshl_sshr
+    $shr: _90_shift_ops_shr_shl_sshl_sshr
+    $shiftx: _90_shift_shiftx
+    $shift: _90_shift_shiftx
+    $fa: _90_fa
+    $lcu: _90_lcu_brent_kung
+    $macc_v2: _90_macc
+    $macc: _90_macc
+    $mul: _90_alumacc
+    $neg: _90_alumacc
+    $sub: _90_alumacc
+    $add: _90_alumacc
+    $gt: _90_alumacc
+    $ge: _90_alumacc
+    $le: _90_alumacc
+    $lt: _90_alumacc
+    $__div_mod_u: $__div_mod_u
+    $__div_mod_trunc: $__div_mod_trunc
+    $div: _90_div
+    $mod: _90_mod
+    $__div_mod_floor: $__div_mod_floor
+    $divfloor: _90_divfloor
+    $modfloor: _90_modfloor
+    $pow: _90_pow
+    $pmux: _90_pmux
+    $demux: _90_demux
+    $sop: _90_lut
+    $lut: _90_lut
+    $connect: $connect
+    $input_port: $input_port
+    $alu: _80_ice40_alu _90_alu
+
+Using extmapper simplemap for cells of type $and.
+Mapping BCD2421_to_bin.$and$/home/user/files/logic_gates/BCD2421_to_bin.v:4$382 ($and) with simplemap.
+Using extmapper simplemap for cells of type $not.
+Mapping BCD2421_to_bin.$not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$383 ($not) with simplemap.
+Mapping BCD2421_to_bin.$and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$384 ($and) with simplemap.
+Using extmapper simplemap for cells of type $or.
+Mapping BCD2421_to_bin.$or$/home/user/files/logic_gates/BCD2421_to_bin.v:5$385 ($or) with simplemap.
+Mapping BCD2421_to_bin.$not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$386 ($not) with simplemap.
+Mapping BCD2421_to_bin.$and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$387 ($and) with simplemap.
+Mapping BCD2421_to_bin.$or$/home/user/files/logic_gates/BCD2421_to_bin.v:5$392 ($or) with simplemap.
+Mapping BCD2421_to_bin.$or$/home/user/files/logic_gates/BCD2421_to_bin.v:5$396 ($or) with simplemap.
+Mapping BCD2421_to_bin.$and$/home/user/files/logic_gates/BCD2421_to_bin.v:6$399 ($and) with simplemap.
+Mapping BCD2421_to_bin.$not$/home/user/files/logic_gates/BCD2421_to_bin.v:6$401 ($not) with simplemap.
+Mapping BCD2421_to_bin.$and$/home/user/files/logic_gates/BCD2421_to_bin.v:6$402 ($and) with simplemap.
+Mapping BCD2421_to_bin.$or$/home/user/files/logic_gates/BCD2421_to_bin.v:6$403 ($or) with simplemap.
+Mapping BCD2421_to_bin.$or$/home/user/files/logic_gates/BCD2421_to_bin.v:7$404 ($or) with simplemap.
+Mapping BCD2421_to_bin.$not$/home/user/files/logic_gates/BCD2421_to_bin.v:7$405 ($not) with simplemap.
+Mapping BCD2421_to_bin.$and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$406 ($and) with simplemap.
+Mapping BCD2421_to_bin.$and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$407 ($and) with simplemap.
+Mapping BCD2421_to_bin.$and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$408 ($and) with simplemap.
+Mapping BCD2421_to_bin.$or$/home/user/files/logic_gates/BCD2421_to_bin.v:7$409 ($or) with simplemap.
+Mapping BCD2421_to_bin.$not$/home/user/files/logic_gates/BCD2421_to_bin.v:7$410 ($not) with simplemap.
+Mapping BCD2421_to_bin.$and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$411 ($and) with simplemap.
+Mapping BCD2421_to_bin.$and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$412 ($and) with simplemap.
+Mapping BCD2421_to_bin.$and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$413 ($and) with simplemap.
+Mapping BCD2421_to_bin.$or$/home/user/files/logic_gates/BCD2421_to_bin.v:7$414 ($or) with simplemap.
+No more expansions possible.
+
+51. Executing RTLIL backend.
+Output filename: 22_techmap_arith_map.il
+
+52. Generating Graphviz representation of design.
+Writing dot description to `22_techmap_arith_map.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '22_techmap_arith_map.dot' > '22_techmap_arith_map.png.new' && mv '22_techmap_arith_map.png.new' '22_techmap_arith_map.png'
+
+53. Executing OPT pass (performing simple optimizations).
+
+53.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+53.2. Executing RTLIL backend.
+Output filename: 23.1_opt_expr_map_gates.il
+
+53.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421_to_bin'.
+Computing hashes of 23 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+Removed a total of 0 cells.
+
+53.4. Executing RTLIL backend.
+Output filename: 23.2_opt_merge_map_gates.il
+
+53.5. Executing OPT_DFF pass (perform DFF optimizations).
+
+53.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+
+53.7. Executing RTLIL backend.
+Output filename: 23.3_opt_clean_map_gates.il
+
+53.8. Finished fast OPT passes.
+
+54. Executing ICE40_OPT pass (performing simple optimizations).
+
+54.1. Running ICE40 specific optimizations.
+
+54.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+54.3. Executing RTLIL backend.
+Output filename: 24.1_ice40_opt_opt_expr_map_gates.il
+
+54.4. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421_to_bin'.
+Computing hashes of 23 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+Removed a total of 0 cells.
+
+54.5. Executing RTLIL backend.
+Output filename: 24.2_ice40_opt_map_gates_opt_merge.il
+
+54.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+54.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+
+54.8. Executing RTLIL backend.
+Output filename: 24.3_ice40_opt_map_gates_opt_clean.il
+
+54.9. Finished OPT passes. (There is nothing left to do.)
+
+55. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+56. Executing TECHMAP pass (map to technology primitives).
+
+56.1. Executing Verilog-2005 frontend: /home/user/yosys_mod/share/ice40/ff_map.v
+Parsing Verilog input from `/home/user/yosys_mod/share/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+56.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $_DFF_N_: $_DFF_N_
+    $_DFF_P_: $_DFF_P_
+    $_DFFE_NP_: $_DFFE_NP_
+    $_DFFE_PP_: $_DFFE_PP_
+    $_DFF_NP0_: $_DFF_NP0_
+    $_DFF_NP1_: $_DFF_NP1_
+    $_DFF_PP0_: $_DFF_PP0_
+    $_DFF_PP1_: $_DFF_PP1_
+    $_DFFE_NP0P_: $_DFFE_NP0P_
+    $_DFFE_NP1P_: $_DFFE_NP1P_
+    $_DFFE_PP0P_: $_DFFE_PP0P_
+    $_DFFE_PP1P_: $_DFFE_PP1P_
+    $_SDFF_NP0_: $_SDFF_NP0_
+    $_SDFF_NP1_: $_SDFF_NP1_
+    $_SDFF_PP0_: $_SDFF_PP0_
+    $_SDFF_PP1_: $_SDFF_PP1_
+    $_SDFFCE_NP0P_: $_SDFFCE_NP0P_
+    $_SDFFCE_NP1P_: $_SDFFCE_NP1P_
+    $_SDFFCE_PP0P_: $_SDFFCE_PP0P_
+    $_SDFFCE_PP1P_: $_SDFFCE_PP1P_
+
+No more expansions possible.
+
+57. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+58. Executing RTLIL backend.
+Output filename: 25_opt_expr_map_ffs.il
+
+59. Generating Graphviz representation of design.
+Writing dot description to `25_opt_expr_map_ffs.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '25_opt_expr_map_ffs.dot' > '25_opt_expr_map_ffs.png.new' && mv '25_opt_expr_map_ffs.png.new' '25_opt_expr_map_ffs.png'
+
+60. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+61. Executing ICE40_OPT pass (performing simple optimizations).
+
+61.1. Running ICE40 specific optimizations.
+
+61.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module BCD2421_to_bin.
+
+61.3. Executing RTLIL backend.
+Output filename: 26.1_ice40_opt_opt_expr_map_ffs.il
+
+61.4. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\BCD2421_to_bin'.
+Computing hashes of 23 cells of `\BCD2421_to_bin'.
+Finding duplicate cells in `\BCD2421_to_bin'.
+Removed a total of 0 cells.
+
+61.5. Executing RTLIL backend.
+Output filename: 26.2_ice40_opt_map_ffs_opt_merge.il
+
+61.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+61.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \BCD2421_to_bin..
+
+61.8. Executing RTLIL backend.
+Output filename: 26.3_ice40_opt_map_ffs_opt_clean.il
+
+61.9. Finished OPT passes. (There is nothing left to do.)
+
+62. Executing TECHMAP pass (map to technology primitives).
+
+62.1. Executing Verilog-2005 frontend: /home/user/yosys_mod/share/ice40/latches_map.v
+Parsing Verilog input from `/home/user/yosys_mod/share/ice40/latches_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Successfully finished Verilog frontend.
+
+62.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $_DLATCH_N_: $_DLATCH_N_
+    $_DLATCH_P_: $_DLATCH_P_
+
+No more expansions possible.
+
+63. Executing Verilog-2005 frontend: /home/user/yosys_mod/share/ice40/abc9_model.v
+Parsing Verilog input from `/home/user/yosys_mod/share/ice40/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_CARRY_WRAPPER'.
+Successfully finished Verilog frontend.
+
+64. Executing ABC9 pass.
+
+64.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+64.2. Executing RTLIL backend.
+Output filename: 27.1_abc9_ops_check.il
+
+64.3. Generating Graphviz representation of design.
+Writing dot description to `27.1_abc9_ops_check.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '27.1_abc9_ops_check.dot' > '27.1_abc9_ops_check.png.new' && mv '27.1_abc9_ops_check.png.new' '27.1_abc9_ops_check.png'
+/home/user/27.1_abc9_ops_check.il
+
+64.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+64.5. Executing RTLIL backend.
+Output filename: 27.2_abc9_ops_prep_hier.il
+
+64.6. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module BCD2421_to_bin.
+Found 0 SCCs.
+
+64.7. Executing RTLIL backend.
+Output filename: 27.2_abc9_scc.il
+
+64.8. Executing ABC9_OPS pass (helper functions for ABC9).
+
+64.9. Executing RTLIL backend.
+Output filename: 27.3_abc9_ops_bypass.il
+
+64.10. Executing TECHMAP pass (map to technology primitives).
+
+64.10.1. Executing Verilog-2005 frontend: /home/user/yosys_mod/share/techmap.v
+Parsing Verilog input from `/home/user/yosys_mod/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+64.10.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    SB_WARMBOOT: SB_WARMBOOT
+    SB_SPRAM256KA: SB_SPRAM256KA
+    SB_SPI: SB_SPI
+    SB_RGB_DRV: SB_RGB_DRV
+    SB_RGBA_DRV: SB_RGBA_DRV
+    SB_RAM40_4KNW: SB_RAM40_4KNW
+    SB_RAM40_4KNRNW: SB_RAM40_4KNRNW
+    SB_RAM40_4KNR: SB_RAM40_4KNR
+    SB_RAM40_4K: SB_RAM40_4K
+    SB_PLL40_PAD: SB_PLL40_PAD
+    SB_PLL40_CORE: SB_PLL40_CORE
+    SB_PLL40_2_PAD: SB_PLL40_2_PAD
+    SB_PLL40_2F_PAD: SB_PLL40_2F_PAD
+    SB_PLL40_2F_CORE: SB_PLL40_2F_CORE
+    SB_MAC16: SB_MAC16
+    SB_LUT4: SB_LUT4
+    SB_LFOSC: SB_LFOSC
+    SB_LED_DRV_CUR: SB_LED_DRV_CUR
+    SB_LEDDA_IP: SB_LEDDA_IP
+    SB_IO_OD: SB_IO_OD
+    SB_IO_I3C: SB_IO_I3C
+    SB_IO: SB_IO
+    SB_I2C: SB_I2C
+    SB_HFOSC: SB_HFOSC
+    SB_GB_IO: SB_GB_IO
+    SB_GB: SB_GB
+    SB_FILTER_50NS: SB_FILTER_50NS
+    SB_DFFSS: SB_DFFSS
+    SB_DFFSR: SB_DFFSR
+    SB_DFFS: SB_DFFS
+    SB_DFFR: SB_DFFR
+    SB_DFFNSS: SB_DFFNSS
+    SB_DFFNSR: SB_DFFNSR
+    SB_DFFNS: SB_DFFNS
+    SB_DFFNR: SB_DFFNR
+    SB_DFFNESS: SB_DFFNESS
+    SB_DFFNESR: SB_DFFNESR
+    SB_DFFNES: SB_DFFNES
+    SB_DFFNER: SB_DFFNER
+    SB_DFFNE: SB_DFFNE
+    SB_DFFN: SB_DFFN
+    SB_DFFESS: SB_DFFESS
+    SB_DFFESR: SB_DFFESR
+    SB_DFFES: SB_DFFES
+    SB_DFFER: SB_DFFER
+    SB_DFFE: SB_DFFE
+    SB_DFF: SB_DFF
+    SB_CARRY: SB_CARRY
+    ICESTORM_RAM: ICESTORM_RAM
+    ICESTORM_LC: ICESTORM_LC
+    BCD2421_to_bin: BCD2421_to_bin
+    $__ICE40_CARRY_WRAPPER: $__ICE40_CARRY_WRAPPER
+    $xnor: _90_simplemap_bool_ops
+    $xor: _90_simplemap_bool_ops
+    $or: _90_simplemap_bool_ops
+    $and: _90_simplemap_bool_ops
+    $not: _90_simplemap_bool_ops
+    $reduce_bool: _90_simplemap_reduce_ops
+    $reduce_xnor: _90_simplemap_reduce_ops
+    $reduce_xor: _90_simplemap_reduce_ops
+    $reduce_or: _90_simplemap_reduce_ops
+    $reduce_and: _90_simplemap_reduce_ops
+    $logic_or: _90_simplemap_logic_ops
+    $logic_and: _90_simplemap_logic_ops
+    $logic_not: _90_simplemap_logic_ops
+    $nex: _90_simplemap_compare_ops
+    $ne: _90_simplemap_compare_ops
+    $eqx: _90_simplemap_compare_ops
+    $eq: _90_simplemap_compare_ops
+    $bweqx: _90_simplemap_various
+    $bwmux: _90_simplemap_various
+    $bmux: _90_simplemap_various
+    $tribuf: _90_simplemap_various
+    $mux: _90_simplemap_various
+    $concat: _90_simplemap_various
+    $slice: _90_simplemap_various
+    $pos: _90_simplemap_various
+    $buf: _90_simplemap_various
+    $dlatchsr: _90_simplemap_registers
+    $adlatch: _90_simplemap_registers
+    $dlatch: _90_simplemap_registers
+    $dffsre: _90_simplemap_registers
+    $dffsr: _90_simplemap_registers
+    $sdffce: _90_simplemap_registers
+    $sdffe: _90_simplemap_registers
+    $sdff: _90_simplemap_registers
+    $aldffe: _90_simplemap_registers
+    $aldff: _90_simplemap_registers
+    $adffe: _90_simplemap_registers
+    $adff: _90_simplemap_registers
+    $dffe: _90_simplemap_registers
+    $dff: _90_simplemap_registers
+    $ff: _90_simplemap_registers
+    $sr: _90_simplemap_registers
+    $sshr: _90_shift_ops_shr_shl_sshl_sshr
+    $sshl: _90_shift_ops_shr_shl_sshl_sshr
+    $shl: _90_shift_ops_shr_shl_sshl_sshr
+    $shr: _90_shift_ops_shr_shl_sshl_sshr
+    $shiftx: _90_shift_shiftx
+    $shift: _90_shift_shiftx
+    $fa: _90_fa
+    $lcu: _90_lcu_brent_kung
+    $alu: _90_alu
+    $macc_v2: _90_macc
+    $macc: _90_macc
+    $mul: _90_alumacc
+    $neg: _90_alumacc
+    $sub: _90_alumacc
+    $add: _90_alumacc
+    $gt: _90_alumacc
+    $ge: _90_alumacc
+    $le: _90_alumacc
+    $lt: _90_alumacc
+    $__div_mod_u: $__div_mod_u
+    $__div_mod_trunc: $__div_mod_trunc
+    $div: _90_div
+    $mod: _90_mod
+    $__div_mod_floor: $__div_mod_floor
+    $divfloor: _90_divfloor
+    $modfloor: _90_modfloor
+    $pow: _90_pow
+    $pmux: _90_pmux
+    $demux: _90_demux
+    $sop: _90_lut
+    $lut: _90_lut
+    $connect: $connect
+    $input_port: $input_port
+
+No more expansions possible.
+
+64.11. Executing RTLIL backend.
+Output filename: 27.4_abc9_techmap_abc9flop.il
+
+64.12. Generating Graphviz representation of design.
+Writing dot description to `27.4_abc9_techmap_abc9flop.dot'.
+Nothing there to show.
+Exec: dot -Tpng '27.4_abc9_techmap_abc9flop.dot' > '27.4_abc9_techmap_abc9flop.png.new' && mv '27.4_abc9_techmap_abc9flop.png.new' '27.4_abc9_techmap_abc9flop.png'
+
+64.13. Executing OPT pass (performing simple optimizations).
+
+64.13.1. Executing OPT_EXPR pass (perform const folding).
+
+64.13.2. Executing RTLIL backend.
+Output filename: 27.5.1_opt_expr_abc9.il
+
+64.13.3. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+64.13.4. Executing RTLIL backend.
+Output filename: 27.5.2_opt_merge_abc9.il
+
+64.13.5. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+64.13.6. Executing RTLIL backend.
+Output filename: 27.5.3_opt_muxtree_abc9.il
+
+64.13.7. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+64.13.8. Executing RTLIL backend.
+Output filename: 27.5.4_opt_reduce_abc9.il
+
+64.13.9. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+64.13.10. Executing RTLIL backend.
+Output filename: 27.5.5_opt_merge_abc9.il
+
+64.13.11. Executing OPT_DFF pass (perform DFF optimizations).
+
+64.13.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+64.13.13. Executing RTLIL backend.
+Output filename: 27.5.8_opt_clean_abc9.il
+
+64.13.14. Executing OPT_EXPR pass (perform const folding).
+
+64.13.15. Executing RTLIL backend.
+Output filename: 27.5.9_opt_expr_abc9.il
+
+64.13.16. Finished fast OPT passes. (There is nothing left to do.)
+
+64.14. Executing TECHMAP pass (map to technology primitives).
+
+64.14.1. Executing Verilog-2005 frontend: /home/user/yosys_mod/share/abc9_map.v
+Parsing Verilog input from `/home/user/yosys_mod/share/abc9_map.v' to AST representation.
+Successfully finished Verilog frontend.
+
+64.14.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+
+No more expansions possible.
+
+64.15. Executing RTLIL backend.
+Output filename: 27.6_abc9_techmap_abc9map.il
+
+64.16. Generating Graphviz representation of design.
+Writing dot description to `27.6_abc9_techmap_abc9map.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '27.6_abc9_techmap_abc9map.dot' > '27.6_abc9_techmap_abc9map.png.new' && mv '27.6_abc9_techmap_abc9map.png.new' '27.6_abc9_techmap_abc9map.png'
+
+64.17. Executing Verilog-2005 frontend: /home/user/yosys_mod/share/abc9_model.v
+Parsing Verilog input from `/home/user/yosys_mod/share/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+64.18. Executing ABC9_OPS pass (helper functions for ABC9).
+
+64.19. Executing RTLIL backend.
+Output filename: 27.7_abc9_ops_prep_delays.il
+
+64.20. Generating Graphviz representation of design.
+Writing dot description to `27.7_abc9_ops_prep_delays.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '27.7_abc9_ops_prep_delays.dot' > '27.7_abc9_ops_prep_delays.png.new' && mv '27.7_abc9_ops_prep_delays.png.new' '27.7_abc9_ops_prep_delays.png'
+
+64.21. Executing RTLIL backend.
+Output filename: 27.8_abc9_ops_break_scc.il
+
+64.22. Executing RTLIL backend.
+Output filename: 27.9_abc9_ops_prep_xaiger.il
+
+64.23. Executing ABC9_OPS pass (helper functions for ABC9).
+
+64.24. Executing RTLIL backend.
+Output filename: 27.10_abc9_ops_prep_lut.il
+
+64.25. Executing ABC9_OPS pass (helper functions for ABC9).
+$__DFF_P__$abc9_flop.D abc9_required = 0
+$__DFF_N__$abc9_flop.D abc9_required = 0
+
+64.26. Executing RTLIL backend.
+Output filename: 27.11_abc9_ops_prep_box.il
+
+64.27. Generating Graphviz representation of design.
+Writing dot description to `27.11_abc9_ops_prep_box.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '27.11_abc9_ops_prep_box.dot' > '27.11_abc9_ops_prep_box.png.new' && mv '27.11_abc9_ops_prep_box.png.new' '27.11_abc9_ops_prep_box.png'
+
+64.28. Executing AIGMAP pass (map logic to AIG).
+Module BCD2421_to_bin: replaced 7 cells with 28 new cells, skipped 16 cells.
+  replaced 1 cell types:
+       7 $_OR_
+  not replaced 2 cell types:
+      11 $_AND_
+       5 $_NOT_
+
+64.29. Executing RTLIL backend.
+Output filename: 27.12_abc9_aigmap_exe.il
+
+64.30. Generating Graphviz representation of design.
+Writing dot description to `27.12_abc9_aigmap_exe.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '27.12_abc9_aigmap_exe.dot' > '27.12_abc9_aigmap_exe.png.new' && mv '27.12_abc9_aigmap_exe.png.new' '27.12_abc9_aigmap_exe.png'
+
+64.30.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+64.30.2. Executing RTLIL backend.
+Output filename: 27.13_abc9_ops_write_lut.il
+
+64.30.3. Executing ABC9_OPS pass (helper functions for ABC9).
+
+64.30.4. Executing RTLIL backend.
+Output filename: 27.14_abc9_ops_write_box.il
+
+64.30.5. Generating Graphviz representation of design.
+Writing dot description to `27.14_abc9_ops_write_box.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '27.14_abc9_ops_write_box.dot' > '27.14_abc9_ops_write_box.png.new' && mv '27.14_abc9_ops_write_box.png.new' '27.14_abc9_ops_write_box.png'
+
+64.30.6. Executing XAIGER backend.
+ciNum = 4
+coNum = 4
+piNum = 4
+poNum = 4
+boxNum = 0
+Extracted 18 AND gates and 50 wires from module `BCD2421_to_bin' to a netlist network with 4 inputs and 4 outputs.
+
+64.30.7. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+64.30.8. Executing ABC9.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_lut <abc-temp-dir>/input.lut 
+ABC: + read_box <abc-temp-dir>/input.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =      4/      4  and =      18  lev =    5 (3.50)  mem = 0.00 MB  box = 0  bb = 0
+ABC: + &scorr 
+ABC: Warning: The network is combinational.
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &dch -f -r 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =      4/      4  and =      24  lev =    4 (3.25)  mem = 0.00 MB  ch =    3  box = 0  bb = 0
+ABC: cst =       0  cls =      2  lit =       3  unused =      23  proof =     0
+ABC: + &if -W 250 -v 
+ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
+ABC: Node =      24.  Ch =     2.  Total mem =    0.01 MB. Peak cut mem =    0.01 MB.
+ABC: P:  Del =  699.00.  Ar =       4.0.  Edge =       14.  Cut =      101.  T =     0.00 sec
+ABC: P:  Del =  699.00.  Ar =       4.0.  Edge =       14.  Cut =      101.  T =     0.00 sec
+ABC: P:  Del =  699.00.  Ar =       4.0.  Edge =       14.  Cut =      101.  T =     0.00 sec
+ABC: F:  Del =  699.00.  Ar =       4.0.  Edge =       14.  Cut =      101.  T =     0.00 sec
+ABC: A:  Del =  699.00.  Ar =       4.0.  Edge =       14.  Cut =      101.  T =     0.00 sec
+ABC: A:  Del =  699.00.  Ar =       4.0.  Edge =       14.  Cut =      101.  T =     0.00 sec
+ABC: Total time =     0.00 sec
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &mfs 
+ABC: Timing manager is given but there is no GIA of boxes.
+ABC: Error: Abc_FrameUpdateGia(): Transformation has failed.
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =      4/      4  and =      20  lev =    4 (3.25)  mem = 0.00 MB  box = 0  bb = 0
+ABC: Mapping (K=4)  :  lut =      4  edge =      14  lev =    1 (1.00)  mem = 0.00 MB
+ABC: LUT = 4 : 2=0 0.0 %  3=2 50.0 %  4=2 50.0 %  Ave = 3.50
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &verify 
+ABC: Networks are equivalent.  Time =     0.01 sec
+ABC: + time 
+ABC: elapse: 0.02 seconds, total: 0.02 seconds
+
+64.30.9. Executing RTLIL backend.
+Output filename: 27.15_abc9_exe.il
+
+64.30.10. Generating Graphviz representation of design.
+Warning: Selection "27.15_abc9_exe" did not match any module.
+Writing dot description to `/home/user/.yosys_show.dot'.
+Nothing there to show.
+Exec: dot -Tpng '/home/user/.yosys_show.dot' > '/home/user/.yosys_show.png.new' && mv '/home/user/.yosys_show.png.new' '/home/user/.yosys_show.png'
+
+64.30.11. Executing AIGER frontend.
+M=24 I=4 L=0 O=4 A=20
+ciNum = 4
+coNum = 4
+piNum = 4
+poNum = 4
+boxNum = 0
+m: dataSize=96 lutNum=4 lutSize=4
+n: '/tmp/yosys-abc-DjyvGp/inputRenaming input $i1 -> A
+Renaming input $i2 -> A[1]
+Renaming input $i3 -> A[2]
+Renaming input $i4 -> A[3]
+Renaming output $o0 -> Y
+Renaming output $o1 -> Y[1]
+Renaming output $o2 -> Y[2]
+Renaming output $o3 -> Y[3]
+Finding unused cells or wires in module \BCD2421_to_bin$abc9..
+  removing unused `$_AND_' cell `$and$aiger684$23'.
+  removing unused `$_NOT_' cell `$not$aiger684$20'.
+  removing unused `$_NOT_' cell `$not$aiger684$21'.
+  removing unused `$_AND_' cell `$and$aiger684$21'.
+  removing unused `$_AND_' cell `$and$aiger684$20'.
+  removing unused `$_NOT_' cell `$not$aiger684$18'.
+  removing unused `$_NOT_' cell `$not$aiger684$19'.
+  removing unused `$_AND_' cell `$and$aiger684$19'.
+  removing unused `$_AND_' cell `$and$aiger684$18'.
+  removing unused `$_AND_' cell `$and$aiger684$17'.
+  removing unused `$_NOT_' cell `$not$aiger684$13'.
+  removing unused `$_NOT_' cell `$not$aiger684$15'.
+  removing unused `$_AND_' cell `$and$aiger684$15'.
+  removing unused `$_AND_' cell `$and$aiger684$14'.
+  removing unused `$_AND_' cell `$and$aiger684$13'.
+  removing unused `$_AND_' cell `$and$aiger684$12'.
+  removing unused `$_NOT_' cell `$not$aiger684$2'.
+  removing unused `$_NOT_' cell `$not$aiger684$6'.
+  removing unused `$_NOT_' cell `$not$aiger684$10'.
+  removing unused `$_AND_' cell `$and$aiger684$10'.
+  removing unused `$_NOT_' cell `$not$aiger684$9'.
+  removing unused `$_AND_' cell `$and$aiger684$9'.
+  removing unused `$_NOT_' cell `$not$aiger684$7'.
+  removing unused `$_NOT_' cell `$not$aiger684$8'.
+  removing unused `$_AND_' cell `$and$aiger684$8'.
+  removing unused `$_NOT_' cell `$not$aiger684$4'.
+  removing unused `$_AND_' cell `$and$aiger684$7'.
+  removing unused `$_AND_' cell `$and$aiger684$6'.
+  removing unused `$_AND_' cell `$and$aiger684$5'.
+  removing unused `$_NOT_' cell `$not$aiger684$3'.
+  removing unused non-port wire $aiger684$23.
+  removing unused non-port wire $aiger684$1.
+  removing unused non-port wire $aiger684$2.
+  removing unused non-port wire $aiger684$3.
+  removing unused non-port wire $aiger684$4.
+  removing unused non-port wire $aiger684$11b.
+  removing unused non-port wire $aiger684$16b.
+  removing unused non-port wire $aiger684$22.
+  removing unused non-port wire $aiger684$24.
+  removing unused non-port wire $aiger684$5.
+  removing unused non-port wire $aiger684$3b.
+  removing unused non-port wire $aiger684$6.
+  removing unused non-port wire $aiger684$7.
+  removing unused non-port wire $aiger684$8.
+  removing unused non-port wire $aiger684$4b.
+  removing unused non-port wire $aiger684$9.
+  removing unused non-port wire $aiger684$8b.
+  removing unused non-port wire $aiger684$7b.
+  removing unused non-port wire $aiger684$10.
+  removing unused non-port wire $aiger684$9b.
+  removing unused non-port wire $aiger684$10b.
+  removing unused non-port wire $aiger684$6b.
+  removing unused non-port wire $aiger684$12.
+  removing unused non-port wire $aiger684$2b.
+  removing unused non-port wire $aiger684$13.
+  removing unused non-port wire $aiger684$14.
+  removing unused non-port wire $aiger684$15.
+  removing unused non-port wire $aiger684$15b.
+  removing unused non-port wire $aiger684$13b.
+  removing unused non-port wire $aiger684$17.
+  removing unused non-port wire $aiger684$18.
+  removing unused non-port wire $aiger684$19.
+  removing unused non-port wire $aiger684$20.
+  removing unused non-port wire $aiger684$19b.
+  removing unused non-port wire $aiger684$18b.
+  removing unused non-port wire $aiger684$21.
+  removing unused non-port wire $aiger684$21b.
+  removing unused non-port wire $aiger684$20b.
+Removed 30 unused cells and 38 unused wires.
+
+64.30.12. Executing ABC9_OPS pass (helper functions for ABC9).
+ABC RESULTS:              $lut cells:        4
+ABC RESULTS:           input signals:        1
+ABC RESULTS:          output signals:        1
+
+64.30.13. Executing RTLIL backend.
+Output filename: 27.16_abc9_ops_reintegrate.il
+
+64.30.14. Generating Graphviz representation of design.
+Writing dot description to `27.16_abc9_ops_reintegrate.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '27.16_abc9_ops_reintegrate.dot' > '27.16_abc9_ops_reintegrate.png.new' && mv '27.16_abc9_ops_reintegrate.png.new' '27.16_abc9_ops_reintegrate.png'
+Removing temp directory.
+
+64.31. Executing TECHMAP pass (map to technology primitives).
+
+64.31.1. Executing Verilog-2005 frontend: /home/user/yosys_mod/share/abc9_unmap.v
+Parsing Verilog input from `/home/user/yosys_mod/share/abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `$__DFF_x__$abc9_flop'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Successfully finished Verilog frontend.
+
+64.31.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $__DFF_P__$abc9_flop: $__DFF_x__$abc9_flop
+    $__DFF_N__$abc9_flop: $__DFF_x__$abc9_flop
+    $__ABC9_SCC_BREAKER: $__ABC9_SCC_BREAKER
+
+No more expansions possible.
+
+64.32. Executing RTLIL backend.
+Output filename: 27.17_abc9_techmap_abc9unmap.il
+
+64.33. Generating Graphviz representation of design.
+Writing dot description to `27.17_abc9_techmap_abc9unmap.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '27.17_abc9_techmap_abc9unmap.dot' > '27.17_abc9_techmap_abc9unmap.png.new' && mv '27.17_abc9_techmap_abc9unmap.png.new' '27.17_abc9_techmap_abc9unmap.png'
+
+65. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+66. Executing TECHMAP pass (map to technology primitives).
+
+66.1. Executing Verilog-2005 frontend: /home/user/yosys_mod/share/ice40/ff_map.v
+Parsing Verilog input from `/home/user/yosys_mod/share/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+66.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $_DFF_N_: $_DFF_N_
+    $_DFF_P_: $_DFF_P_
+    $_DFFE_NP_: $_DFFE_NP_
+    $_DFFE_PP_: $_DFFE_PP_
+    $_DFF_NP0_: $_DFF_NP0_
+    $_DFF_NP1_: $_DFF_NP1_
+    $_DFF_PP0_: $_DFF_PP0_
+    $_DFF_PP1_: $_DFF_PP1_
+    $_DFFE_NP0P_: $_DFFE_NP0P_
+    $_DFFE_NP1P_: $_DFFE_NP1P_
+    $_DFFE_PP0P_: $_DFFE_PP0P_
+    $_DFFE_PP1P_: $_DFFE_PP1P_
+    $_SDFF_NP0_: $_SDFF_NP0_
+    $_SDFF_NP1_: $_SDFF_NP1_
+    $_SDFF_PP0_: $_SDFF_PP0_
+    $_SDFF_PP1_: $_SDFF_PP1_
+    $_SDFFCE_NP0P_: $_SDFFCE_NP0P_
+    $_SDFFCE_NP1P_: $_SDFFCE_NP1P_
+    $_SDFFCE_PP0P_: $_SDFFCE_PP0P_
+    $_SDFFCE_PP1P_: $_SDFFCE_PP1P_
+
+No more expansions possible.
+Finding unused cells or wires in module \BCD2421_to_bin..
+  removing unused `$lut' cell `$abc$685$lut$aiger684$16'.
+  removing unused `$lut' cell `$abc$685$lut$aiger684$11'.
+  removing unused non-port wire $or$/home/user/files/logic_gates/BCD2421_to_bin.v:7$409_Y.
+  removing unused non-port wire $or$/home/user/files/logic_gates/BCD2421_to_bin.v:6$397_Y.
+  removing unused non-port wire $or$/home/user/files/logic_gates/BCD2421_to_bin.v:5$392_Y.
+  removing unused non-port wire $or$/home/user/files/logic_gates/BCD2421_to_bin.v:5$385_Y.
+  removing unused non-port wire $not$/home/user/files/logic_gates/BCD2421_to_bin.v:6$398_Y.
+  removing unused non-port wire $not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$394_Y.
+  removing unused non-port wire $not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$388_Y.
+  removing unused non-port wire $not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$386_Y.
+  removing unused non-port wire $not$/home/user/files/logic_gates/BCD2421_to_bin.v:5$383_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$408_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:7$406_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:6$399_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$395_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$391_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$390_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$389_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$387_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:5$384_Y.
+  removing unused non-port wire $and$/home/user/files/logic_gates/BCD2421_to_bin.v:4$381_Y.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$628.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$630.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$632.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$634.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$636.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$638.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$640.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$642.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$644.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$646.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$648.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$650.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$652.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$654.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$656.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$658.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$660.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$662.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$664.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$666.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$668.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$670.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$672.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$674.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$676.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$678.
+  removing unused non-port wire $auto$aigmap.cc:122:execute$680.
+  removing unused non-port wire $auto$aigmap.cc:131:execute$682.
+  removing unused non-port wire $abc$685$Y[3].
+  removing unused non-port wire $abc$685$aiger684$11.
+  removing unused non-port wire $abc$685$Y[1].
+  removing unused non-port wire $abc$685$A[3].
+  removing unused non-port wire $abc$685$aiger684$16.
+  removing unused non-port wire $abc$685$A[2].
+  removing unused non-port wire $abc$685$Y[2].
+  removing unused non-port wire $abc$685$A[1].
+  removing unused non-port wire $abc$685$Y[0].
+  removing unused non-port wire $abc$685$Y.
+  removing unused non-port wire $abc$685$A[0].
+  removing unused non-port wire $abc$685$A.
+Removed 2 unused cells and 59 unused wires.
+
+67. Executing RTLIL backend.
+Output filename: 28_clean.il
+
+68. Generating Graphviz representation of design.
+Writing dot description to `28_clean.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '28_clean.dot' > '28_clean.png.new' && mv '28_clean.png.new' '28_clean.png'
+
+69. Executing OPT_LUT pass (optimize LUTs).
+Discovering LUTs.
+Found $lut\WIDTH=4 cell BCD2421_to_bin.$abc$685$lut\Y[2].
+  Cell implements a 4-LUT.
+Found $lut\WIDTH=4 cell BCD2421_to_bin.$auto$abc9_ops.cc:1613:reintegrate$687.
+  Cell implements a 4-LUT.
+Found $lut\WIDTH=3 cell BCD2421_to_bin.$auto$abc9_ops.cc:1613:reintegrate$686.
+  Cell implements a 3-LUT.
+Found $lut\WIDTH=3 cell BCD2421_to_bin.$abc$685$lut\Y[3].
+  Cell implements a 3-LUT.
+Number of LUTs:        4
+  3-LUT                2
+  4-LUT                2
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Eliminating LUTs.
+Number of LUTs:        4
+  3-LUT                2
+  4-LUT                2
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Combining LUTs.
+Number of LUTs:        4
+  3-LUT                2
+  4-LUT                2
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Eliminated 0 LUTs.
+Combined 0 LUTs.
+
+70. Executing RTLIL backend.
+Output filename: 29_opt_lut.il
+
+71. Generating Graphviz representation of design.
+Writing dot description to `29_opt_lut.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '29_opt_lut.dot' > '29_opt_lut.png.new' && mv '29_opt_lut.png.new' '29_opt_lut.png'
+
+72. Executing TECHMAP pass (map to technology primitives).
+
+72.1. Executing Verilog-2005 frontend: /home/user/yosys_mod/share/ice40/cells_map.v
+Parsing Verilog input from `/home/user/yosys_mod/share/ice40/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+72.2. Continuing TECHMAP pass.
+Cell type mappings to use:
+    $lut: $lut
+
+Parameter \WIDTH = 4
+Parameter \LUT = 16'1011100100000000
+
+72.3. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'1011100100000000
+Generating RTLIL representation for module `$paramod$b9642739d231ba7770280a0cab59cb676c0ca0ec$lut'.
+
+72.4. Continuing TECHMAP pass.
+Using template $paramod$b9642739d231ba7770280a0cab59cb676c0ca0ec$lut for cells of type $lut.
+Mapping BCD2421_to_bin.$auto$abc9_ops.cc:1613:reintegrate$687 ($lut) using $paramod$b9642739d231ba7770280a0cab59cb676c0ca0ec$lut.
+Parameter \WIDTH = 3
+Parameter \LUT = 8'00011000
+
+72.5. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 3
+Parameter \LUT = 8'00011000
+Generating RTLIL representation for module `$paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00011000'.
+
+72.6. Continuing TECHMAP pass.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00011000 for cells of type $lut.
+Mapping BCD2421_to_bin.$auto$abc9_ops.cc:1613:reintegrate$686 ($lut) using $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00011000.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'0010100000001100
+
+72.7. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 4
+Parameter \LUT = 16'0010100000001100
+Generating RTLIL representation for module `$paramod$1fe34ed2a78fc38da7111add2bfc01857a881547$lut'.
+
+72.8. Continuing TECHMAP pass.
+Using template $paramod$1fe34ed2a78fc38da7111add2bfc01857a881547$lut for cells of type $lut.
+Mapping BCD2421_to_bin.$abc$685$lut\Y[2] ($lut) using $paramod$1fe34ed2a78fc38da7111add2bfc01857a881547$lut.
+Parameter \WIDTH = 3
+Parameter \LUT = 8'10000000
+
+72.9. Executing AST frontend in derive mode using pre-parsed AST for module `$lut'.
+Parameter \WIDTH = 3
+Parameter \LUT = 8'10000000
+Generating RTLIL representation for module `$paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10000000'.
+
+72.10. Continuing TECHMAP pass.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10000000 for cells of type $lut.
+Mapping BCD2421_to_bin.$abc$685$lut\Y[3] ($lut) using $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10000000.
+No more expansions possible.
+
+73. Executing RTLIL backend.
+Output filename: 30_techmap_cells_map.il
+
+74. Generating Graphviz representation of design.
+Writing dot description to `30_techmap_cells_map.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '30_techmap_cells_map.dot' > '30_techmap_cells_map.png.new' && mv '30_techmap_cells_map.png.new' '30_techmap_cells_map.png'
+Finding unused cells or wires in module \BCD2421_to_bin..
+  removing unused non-port wire $techmap688$auto$abc9_ops.cc:1613:reintegrate$687.Y.
+  removing unused non-port wire $techmap688$auto$abc9_ops.cc:1613:reintegrate$687.A.
+  removing unused non-port wire $techmap689$auto$abc9_ops.cc:1613:reintegrate$686.Y.
+  removing unused non-port wire $techmap689$auto$abc9_ops.cc:1613:reintegrate$686.A.
+  removing unused non-port wire $techmap690$abc$685$lut\Y[2].Y.
+  removing unused non-port wire $techmap690$abc$685$lut\Y[2].A.
+  removing unused non-port wire $techmap691$abc$685$lut\Y[3].Y.
+  removing unused non-port wire $techmap691$abc$685$lut\Y[3].A.
+Removed 0 unused cells and 8 unused wires.
+
+75. Executing RTLIL backend.
+Output filename: 31_clean.il
+
+76. Generating Graphviz representation of design.
+Writing dot description to `31_clean.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '31_clean.dot' > '31_clean.png.new' && mv '31_clean.png.new' '31_clean.png'
+
+77. Executing AUTONAME pass.
+Rename cell $abc$685$lut\Y[2] in BCD2421_to_bin to Y_SB_LUT4_O.
+Rename cell $auto$abc9_ops.cc:1613:reintegrate$687 in BCD2421_to_bin to Y_SB_LUT4_O_1.
+Rename cell $auto$abc9_ops.cc:1613:reintegrate$686 in BCD2421_to_bin to Y_SB_LUT4_O_2.
+Rename cell $abc$685$lut\Y[3] in BCD2421_to_bin to Y_SB_LUT4_O_3.
+Renamed 4 objects in module BCD2421_to_bin (2 iterations).
+
+78. Executing RTLIL backend.
+Output filename: 32_autoname.il
+
+79. Generating Graphviz representation of design.
+Writing dot description to `32_autoname.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '32_autoname.dot' > '32_autoname.png.new' && mv '32_autoname.png.new' '32_autoname.png'
+
+80. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `BCD2421_to_bin'. Setting top module to BCD2421_to_bin.
+
+80.1. Analyzing design hierarchy..
+Top module:  \BCD2421_to_bin
+
+80.2. Analyzing design hierarchy..
+Top module:  \BCD2421_to_bin
+Removed 0 unused modules.
+
+81. Executing RTLIL backend.
+Output filename: 33_hierarchy_final.il
+
+82. Generating Graphviz representation of design.
+Writing dot description to `33_hierarchy_final.dot'.
+Dumping module BCD2421_to_bin to page 1.
+Exec: dot -Tpng '33_hierarchy_final.dot' > '33_hierarchy_final.png.new' && mv '33_hierarchy_final.png.new' '33_hierarchy_final.png'
+
+83. Printing statistics.
+
+=== BCD2421_to_bin ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+        8 wire bits
+        2 public wires
+        8 public wire bits
+        2 ports
+        8 port bits
+        4 submodules
+        4   SB_LUT4
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+        - BCD2421_to_bin
+
+        +----------Count including submodules.
+        | 
+        2 wires
+        8 wire bits
+        2 public wires
+        8 public wire bits
+        2 ports
+        8 port bits
+        - memories
+        - memory bits
+        - processes
+        - cells
+        4 submodules
+        4   SB_LUT4
+
+84. Executing CHECK pass (checking for obvious problems).
+Checking module BCD2421_to_bin...
+Found and reported 0 problems.
+
+85. Executing RTLIL backend.
+Output filename: 35_blackbox.il
+
+86. Executing Verilog backend.
+
+86.1. Executing BMUXMAP pass.
+
+86.2. Executing DEMUXMAP pass.
+Dumping module `\BCD2421_to_bin'.
+
+Warnings: 1 unique messages, 1 total
+End of script. Logfile hash: 8ace7bc97f, time: 3.86s, user: 0.72s, system: 0.26s, MEM: 34.25 MB peak
+Yosys 0.64 (git sha1 6d2c445ae, g++ 11.4.0-1ubuntu1~22.04.3 -fPIC -O3)
+Time spent: 74% 23x show (2 sec), 12% 200x write_rtlil (0 sec), ...
