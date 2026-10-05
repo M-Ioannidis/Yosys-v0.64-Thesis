@@ -17,7 +17,7 @@ do
 		safe_name=${safe_name%.*}
 		pic="${safe_name}_${type}"
 		
-		python3 $HOME/codes/cake.py "$safe_name" "$type" "1"
+		python3 $HOME/codes/setup.py "$safe_name" "$type"
 		$HOME/yosys/./yosys -p "synth_ice40 -top $safe_name" -g -d -l "log_${pic}.txt" $filepath
 		$HOME/yosys/./yosys -p "synth_ice40 -top $safe_name" -X -g -d -l "debug_${pic}.txt" $filepath
 		$HOME/yosys_mod/./yosys -Q -g -l "show_${pic}.txt" -c ~/codes/setup_show_nooptions.tcl $filepath
